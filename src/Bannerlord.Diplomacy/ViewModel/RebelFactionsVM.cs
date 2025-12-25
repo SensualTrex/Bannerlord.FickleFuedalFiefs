@@ -18,8 +18,10 @@ using TaleWorlds.Localization;
 
 namespace Diplomacy.ViewModel
 {
+    
     internal sealed class RebelFactionsVM : TaleWorlds.Library.ViewModel
     {
+        
         private static readonly TextObject _TCreateFactionLabel = new("{=hBSo0Ziq}Create Faction");
         private readonly Kingdom _kingdom;
         private readonly Action _onComplete;
@@ -66,6 +68,7 @@ namespace Diplomacy.ViewModel
             KingdomName = _kingdom.Name.ToString();
             CreateFactionInfluenceCost = Settings.Instance!.FactionCreationInfluenceCost;
             HelpHint = new HintViewModel(GameTexts.FindText("str_faction_help"));
+            //Hero.MainHero.HeroState;
             RefreshValues();
         }
 
@@ -109,6 +112,7 @@ namespace Diplomacy.ViewModel
         [UsedImplicitly]
         public void OnComplete()
         {
+            
             _onComplete();
         }
 
@@ -139,16 +143,14 @@ namespace Diplomacy.ViewModel
                 inquiryElements,
                 true,
                 1,
-#if v120 || v121 || v122 || v123 || v124 || v125 || v126 || v127 || v128 || v129 || v1210
                 1,
-#endif
                 GameTexts.FindText("str_ok").ToString(),
                 GameTexts.FindText("str_cancel").ToString(),
                 HandleCreateFaction,
                 null
             ), true);
         }
-
+        
         private void HandleCreateFaction(List<InquiryElement> inquiryElements)
         {
             var identifier = inquiryElements.First().Identifier;

@@ -2,6 +2,7 @@
 using Bannerlord.UIExtenderEx.ViewModels;
 
 using Diplomacy.DiplomaticAction;
+using Diplomacy.Extensions;
 using Diplomacy.GauntletInterfaces;
 
 using JetBrains.Annotations;
@@ -14,6 +15,7 @@ using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.Pages;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.ScreenSystem;
+using NavalDLC;
 
 namespace Diplomacy.ViewModelMixin
 {
@@ -66,9 +68,10 @@ namespace Diplomacy.ViewModelMixin
 
             var clanPages = Campaign.Current.EncyclopediaManager.GetPageOf(typeof(Clan));
 
-            foreach (var f in Campaign.Current.Factions.Where(f => f != _faction).OrderBy(f => !f.IsKingdomFaction).ThenBy(f => f.Name.ToString()))
-                if (clanPages.IsValidEncyclopediaItem(f) && FactionManager.IsAlliedWithFaction(_faction, f))
+            /*foreach (var f in Campaign.Current.Factions.Where(f => f != _faction).OrderBy(f => !f.IsKingdomFaction).ThenBy(f => f.Name.ToString()))
+                if (clanPages.IsValidEncyclopediaItem(f) && _faction.IsAlliedWith(f))
                     _allies.Add(new EncyclopediaFactionVM(f));
+            */
 
             if (_faction.IsKingdomFaction)
                 foreach (var f in Kingdom.All.Cast<IFaction>().Where(f => f != _faction).OrderBy(f => f.Name.ToString()))

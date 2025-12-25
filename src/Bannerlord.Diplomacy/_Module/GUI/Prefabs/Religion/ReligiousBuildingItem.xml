@@ -1,0 +1,31 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <Widget SuggestedWidth="201.5" SuggestedHeight="228" PositionYOffset="1.500023" VerticalAlignment="Center" HorizontalAlignment="Center" Sprite="MPLobby\Armory\item_portrait_frame" MinWidth="750" MinHeight="225">
+          <Children>
+            <TextWidget Text="     BuildingName" Brush="TownManagement.Item.Title.Text" Brush.FontSize="26" Brush.TextHorizontalAlignment="Left" Brush.Sprite="Order\melee_unit_troop_card_default" SuggestedWidth="318.5" SuggestedHeight="49.25005" Sprite="Order\melee_unit_troop_card_default" Id="txtBuildingName" MarginTop="-10" />
+            <ImageWidget Brush="TownManagement.Slider" Brush.Sprite="khuzait_keep" SuggestedWidth="155" SuggestedHeight="155" VerticalAlignment="Bottom" Sprite="khuzait_keep" Id="imgBld" MarginLeft="30" MarginBottom="25" />
+            <ImageWidget Brush="TownManagement.Slider" SuggestedWidth="170" SuggestedHeight="170" VerticalAlignment="Bottom" Sprite="reserve_slider_frame_9" MarginLeft="20" MarginBottom="15">
+              <Children>
+                <ImageWidget Brush="DefaultBrush" Brush.Sprite="PartyScreen\FormationIcons\1" SuggestedWidth="65" SuggestedHeight="65" VerticalAlignment="Bottom" HorizontalAlignment="Center" Sprite="PartyScreen\FormationIcons\1" Id="imgBldLvl" />
+                <ImageWidget Brush="TownManagement.Slider(Clone)" SuggestedWidth="125" SuggestedHeight="125" HorizontalAlignment="Center" Id="imgRlgnIco" />
+              </Children>
+            </ImageWidget>
+            <ImageWidget Brush="TownManagement.Slider" SuggestedWidth="135" SuggestedHeight="135" HorizontalAlignment="Right" Sprite="reserve_slider_frame_9" MarginTop="15" MarginRight="25" />
+            <Widget SuggestedWidth="235.75" SuggestedHeight="175" MarginLeft="200" MarginBottom="20" VerticalAlignment="Bottom">
+              <Children>
+                <TextWidget Text="Coversion Rate:" Brush="TownManagement.Income.Item.Text" Brush.FontSize="20" Brush.TextHorizontalAlignment="Left" SuggestedWidth="200" SuggestedHeight="52.25" />
+                <TextWidget Text="-0%" Brush="TownManagement.Income.Item.Text" Brush.FontSize="20" Brush.TextHorizontalAlignment="Right" Brush.FontColor="#024F00FF" SuggestedWidth="140.75" SuggestedHeight="52.25" HorizontalAlignment="Right" Color="#0CFF21FF" Id="txtConversionRate" />
+                <TextWidget Text="Zeal:" Brush="TownManagement.Income.Item.Text(Clone)" SuggestedWidth="200" SuggestedHeight="52.25" PositionYOffset="30" />
+                <TextWidget Text="Piety:" Brush="TownManagement.Income.Item.Text(Clone)" SuggestedWidth="200" SuggestedHeight="52.25" PositionYOffset="60" />
+                <TextWidget Text="Tolerance:" Brush="TownManagement.Income.Item.Text(Clone)" SuggestedWidth="200" SuggestedHeight="52.25" PositionYOffset="90" />
+                <TextWidget Text="Dogmatism:" Brush="TownManagement.Income.Item.Text(Clone)" SuggestedWidth="200" SuggestedHeight="52.25" PositionYOffset="120" />
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

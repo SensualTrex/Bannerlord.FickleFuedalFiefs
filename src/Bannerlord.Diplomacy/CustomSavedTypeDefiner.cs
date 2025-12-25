@@ -2,6 +2,8 @@
 using Diplomacy.CivilWar.Factions;
 using Diplomacy.DiplomaticAction;
 using Diplomacy.Messengers;
+using Diplomacy.Religions;
+using Diplomacy.Religions.ViewModel;
 using Diplomacy.WarExhaustion;
 using Diplomacy.WarExhaustion.EventRecords;
 

@@ -32,11 +32,10 @@ namespace Diplomacy.CampaignBehaviors
             _cooldownManager.UpdateLastAllianceFormedTime(allianceFormedEvent.Kingdom, allianceFormedEvent.OtherKingdom, CampaignTime.Now);
         }
 
-#if v100 || v101 || v102 || v103
-        private void RegisterDeclareWarCooldown(IFaction faction1, IFaction faction2)
-#else
+
         private void RegisterDeclareWarCooldown(IFaction faction1, IFaction faction2, MakePeaceAction.MakePeaceDetail makePeaceDetail)
-#endif
+
+
         {
             if (faction1 is Kingdom kingdom1 && faction2 is Kingdom kingdom2)
             {

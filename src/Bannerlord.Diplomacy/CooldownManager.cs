@@ -1,4 +1,6 @@
-﻿using JetBrains.Annotations;
+﻿using Diplomacy.Extensions;
+
+using JetBrains.Annotations;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -73,7 +75,7 @@ namespace Diplomacy
         public static CampaignTime GetLastWarTimeBetweenFactions(IFaction faction1, IFaction faction2)
         {
             var stanceLink = faction1.GetStanceWith(faction2);
-            if ((stanceLink?.IsNeutral ?? false) || (stanceLink?.IsAllied ?? false))
+            if ((stanceLink?.IsNeutral ?? false) || (faction1.IsAlliedWith(faction2)))
             {
                 return stanceLink.PeaceDeclarationDate;
             }

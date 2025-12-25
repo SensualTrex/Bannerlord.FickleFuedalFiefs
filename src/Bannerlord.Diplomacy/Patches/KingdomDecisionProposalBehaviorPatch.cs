@@ -15,7 +15,7 @@ namespace Diplomacy.Patches
         protected override IEnumerable<Patch> Prepare() => new Patch[]
         {
             new Prefix(nameof(ConsiderWarPrefix), "ConsiderWar"),
-            new Prefix(nameof(ConsiderPeacePrefix), "ConsiderPeace"),
+            //new Prefix(nameof(ConsiderPeacePrefix), "ConsiderPeace"),
             new Prefix(nameof(HandleRebelKingdom), "DailyTickClan")
         };
 

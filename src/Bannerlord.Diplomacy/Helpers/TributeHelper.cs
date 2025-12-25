@@ -18,7 +18,8 @@ namespace Diplomacy.Helpers
             if (!atWar)
             {
                 var stance = kingdomInQuestion.GetStanceWith(otherKingdom);
-                return stance?.GetDailyTributePaid(kingdomInQuestion) ?? 0;
+                
+                return stance?.DailyTributeInstallments ?? 0;
             }
 
             if (kingdomInQuestion == Clan.PlayerClan.Kingdom)
@@ -55,7 +56,8 @@ namespace Diplomacy.Helpers
                     valueForOtherKingdom = 0;
                 }
             }
-            var dailyPeaceTributeToPay = Campaign.Current.Models.DiplomacyModel.GetDailyTributeForValue(valueForOtherKingdom);
+            var dailyPeaceTributeToPay = kingdomInQuestion.GetStanceWith(otherKingdom).DailyTributeInstallments;
+            // var dailyPeaceTributeToPay = Campaign.Current.Models.DiplomacyModel.GetDailyTributeForValue(valueForOtherKingdom);
             return 10 * (dailyPeaceTributeToPay / 10);
         }
 

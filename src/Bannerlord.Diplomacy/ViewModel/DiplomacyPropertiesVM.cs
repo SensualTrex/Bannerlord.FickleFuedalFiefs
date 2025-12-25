@@ -1,6 +1,8 @@
 ﻿using Diplomacy.DiplomaticAction;
 using Diplomacy.Extensions;
 
+using Helpers;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,15 +55,15 @@ namespace Diplomacy.ViewModel
             Faction1Pacts.Clear();
             Faction2Pacts.Clear();
 
-            AddWarRelationships(Faction1.Stances);
-            AddWarRelationships(Faction2.Stances);
+            AddWarRelationships(FactionHelper.GetStances(Faction1));
+            AddWarRelationships(FactionHelper.GetStances(Faction2));
 
             foreach (var kingdom in KingdomExtensions.AllActiveKingdoms)
             {
-                if (FactionManager.IsAlliedWithFaction(kingdom, Faction1) && kingdom != Faction1)
+                if ( kingdom != Faction1 && Faction1.IsAlliedWith(kingdom))
                     Faction1Allies.Add(new DiplomacyFactionRelationshipVM(kingdom, CreateAllianceHint(kingdom, (Faction1 as Kingdom)!)));
 
-                if (FactionManager.IsAlliedWithFaction(kingdom, Faction2) && kingdom != Faction2)
+                if ( kingdom != Faction2 && Faction2.IsAlliedWith(kingdom))
                     Faction2Allies.Add(new DiplomacyFactionRelationshipVM(kingdom, CreateAllianceHint(kingdom, (Faction2 as Kingdom)!)));
 
                 AddNonAggressionPactRelationships(kingdom, Faction1, Faction1Pacts);
@@ -79,7 +81,7 @@ namespace Diplomacy.ViewModel
             }
             else
             {
-                textObject = TextObject.Empty;
+                textObject = TextObject.GetEmpty();
             }
 
             return new HintViewModel(textObject);

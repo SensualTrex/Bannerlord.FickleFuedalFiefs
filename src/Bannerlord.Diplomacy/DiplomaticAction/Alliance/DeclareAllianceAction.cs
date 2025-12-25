@@ -1,6 +1,8 @@
 ﻿using Diplomacy.Costs;
 using Diplomacy.Events;
 
+using Helpers;
+
 using Microsoft.Extensions.Logging;
 
 using System;
@@ -22,7 +24,8 @@ namespace Diplomacy.DiplomaticAction.Alliance
         protected override void ApplyInternal(Kingdom proposingKingdom, Kingdom otherKingdom, float? customDurationInDays)
         {
             LogFactory.Get<DeclareAllianceAction>().LogTrace($"[{CampaignTime.Now}] {proposingKingdom.Name} secured an alliance with {otherKingdom.Name}.");
-            FactionManager.DeclareAlliance(proposingKingdom, otherKingdom);
+            proposingKingdom.AlliedKingdoms.Add(otherKingdom);
+            proposingKingdom.UpdateAlliedKingdoms();
             DiplomacyEvents.Instance.OnAllianceFormed(new AllianceEvent(proposingKingdom, otherKingdom));
         }
 

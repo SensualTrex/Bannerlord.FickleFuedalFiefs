@@ -10,6 +10,8 @@ using Diplomacy.Helpers;
 using Diplomacy.WarExhaustion;
 using Diplomacy.WarExhaustion.EventRecords;
 
+using Helpers;
+
 using Microsoft.Extensions.Logging;
 
 using System;
@@ -145,7 +147,7 @@ namespace Diplomacy.DiplomaticAction.WarPeace
         {
             diplomacyCost.ApplyCost();
             DoReturnFiefs(kingdomMakingPeace, otherKingdom, fiefsToBeReturned);
-            MakePeaceAction.Apply(kingdomMakingPeace, otherKingdom, dailyPeaceTributeToPay);
+            MakePeaceAction.Apply(kingdomMakingPeace, otherKingdom);
             if (shouldBeDestroyed.KingdomMakingPeace) SoftlyDestroyKingdomAction.Apply(kingdomMakingPeace);
             if (shouldBeDestroyed.OtherKingdom) SoftlyDestroyKingdomAction.Apply(otherKingdom);
 
@@ -293,10 +295,10 @@ namespace Diplomacy.DiplomaticAction.WarPeace
             var loserKingdom = RebelFactionManager.GetCivilWarLoser(kingdomMakingPeace, otherKingdom);
             return (ShouldKingdomBeDestroyed(kingdomMakingPeace, otherKingdom, loserKingdom), ShouldKingdomBeDestroyed(otherKingdom, kingdomMakingPeace, loserKingdom));
         }
-
+       
         private static bool ShouldKingdomBeDestroyed(Kingdom kingdomInQuestion, Kingdom otherKingdom, Kingdom loserKingdom) =>
             Settings.Instance!.EnableKingdomElimination && kingdomInQuestion.Fiefs.Count <= 0
-            && !FactionManager.GetEnemyKingdoms(kingdomInQuestion).Any(k => k != otherKingdom && !k.IsEliminated)
+            && !FactionHelper.GetEnemyKingdoms(kingdomInQuestion).Any(k => k != otherKingdom && !k.IsEliminated)
             && (!kingdomInQuestion.WillBeConsolidatedWith(otherKingdom, loserKingdom) || otherKingdom.Fiefs.Count <= 0);
 
         private static List<Town> GetFiefsToBeReturned(Kingdom kingdomMakingPeace, Kingdom otherKingdom)

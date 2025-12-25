@@ -3,6 +3,8 @@ using Diplomacy.CivilWar.Factions;
 using Diplomacy.Helpers;
 using Diplomacy.WarExhaustion;
 
+using Helpers;
+
 using JetBrains.Annotations;
 
 using System.Collections.Generic;
@@ -144,7 +146,7 @@ namespace Diplomacy.CivilWar
             foreach (var kingdom in kingdomsToReanimate)
             {
                 DeadRebelKingdoms.Remove(kingdom);
-                var enemyKingdomList = FactionManager.GetEnemyKingdoms(kingdom).Where(k => !k.IsEliminated).ToList();
+                var enemyKingdomList = FactionHelper.GetEnemyKingdoms(kingdom).Where(k => !k.IsEliminated).ToList();
                 if (enemyKingdomList.Count == 1)
                 {
                     var parentKingdom = enemyKingdomList.First();

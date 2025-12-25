@@ -1,5 +1,7 @@
 ﻿using Diplomacy.Extensions;
 
+using Helpers;
+
 using System;
 using System.Linq;
 
@@ -39,7 +41,7 @@ namespace Diplomacy.DiplomaticAction
 
             // Common Enemies
 
-            var commonEnemies = FactionManager.GetEnemyKingdoms(ourKingdom).Intersect(FactionManager.GetEnemyKingdoms(otherKingdom));
+            var commonEnemies = FactionHelper.GetEnemyKingdoms(ourKingdom).Intersect(FactionHelper.GetEnemyKingdoms(otherKingdom));
 
             foreach (var commonEnemy in commonEnemies)
                 explainedNum.Add(Scores.HasCommonEnemy, CreateTextWithKingdom(SCommonEnemy, commonEnemy));
@@ -49,7 +51,7 @@ namespace Diplomacy.DiplomaticAction
             var alliedEnemies = KingdomExtensions.AllActiveKingdoms
                 .Where(k => k != ourKingdom
                          && k != otherKingdom
-                         && FactionManager.IsAlliedWithFaction(otherKingdom, k)
+                         && otherKingdom.IsAllyWith(k)
                          && FactionManager.IsAtWarAgainstFaction(ourKingdom, k));
 
             foreach (var alliedEnemy in alliedEnemies)
@@ -60,7 +62,7 @@ namespace Diplomacy.DiplomaticAction
             var alliedNeutrals = KingdomExtensions.AllActiveKingdoms
                 .Where(k => k != ourKingdom
                          && k != otherKingdom
-                         && FactionManager.IsAlliedWithFaction(otherKingdom, k)
+                         && otherKingdom.IsAllyWith(k)
                          && !FactionManager.IsAtWarAgainstFaction(ourKingdom, k));
 
             // FIXME: alliedNeutrals also includes common allies as it's coded... Should they be scored differently? Probable answer: YES!

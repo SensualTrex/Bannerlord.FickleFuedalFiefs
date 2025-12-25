@@ -1,0 +1,45 @@
+<Prefab>
+    <Window>
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+            <Children>
+                <Widget SuggestedHeight="375" MarginTop="20" MarginLeft="20" WidthSizePolicy="StretchToParent" Sprite="StdAssets\Popup\order_popup_canvas">
+                    <Children>
+                        <Widget SuggestedWidth="1000" SuggestedHeight="60" WidthSizePolicy="StretchToParent" Sprite="StdAssets\top_header">
+                            <Children>
+                                <ListPanel SuggestedWidth="200" SuggestedHeight="200" VerticalAlignment="Center" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                    <Children>
+                                        <RichTextWidget Text="@ReligionName" Brush="MPLobby.AfterBattle.Popup.Header.Text" Brush.FontSize="25" Brush.TextHorizontalAlignment="Left" SuggestedWidth="350" SuggestedHeight="30" MarginLeft="15" VerticalAlignment="Center" DoNotAcceptEvents="true" CanAcceptEvents="false" />
+                                        <RichTextWidget Text="@CurrentPopulation" Brush="Crafting.Result.Neutral" SuggestedWidth="200" Brush.FontSize="25" SuggestedHeight="30" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" />
+                                        <RichTextWidget Text="@ConversionRate" Brush="Crafting.Order.Card.Property.Value.Positive" Brush.FontSize="25" SuggestedWidth="200" SuggestedHeight="30" MarginLeft="15" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" />
+                                    </Children>
+                                </ListPanel>
+                            </Children>
+                        </Widget>
+                        <Widget SuggestedHeight="275" MarginTop="70" WidthSizePolicy="StretchToParent">
+                            <Children>
+                                <ListPanel DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" SuggestedHeight="275" MarginLeft="20" CanAcceptEvents="false" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                    <Children>
+                                        <ListPanel Sprite="StdAssets\Popup\canvas_gradient" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                            <Children>
+                                                <ListPanel Sprite="frame_9" DataSource="{Cards}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="-20" MarginTop="-20" MarginRight="-20" MarginBottom="-20">
+                                                    <ItemTemplate>
+                                                        <SettlementReligionItem ButtonType="Radio" />
+                                                    </ItemTemplate>
+                                                </ListPanel>
+                                            </Children>
+                                        </ListPanel>
+                                    </Children>
+                                </ListPanel>
+                                <Widget SuggestedWidth="200"  WidthSizePolicy="Fixed" SuggestedHeight="30" PositionXOffset="20" PositionYOffset="-20" Sprite="StdAssets\page_button_center_selected">
+                                    <Children>
+                                        <RichTextWidget Text="Religious Buildings" Brush="OverlayPopup.ButtonText"  WidthSizePolicy="StretchToParent" Brush.FontSize="25" Brush.Sprite="StdAssets\button_wide_flat" Sprite="StdAssets\button_wide_flat" SuggestedWidth="200" SuggestedHeight="25" DoNotAcceptEvents="true" CanAcceptEvents="false" />
+                                    </Children>
+                                </Widget>
+                            </Children>
+                        </Widget>
+                    </Children>
+                </Widget>
+            </Children>
+        </Widget>
+    </Window>
+</Prefab>

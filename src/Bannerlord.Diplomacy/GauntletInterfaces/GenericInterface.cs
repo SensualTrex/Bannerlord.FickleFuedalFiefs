@@ -1,7 +1,9 @@
 ﻿using HarmonyLib.BUTR.Extensions;
 
 using TaleWorlds.Engine.GauntletUI;
+using TaleWorlds.MountAndBlade.GauntletUI;
 using TaleWorlds.ScreenSystem;
+
 
 namespace Diplomacy.GauntletInterfaces
 {
@@ -11,7 +13,6 @@ namespace Diplomacy.GauntletInterfaces
 
         protected static readonly LoadMovieDelegate? LoadMovieDel =
             AccessTools2.GetDelegate<LoadMovieDelegate>(typeof(GauntletLayer), "LoadMovie");
-
         protected static readonly ReleaseMovieDelegate? ReleaseMovieDel =
             AccessTools2.GetDelegate<ReleaseMovieDelegate>(typeof(GauntletLayer), "ReleaseMovie");
 
@@ -32,7 +33,7 @@ namespace Diplomacy.GauntletInterfaces
 
         protected object? LoadMovie()
         {
-            return LoadMovieDel?.Invoke(_layer, MovieName, _vm!);
+            return _layer.LoadMovie(MovieName, _vm);
         }
 
         protected virtual void OnFinalize()

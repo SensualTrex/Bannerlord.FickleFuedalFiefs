@@ -3,6 +3,8 @@ using Diplomacy.DiplomaticAction.WarPeace;
 using Diplomacy.Extensions;
 using Diplomacy.WarExhaustion;
 
+using Helpers;
+
 using System;
 using System.Linq;
 
@@ -164,7 +166,8 @@ namespace Diplomacy.Costs
 
         private static float GetKingdomWarLoad(Kingdom kingdom)
         {
-            return FactionManager.GetEnemyFactions(kingdom)?.Select(x => x.TotalStrength).Aggregate(0f, (result, item) => result + item) / kingdom.TotalStrength ?? 0f;
+            
+            return FactionHelper.GetEnemyKingdoms(kingdom)?.Select(x => x.CurrentTotalStrength).Aggregate(0f, (result, item) => result + item) / kingdom.CurrentTotalStrength ?? 0f;
         }
 
         public static GoldCost DetermineCostForSendingMessenger()

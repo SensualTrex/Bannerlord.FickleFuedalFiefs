@@ -8,6 +8,7 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 
+
 namespace Diplomacy.Extensions
 {
     public static class KingdomExtensions
@@ -26,41 +27,23 @@ namespace Diplomacy.Extensions
             {
                 return false;
             }
-            var stanceLink = faction1.GetStanceWith(faction2);
-            return stanceLink.IsAllied;
+            faction1.IsAlliedWith(faction2);
+            return faction1.IsAlliedWith(faction2);
         }
 
         public static IEnumerable<Kingdom> GetAlliedKingdoms(this Kingdom kingdom)
         {
-            foreach (var stanceLink in kingdom.Stances)
-            {
-                if (stanceLink.IsAllied)
-                {
-                    IFaction? alliedFaction = null;
-                    if (stanceLink.Faction1 == kingdom)
-                    {
-                        alliedFaction = stanceLink.Faction2;
-                    }
-                    else if (stanceLink.Faction2 == kingdom)
-                    {
-                        alliedFaction = stanceLink.Faction1;
-                    }
-                    if (alliedFaction is not null && alliedFaction.IsKingdomFaction)
-                    {
-                        yield return (alliedFaction as Kingdom)!;
-                    }
-                }
-            }
+            return kingdom.GetAlliedKingdoms();
         }
 
-        public static bool IsStrong(this Kingdom kingdom) => kingdom.TotalStrength > GetMedianStrength();
+        public static bool IsStrong(this Kingdom kingdom) => kingdom.CurrentTotalStrength > GetMedianStrength();
 
-        public static float GetAllianceStrength(this Kingdom kingdom) => kingdom.GetAlliedKingdoms().Select(curKingdom => curKingdom.TotalStrength).Sum() + kingdom.TotalStrength;
+        public static float GetAllianceStrength(this Kingdom kingdom) => kingdom.GetAlliedKingdoms().Select(curKingdom => curKingdom.CurrentTotalStrength).Sum() + kingdom.CurrentTotalStrength;
 
         private static float GetMedianStrength()
         {
             float medianStrength;
-            var kingdomStrengths = AllActiveKingdoms.Select(curKingdom => curKingdom.TotalStrength).OrderBy(a => a).ToArray();
+            var kingdomStrengths = AllActiveKingdoms.Select(curKingdom => curKingdom.CurrentTotalStrength).OrderBy(a => a).ToArray();
 
             var halfIndex = kingdomStrengths.Length / 2;
 
@@ -103,6 +86,7 @@ namespace Diplomacy.Extensions
                 return rebelKingdom == losingKingdom || parentKingdom.GetRebelFactions().Any(x => x.RebelKingdom == rebelKingdom && x.ConsolidateOnSuccess);
             }
         }
+
 
         public static IEnumerable<RebelFaction> GetRebelFactions(this Kingdom kingdom) => RebelFactionManager.GetRebelFaction(kingdom);
     }

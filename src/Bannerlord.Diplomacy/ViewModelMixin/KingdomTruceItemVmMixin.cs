@@ -145,7 +145,7 @@ namespace Diplomacy.ViewModelMixin
             WarsText = _TWars.ToString();
             PactsText = _TPacts.ToString();
             NonAggressionPactHelpText = _TNapHelpText.SetTextVariable("DAYS", Settings.Instance!.NonAggressionPactDuration).ToString();
-            _isAlliance = _faction1.GetStanceWith(_faction2).IsAllied;
+            _isAlliance = _faction1.IsAllyWith(_faction2);
             ActionName = _isAlliance ? _TBreakAlliance.ToString() : GameTexts.FindText("str_kingdom_declate_war_action").ToString();
             InfluenceCost = _isAlliance ? 0 : (int) DiplomacyCostCalculator.DetermineCostForDeclaringWar(_faction1, true).Value;
             OnRefresh();
@@ -242,11 +242,9 @@ namespace Diplomacy.ViewModelMixin
             else
             {
                 DiplomacyCostCalculator.DetermineCostForDeclaringWar(_faction1, true).ApplyCost();
-#if v100 || v101 || v102 || v103
-                DeclareWarAction.Apply(_faction1, _faction2);
-#else
+
                 DeclareWarAction.ApplyByKingdomDecision(_faction1, _faction2);
-#endif
+
             }
 
             OnRefresh();

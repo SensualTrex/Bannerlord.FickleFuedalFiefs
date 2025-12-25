@@ -20,7 +20,7 @@ namespace Diplomacy.Messengers
         {
             TargetHero = targetHero;
             DispatchTime = dispatchTime;
-            CurrentPosition = Hero.MainHero.GetMapPoint().Position2D;
+            CurrentPosition = Hero.MainHero.GetMapPoint().GetPositionAsVec3().AsVec2;
             Arrived = false;
         }
     }

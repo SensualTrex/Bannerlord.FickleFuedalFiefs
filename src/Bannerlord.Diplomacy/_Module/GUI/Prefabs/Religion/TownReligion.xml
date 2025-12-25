@@ -1,0 +1,41 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <Widget SuggestedHeight="900" VerticalAlignment="Center" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent">
+          <Children>
+            <Widget SuggestedWidth="200" SuggestedHeight="200" VerticalAlignment="Center" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="StdAssets\standart_popup">
+              <Children>
+                <Widget SuggestedWidth="400" SuggestedHeight="80" HorizontalAlignment="Center" Sprite="TitleHeader">
+                  <Children>
+                    <TextWidget Text="Settlement Name" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="DefaultBrush" Brush.FontSize="26" SuggestedWidth="397.25" SuggestedHeight="72.50001" />
+                  </Children>
+                </Widget>
+              </Children>
+            </Widget>
+            <Widget ExtendLeft="-50" ExtendRight="-50" ExtendTop="-75" ExtendBottom="-125" VerticalAlignment="Center" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="Frame1_canvas">
+              <Children>
+                <ImageWidget SuggestedWidth="140.75" SuggestedHeight="112.25" HorizontalAlignment="Right" Brush="DefaultBrush" Brush.Sprite="MapIncidents\plight_of_civilians" Sprite="MapIncidents\plight_of_civilians" MarginTop="25" MarginRight="25" />
+                  <ListPanel SuggestedWidth="775" SuggestedHeight="665" PositionXOffset="65" PositionYOffset="85" Sprite="SPGeneral\SPRecruitment\left_dent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                  <Children>
+                    <TextWidget Text="Religious Summary" Brush="DefaultBrush" Brush.Sprite="Barter\header_stone" SuggestedWidth="750" SuggestedHeight="65" Sprite="Barter\header_stone" WidthSizePolicy="StretchToParent" />
+                  </Children>
+                    <ListPanel Id="ReligiousBuildingItems" DataSource="{ReligiousBuildingItems}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="VerticalBottomToTop" >
+                        <ItemTemplate>
+                            <ReligiousBuildingItem />
+                        </ItemTemplate>
+                    </ListPanel>
+                </ListPanel>
+                <ButtonWidget Brush="DefaultBrush" Brush.Sprite="StdAssets\update_save_button" SuggestedWidth="210.5" SuggestedHeight="84.5" VerticalAlignment="Center" HorizontalAlignment="Center" ToggleIndicator="ToggleIndicator" PositionXOffset="380.25" PositionYOffset="375" Sprite="StdAssets\update_save_button">
+                  <Children>
+                    <Widget Id="ToggleIndicator" SuggestedWidth="200" SuggestedHeight="136.25" PositionXOffset="1.499985" PositionYOffset="-10.87505" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

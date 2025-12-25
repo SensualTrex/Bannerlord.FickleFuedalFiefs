@@ -4,6 +4,8 @@ using Diplomacy.Extensions;
 using Diplomacy.Helpers;
 using Diplomacy.WarExhaustion.EventRecords;
 
+using Helpers;
+
 using Microsoft.Extensions.Logging;
 
 using System;
@@ -45,20 +47,11 @@ namespace Diplomacy.WarExhaustion
             var warExhaustionToAdd = GetCasualtyWarExhaustionDelta(kingdoms, kingdom1Casualties, kingdom2Casualties, kingdom1PartyName, kingdom2PartyName, out var battleCasualtyRecord);
             AddWarExhaustion(kingdoms, WarExhaustionType.Casualty, warExhaustionToAdd, battleCasualtyRecord);
         }
-
-#if v100 || v101 || v102 || v103
-        public void AddRaidWarExhaustion(Kingdoms kingdoms, MapEvent mapEvent)
-        {
-            var warExhaustionToAdd = GetRaidWarExhaustionDelta(kingdoms, mapEvent.MapEventSettlement.Village, mapEvent.AttackerSide.LeaderParty?.Name ?? kingdoms.Kingdom1.Name, out var raidRecord);
-            AddWarExhaustion(kingdoms, WarExhaustionType.Raid, warExhaustionToAdd, raidRecord);
-        }
-#else
         public void AddRaidWarExhaustion(Kingdoms kingdoms, RaidEventComponent raidEventComponent)
         {
             var warExhaustionToAdd = GetRaidWarExhaustionDelta(kingdoms, raidEventComponent.MapEventSettlement.Village, raidEventComponent.AttackerSide.LeaderParty?.Name ?? kingdoms.Kingdom1.Name, out var raidRecord);
             AddWarExhaustion(kingdoms, WarExhaustionType.Raid, warExhaustionToAdd, raidRecord);
         }
-#endif
 
         public void AddSiegeWarExhaustion(Kingdoms kingdoms, MapEvent mapEvent)
         {
@@ -206,8 +199,9 @@ namespace Diplomacy.WarExhaustion
 
         private WarExhaustionRecord GetCasualtyWarExhaustionDelta(Kingdoms kingdoms, MapEvent mapEvent, out BattleCasualtyRecord battleCasualtyRecord)
         {
-            int attackerSideCasualties = mapEvent.AttackerSide.Casualties;
-            int defenderSideCasualties = mapEvent.DefenderSide.Casualties;
+            //Needs ship casualty
+            int attackerSideCasualties = mapEvent.AttackerSide.TroopCasualties;
+            int defenderSideCasualties = mapEvent.DefenderSide.TroopCasualties;
 
             var warExhaustionPerCasualty = Settings.Instance!.WarExhaustionPerCasualty;
             float attackerSideWarExhaustion = attackerSideCasualties * warExhaustionPerCasualty;
@@ -422,7 +416,7 @@ namespace Diplomacy.WarExhaustion
             List<string> listKeys = new();
             foreach (var kingdom in KingdomExtensions.AllActiveKingdoms)
             {
-                var enemyKingdoms = FactionManager.GetEnemyKingdoms(kingdom);
+                var enemyKingdoms = FactionHelper.GetEnemyKingdoms(kingdom);
                 foreach (var enemyKingdom in enemyKingdoms)
                 {
                     var key = CreateKey(kingdom, enemyKingdom, out var kingdoms);
@@ -479,7 +473,7 @@ namespace Diplomacy.WarExhaustion
             {
                 var kingdomLastOccupationDate = GetLastOccupationDate(kingdom, out var kingdomLastOccupatorFaction);
 
-                var enemyKingdoms = FactionManager.GetEnemyKingdoms(kingdom).Where(k => !k.IsEliminated).ToList();
+                var enemyKingdoms = FactionHelper.GetEnemyKingdoms(kingdom).Where(k => !k.IsEliminated).ToList();
                 foreach (var enemyKingdom in enemyKingdoms)
                 {
                     var key = CreateKey(kingdom, enemyKingdom, out var kingdoms);
@@ -758,7 +752,7 @@ namespace Diplomacy.WarExhaustion
 
         private void ConsiderPeaceActions(ILogger logger, Kingdom kingdom, List<string> keyList)
         {
-            foreach (var enemyKingdom in FactionManager.GetEnemyKingdoms(kingdom).ToList())
+            foreach (var enemyKingdom in FactionHelper.GetEnemyKingdoms(kingdom).ToList())
             {
                 var key = CreateKey(kingdom, enemyKingdom, out var kingdoms);
                 if (key is null || kingdoms is null || enemyKingdom.IsEliminated || !_warExhaustionScores.TryGetValue(key, out _) || keyList.Contains(key))

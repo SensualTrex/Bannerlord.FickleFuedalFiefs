@@ -25,7 +25,7 @@ namespace Diplomacy.Models
                 isWarDecisionAllowed = _previousModel.IsWarDecisionAllowedBetweenKingdoms(kingdom1, kingdom2, out reason);
             else
             {
-                reason = TextObject.Empty;
+                reason = TextObject.GetEmpty();
                 isWarDecisionAllowed = true;
             }
 
@@ -34,7 +34,7 @@ namespace Diplomacy.Models
                 var listExceptions = DeclareWarConditions.Instance.CanApplyExceptions(kingdom1, kingdom2, bypassCosts: true);
                 if (listExceptions is not null && listExceptions.Count > 0)
                 {
-                    reason = listExceptions.FirstOrDefault() ?? TextObject.Empty;
+                    reason = listExceptions.FirstOrDefault() ?? TextObject.GetEmpty();
                     isWarDecisionAllowed = false;
                 }
             }
@@ -49,7 +49,7 @@ namespace Diplomacy.Models
                 isPeaceDecisionAllowed = _previousModel.IsPeaceDecisionAllowedBetweenKingdoms(kingdom1, kingdom2, out reason);
             else
             {
-                reason = TextObject.Empty;
+                reason = TextObject.GetEmpty();
                 isPeaceDecisionAllowed = true;
             }
 
@@ -58,7 +58,7 @@ namespace Diplomacy.Models
                 var listExceptions = MakePeaceConditions.Instance.CanApplyExceptions(kingdom1, kingdom2, bypassCosts: true);
                 if (listExceptions is not null && listExceptions.Count > 0)
                 {
-                    reason = listExceptions.FirstOrDefault() ?? TextObject.Empty;
+                    reason = listExceptions.FirstOrDefault() ?? TextObject.GetEmpty();
                     isPeaceDecisionAllowed = false;
                 }
             }
@@ -70,5 +70,10 @@ namespace Diplomacy.Models
         public override bool IsAnnexationDecisionAllowed(Settlement annexedSettlement) => _previousModel?.IsAnnexationDecisionAllowed(annexedSettlement) ?? true;
         public override bool IsExpulsionDecisionAllowed(Clan expelledClan) => _previousModel?.IsExpulsionDecisionAllowed(expelledClan) ?? true;
         public override bool IsKingSelectionDecisionAllowed(Kingdom kingdom) => _previousModel?.IsKingSelectionDecisionAllowed(kingdom) ?? true;
+
+        public override bool IsStartAllianceDecisionAllowedBetweenKingdoms(Kingdom kingdom1, Kingdom kingdom2, out TextObject reason)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

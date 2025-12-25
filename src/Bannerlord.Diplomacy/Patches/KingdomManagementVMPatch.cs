@@ -12,7 +12,7 @@ namespace Diplomacy.Patches
         {
             return new Patch[]
             {
-                new Postfix(nameof(FinalizeFix), typeof(KingdomManagementVM), "OnFinalize"),
+                new Prefix(nameof(FinalizeFix), typeof(KingdomManagementVM), "OnFinalize"),
             };
         }
 

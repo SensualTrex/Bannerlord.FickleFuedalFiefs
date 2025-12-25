@@ -1,18 +1,25 @@
 ﻿using Bannerlord.ButterLib.Common.Extensions;
 using Bannerlord.UIExtenderEx;
+using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ResourceManager;
 
 using Diplomacy.CampaignBehaviors;
 using Diplomacy.Events;
 using Diplomacy.Models;
 using Diplomacy.PatchTools;
+using Diplomacy.Religions;
+using Diplomacy.Religions.Behavior;
 using Diplomacy.Widgets;
 
 using Microsoft.Extensions.Logging;
 
 using Serilog.Events;
 
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ComponentInterfaces;
@@ -43,11 +50,14 @@ namespace Diplomacy
 
         protected override void OnSubModuleLoad()
         {
+
             base.OnSubModuleLoad();
             Instance = this;
 
             var extender = UIExtender.Create(Name);
-            extender.Register(typeof(SubModule).Assembly);
+            
+            var assembly = typeof(SubModule).Assembly;
+            extender.Register(assembly);
             extender.Enable();
 
             this.AddSerilogLoggerProvider($"{Name}.log", new[] { $"{Name}.*" }, config => config.MinimumLevel.Is(LogEventLevel.Verbose));
@@ -104,6 +114,9 @@ namespace Diplomacy
                 gameStarter.AddBehavior(new ExpansionismBehavior());
                 gameStarter.AddBehavior(new CivilWarBehavior());
                 gameStarter.AddBehavior(new UIBehavior());
+                gameStarter.AddBehavior(new TownMenuBehavior());
+                gameStarter.AddBehavior(new ReligionInitBehavior());
+
 
                 var currentKingdomDecisionPermissionModel = GetGameModel<KingdomDecisionPermissionModel>(gameStarterObject);
                 if (currentKingdomDecisionPermissionModel is null)

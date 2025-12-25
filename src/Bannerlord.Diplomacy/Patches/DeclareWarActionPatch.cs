@@ -20,8 +20,9 @@ namespace Diplomacy.Patches
 
         protected override IEnumerable<Patch> Prepare() => new Patch[]
         {
-            new Postfix(nameof(ApplyPostfix), TargetType, nameof(DeclareWarAction.Apply)),
-            new Postfix(nameof(ApplyDeclareWarOverProvocationPostfix), TargetType, nameof(DeclareWarAction.ApplyDeclareWarOverProvocation)),
+            new Postfix(nameof(ApplyPostfix), TargetType, nameof(DeclareWarAction.ApplyByDefault)),
+            //@TODO Fix Later
+            //new Postfix(nameof(ApplyDeclareWarOverProvocationPostfix), TargetType, nameof(DeclareWarAction.ApplyByPlayerHostility)),
         };
 
         private static void ApplyPostfix(IFaction faction1, IFaction faction2)
