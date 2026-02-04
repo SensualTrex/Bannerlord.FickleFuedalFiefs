@@ -1,47 +1,64 @@
 <Prefab>
-	<Window>
-		<ListPanel Sprite="StdAssets\Popup\order_popup_canvas" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="500" SuggestedHeight="275" MarginTop="20" MarginLeft="20">
-			<Children>
-				<ListPanel Sprite="StdAssets\Popup\canvas_gradient" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
-					<Children>
-						<Panel Sprite="frame_9" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="-20" MarginTop="-20" MarginRight="-20" MarginBottom="-20" Brush="MyLittleWarbandEx.Tooltip.SmallText" >
-							<Children>
-								
-								<!-- Icon -->
-								<ButtonWidget  WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedHeight="100" SuggestedWidth="100" MarginTop="35" MarginLeft="95" Brush="Encyclopedia.SubPage.Element" >
-									<Children>
-										<ImageIdentifierWidget Id="EquipmentImage" DataSource="{EquipmentImage}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="96" SuggestedHeight="96" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="2"  MarginLeft="2" ImageId="@Id" AdditionalArgs="@AdditionalArgs" TextureProviderName="@TextureProviderName" LoadingIconWidget="LoadingIconWidget">
-											<Children>
-												 <Standard.CircleLoadingWidget HorizontalAlignment="Center" VerticalAlignment="Center"
-													Id="LoadingIconWidget" />
-											</Children>
-										</ImageIdentifierWidget>
-									</Children>
-								</ButtonWidget>
-
-								<!-- Name -->
-								<Panel DataSource="{ItemName}" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" MarginTop="140" MarginLeft="0"  SuggestedWidth="250" HorizontalAlignment="Center">
-									<ItemTemplate>
-										<RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="Recruitment.Popup.Title.Text" Brush.FontSize="16" Text="@Item"/>
-									</ItemTemplate>
-								</Panel>
-
-								<!-- Details -->
-								<EquipmentTooltipInnerContent Parameter.ItemFlagsDataSource="{ItemFlagList}" Parameter.PropertiesDataSource="{ItemProperties}" HorizontalAlignment="Center" MarginTop="160" MarginLeft="0" />
-
-								<!-- Apply -->
-								<ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="40" SuggestedWidth="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="ButtonBrush1" Command.Click="Apply"  MarginBottom="25" IsEnabled="true">
-									<Children>
-										<RichTextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="OverlayPopup.ButtonText" Brush.FontSize="20" Text="Select" />
-									</Children>
-								</ButtonWidget>
-								
-							</Children>
-						</Panel>
-				</Children>
-				</ListPanel>			
-			</Children>
-		</ListPanel>
-
-	</Window>
+    <Window>
+        <ListPanel Sprite="StdAssets\Popup\order_popup_canvas" DoNotAcceptEvents="true" SuggestedHeight="150" MarginTop="10" MarginLeft="10" CanAcceptEvents="false" SuggestedWidth="@ItemTotalWidth" StackLayout.LayoutMethod="HorizontalLeftToRight">
+            <Children>
+                <ListPanel Sprite="StdAssets\Popup\canvas_gradient" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                    <Children>
+                        <Widget MarginTop="-5" MarginLeft="-12" MarginBottom="-5" MarginRight="-12" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="SPGeneral\Frame1\frame">
+                            <Children>
+                                <RichTextWidget WidthSizePolicy="StretchToParent" Brush="GameTip.Title.Text" MarginTop="-15" Text="@ItemName" Brush.FontSize="14" SuggestedHeight="45" Sprite="SPGeneral\SPOptions\standart_dropdown_hover" ExtendLeft="-20" ExtendRight="-20" SuggestedWidth="200"/>
+                                <ButtonWidget SuggestedHeight="104" SuggestedWidth="104" MarginLeft="20" Brush="Encyclopedia.SubPage.Element" VerticalAlignment="Top" MarginTop="25" Sprite="Encyclopedia\subpage_notable_portrait" IsVisible="@ShowIcon" >
+                                    <Children>
+                                        <ImageWidget Brush="DefaultBrush" SuggestedWidth="100" SuggestedHeight="100" MarginLeft="2" MarginBottom="2" Sprite="@ItemSprite" MarginTop="2" MarginRight="2"/>
+                                        <ImageWidget Brush="DefaultBrush" SuggestedWidth="50" SuggestedHeight="50" VerticalAlignment="Bottom" HorizontalAlignment="Center"  Sprite="@LevelSprite" />
+                                    </Children>
+                                </ButtonWidget>
+                                <Widget SuggestedWidth="175" SuggestedHeight="125" MarginTop="10" MarginRight="80" HorizontalAlignment="Right">
+                                    <Children>
+                                        <ListPanel DataSource="{ItemProperties}" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="@ItemDetailsWidth" StackLayout.LayoutMethod="VerticalBottomToTop" MarginTop="15" >
+                                            <ItemTemplate>
+                                                <ItemValuePair ButtonType="Radio" />
+                                            </ItemTemplate>
+                                        </ListPanel>
+                                    </Children>
+                                </Widget>
+                                <Widget SuggestedWidth="104" SuggestedHeight="30" MarginLeft="20" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                                    <Children>
+                                        <Widget SuggestedWidth="110" SuggestedHeight="25" VerticalAlignment="Center" MarginBottom="5" HorizontalAlignment="Center" Sprite="options_memory_progress_frame">
+                                            <Children>
+                                                <Widget ExtendLeft="-5" ExtendRight="-5" ExtendTop="1" ExtendBottom="2" SuggestedWidth="@BuildingProgress" SuggestedHeight="45" VerticalAlignment="Center" HorizontalAlignment="Left" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" ClipContents="true" ClipHorizontalContent="true" ClipVerticalContent="true">
+                                                    <Children>
+                                                        <Widget SuggestedWidth="150" SuggestedHeight="45" VerticalAlignment="Center" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="SPGeneral\TownManagement\progress_bar"/>
+                                                    </Children>
+                                                </Widget>
+                                            </Children>
+                                        </Widget>
+                                    </Children>
+                                </Widget>
+                                <ListPanel SuggestedHeight="125" VerticalAlignment="Bottom" HorizontalAlignment="Right" SuggestedWidth="85" MarginRight="10" StackLayout.LayoutMethod="VerticalBottomToTop">
+                                    <Children>
+                                        <ButtonWidget IsVisible="@ShowButtons" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="20" SuggestedWidth="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="ButtonBrush1" marginBottom="20" Command.Click="TalkPriest" IsEnabled="true">
+                                            <Children>
+                                                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="OverlayPopup.ButtonText" Brush.FontSize="16" DoNotAcceptEvents="true" VerticalAlignment="Center" Text="Talk" CanAcceptEvents="false"/>
+                                            </Children>
+                                        </ButtonWidget> 
+                                        <ButtonWidget IsVisible="@ShowButtons" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="20" SuggestedWidth="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="ButtonBrush1" MarginBottom="20" Command.Click="Pray" IsEnabled="true">
+                                            <Children>
+                                                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="OverlayPopup.ButtonText" Brush.FontSize="16" DoNotAcceptEvents="true" VerticalAlignment="Center" Text="Pray" CanAcceptEvents="false"/>
+                                            </Children>
+                                        </ButtonWidget>
+                                        <ButtonWidget IsVisible="@ShowButtons" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="20" SuggestedWidth="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="ButtonBrush1" MarginBottom="20" Command.Click="Convert"  IsEnabled="true">
+                                            <Children>
+                                                <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="OverlayPopup.ButtonText" Brush.FontSize="16" DoNotAcceptEvents="true" VerticalAlignment="Center" Text="Convert" CanAcceptEvents="false"/>
+                                            </Children>
+                                        </ButtonWidget>
+                                    </Children>
+                                </ListPanel>
+                            </Children>
+                        </Widget>
+                    </Children>
+                </ListPanel>
+            </Children>
+        </ListPanel>
+    </Window>
 </Prefab>

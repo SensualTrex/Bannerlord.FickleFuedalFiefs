@@ -3,7 +3,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction
+namespace Religions.DiplomaticAction
 {
     class NonAggressionPactAgreement : DiplomaticAgreement
     {

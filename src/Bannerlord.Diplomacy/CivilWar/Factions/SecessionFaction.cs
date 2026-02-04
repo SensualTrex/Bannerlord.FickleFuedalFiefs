@@ -1,4 +1,4 @@
-﻿using Diplomacy.CivilWar.Actions;
+﻿using Religions.CivilWar.Actions;
 
 using System.Collections.Generic;
 
@@ -7,7 +7,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.CivilWar.Factions
+namespace Religions.CivilWar.Factions
 {
     internal class SecessionFaction : RebelFaction
     {

@@ -1,7 +1,7 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.Extensions;
+using Religions.Extensions;
 
 using JetBrains.Annotations;
 
@@ -13,7 +13,7 @@ using TaleWorlds.CampaignSystem.Naval;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Map.MapBar;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     
     /*[ViewModelMixin("RefreshPermissionValues")]

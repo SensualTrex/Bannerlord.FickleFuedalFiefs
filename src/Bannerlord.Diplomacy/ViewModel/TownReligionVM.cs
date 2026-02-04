@@ -1,8 +1,9 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Actions;
-using Diplomacy.CivilWar.Factions;
-using Diplomacy.Extensions;
-using Diplomacy.Religions;
+﻿using Religions.CivilWar;
+using Religions.CivilWar.Actions;
+using Religions.CivilWar.Factions;
+using Religions.Extensions;
+using Religions.Religion;
+using Religions.Religion.Extensions;
 
 using JetBrains.Annotations;
 
@@ -18,7 +19,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     
     internal sealed class TownReligionVM : TaleWorlds.Library.ViewModel

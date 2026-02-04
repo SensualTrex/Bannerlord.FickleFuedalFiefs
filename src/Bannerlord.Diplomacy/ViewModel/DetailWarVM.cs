@@ -1,4 +1,4 @@
-﻿using Diplomacy.Extensions;
+﻿using Religions.Extensions;
 
 using JetBrains.Annotations;
 
@@ -13,10 +13,10 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-using static Diplomacy.WarExhaustion.WarExhaustionManager;
-using static Diplomacy.WarExhaustion.WarExhaustionRecord;
+using static Religions.WarExhaustion.WarExhaustionManager;
+using static Religions.WarExhaustion.WarExhaustionRecord;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal sealed class DetailWarVM : TaleWorlds.Library.ViewModel
     {

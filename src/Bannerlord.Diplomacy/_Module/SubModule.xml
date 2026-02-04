@@ -36,7 +36,7 @@
         <SubModule>
             <Name value="Bannerlord Module Loader" />
             <DLLName value="Bannerlord.ModuleLoader.$modulename$.dll" />
-            <SubModuleClassType value="Bannerlord.ModuleLoader.Bannerlord_Diplomacy" />
+            <SubModuleClassType value="Bannerlord.ModuleLoader.Bannerlord_Religions" />
             <Tags>
                 <Tag key="LoaderFilter" value ="$modulename$.*.dll" />
             </Tags>
@@ -51,6 +51,9 @@
         </XmlNode>
         <XmlNode>
             <XmlName id="GameText" path="gt_war_exhaustion"/>
+        </XmlNode>
+        <XmlNode>
+            <XmlName id="religion_sprites" path="GUI/SpriteData" />
         </XmlNode>
     </Xmls>
 </Module>

@@ -1,4 +1,4 @@
-﻿using Diplomacy.CivilWar.Actions;
+﻿using Religions.CivilWar.Actions;
 
 using JetBrains.Annotations;
 
@@ -15,7 +15,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.CivilWar.Factions
+namespace Religions.CivilWar.Factions
 {
     public abstract class RebelFaction
     {

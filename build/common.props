@@ -29,18 +29,18 @@
     </PropertyGroup>
     
     <PropertyGroup>
-        <ModuleId>Bannerlord.Diplomacy</ModuleId>
+        <ModuleId>Bannerlord.Religions</ModuleId>
         <ModuleName>$(ModuleId)</ModuleName>
-        <DisplayName>Diplomacy</DisplayName>
+        <DisplayName>Religions</DisplayName>
         <RootNamespace>$(DisplayName)</RootNamespace>
     </PropertyGroup>
 
     <PropertyGroup>
-        <Authors>Diplomacy Team</Authors>
-        <Product>Diplomacy Library mod for Bannerlord</Product>
+        <Authors>Religions Team</Authors>
+        <Product>Religions Library mod for Bannerlord</Product>
         <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-        <Copyright>Copyright © 2020-2024 Diplomacy Team</Copyright>
-        <Description>Diplomacy system overhaul for Mount &amp; Blade II: Bannerlord</Description>
+        <Copyright>Copyright © 2020-2024 Religions Team</Copyright>
+        <Description>Religions system overhaul for Mount &amp; Blade II: Bannerlord</Description>
     </PropertyGroup>
 
     <PropertyGroup>

@@ -2,7 +2,7 @@
 
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 
-namespace Diplomacy.Character
+namespace Religions.Character
 {
     internal class PlayerCharacterTraitEventExperience
     {

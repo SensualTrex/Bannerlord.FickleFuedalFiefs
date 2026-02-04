@@ -3,7 +3,7 @@
 using TaleWorlds.GauntletUI;
 using TaleWorlds.GauntletUI.BaseTypes;
 
-namespace Diplomacy.Widgets
+namespace Religions.Widgets
 {
     [UsedImplicitly]
     public class CriticalThresholdTextWidget : TextWidget

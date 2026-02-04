@@ -1,5 +1,5 @@
-﻿using Diplomacy.Extensions;
-using Diplomacy.PatchTools;
+﻿using Religions.Extensions;
+using Religions.PatchTools;
 
 using System.Collections.Generic;
 
@@ -7,7 +7,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.GameComponents;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class DefaultClanPoliticsModelPatch : PatchClass<DefaultClanPoliticsModelPatch, DefaultClanPoliticsModel>
     {

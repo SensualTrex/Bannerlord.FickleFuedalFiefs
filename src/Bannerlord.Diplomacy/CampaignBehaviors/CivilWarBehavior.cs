@@ -1,10 +1,10 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Actions;
-using Diplomacy.CivilWar.Factions;
-using Diplomacy.CivilWar.Scoring;
-using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Extensions;
-using Diplomacy.WarExhaustion;
+﻿using Religions.CivilWar;
+using Religions.CivilWar.Actions;
+using Religions.CivilWar.Factions;
+using Religions.CivilWar.Scoring;
+using Religions.DiplomaticAction.WarPeace;
+using Religions.Extensions;
+using Religions.WarExhaustion;
 
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ using TaleWorlds.CampaignSystem.BarterSystem.Barterables;
 using TaleWorlds.CampaignSystem.Election;
 using TaleWorlds.Core;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class CivilWarBehavior : CampaignBehaviorBase
     {

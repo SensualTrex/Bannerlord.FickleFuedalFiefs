@@ -9,7 +9,7 @@ using TaleWorlds.Core.ViewModelCollection.ImageIdentifiers;
 using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     public sealed class DiplomacyFactionRelationshipVM : TaleWorlds.Library.ViewModel
     {

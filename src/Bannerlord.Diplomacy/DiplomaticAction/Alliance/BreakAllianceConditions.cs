@@ -1,8 +1,8 @@
-﻿using Diplomacy.DiplomaticAction.Alliance.Conditions;
+﻿using Religions.DiplomaticAction.Alliance.Conditions;
 
 using System.Collections.Generic;
 
-namespace Diplomacy.DiplomaticAction.Alliance
+namespace Religions.DiplomaticAction.Alliance
 {
     class BreakAllianceConditions : AbstractConditionEvaluator<BreakAllianceConditions>
     {

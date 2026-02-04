@@ -1,5 +1,5 @@
-﻿using Diplomacy.CivilWar.Actions;
-using Diplomacy.PatchTools;
+﻿using Religions.CivilWar.Actions;
+using Religions.PatchTools;
 
 using SandBox.GauntletUI.BannerEditor;
 
@@ -9,7 +9,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.GameState;
 using TaleWorlds.Core;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class MBBannerEditorGauntletScreenPatch : PatchClass<MBBannerEditorGauntletScreenPatch, GauntletBannerEditorScreen>
     {

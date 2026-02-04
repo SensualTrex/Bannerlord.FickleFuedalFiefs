@@ -1,4 +1,4 @@
-﻿using Diplomacy.Events;
+﻿using Religions.Events;
 
 using Microsoft.Extensions.Logging;
 
@@ -9,7 +9,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.Alliance
+namespace Religions.DiplomaticAction.Alliance
 {
     class BreakAllianceAction : AbstractDiplomaticAction<BreakAllianceAction>
     {

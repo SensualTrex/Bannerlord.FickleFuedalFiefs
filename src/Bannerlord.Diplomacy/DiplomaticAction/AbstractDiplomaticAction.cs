@@ -3,7 +3,7 @@ using System;
 
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.DiplomaticAction
+namespace Religions.DiplomaticAction
 {
     abstract class AbstractDiplomaticAction<T> where T : AbstractDiplomaticAction<T>, new()
     {

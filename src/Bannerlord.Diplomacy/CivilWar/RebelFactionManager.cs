@@ -1,7 +1,7 @@
-﻿using Diplomacy.CivilWar.Actions;
-using Diplomacy.CivilWar.Factions;
-using Diplomacy.Helpers;
-using Diplomacy.WarExhaustion;
+﻿using Religions.CivilWar.Actions;
+using Religions.CivilWar.Factions;
+using Religions.Helpers;
+using Religions.WarExhaustion;
 
 using Helpers;
 
@@ -14,7 +14,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.CivilWar
+namespace Religions.CivilWar
 {
     internal sealed class RebelFactionManager
     {

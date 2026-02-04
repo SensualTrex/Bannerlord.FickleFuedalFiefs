@@ -1,0 +1,14 @@
+<Prefab>
+    <Window>
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="18" VerticalAlignment="Top" HorizontalAlignment="Left" SuggestedWidth="225">
+            <Children>
+                <ListPanel VerticalAlignment="Center" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                    <Children>
+                        <RichTextWidget Text="@Property" Brush="Encyclopedia.Stat.DefinitionText" Brush.FontSize="14" SuggestedHeight="18" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" Brush.TextHorizontalAlignment="Left" MarginLeft="15" />
+                        <RichTextWidget Text="@Value" Brush="Encyclopedia.Stat.ValueText" Brush.FontSize="14" SuggestedHeight="18" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" Brush.TextHorizontalAlignment="Left" MarginLeft="15" />
+                    </Children>
+                </ListPanel>
+            </Children>
+        </Widget>
+    </Window>
+</Prefab>

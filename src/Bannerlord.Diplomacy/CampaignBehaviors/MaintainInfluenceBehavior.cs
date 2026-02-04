@@ -1,4 +1,4 @@
-﻿using Diplomacy.Extensions;
+﻿using Religions.Extensions;
 
 using System;
 using System.Linq;
@@ -7,7 +7,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.BarterSystem.Barterables;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class MaintainInfluenceBehavior : CampaignBehaviorBase
     {

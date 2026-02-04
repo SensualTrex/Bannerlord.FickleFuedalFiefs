@@ -1,8 +1,8 @@
-﻿using Diplomacy.DiplomaticAction;
-using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.DiplomaticAction.NonAggressionPact;
-using Diplomacy.Events;
-using Diplomacy.Extensions;
+﻿using Religions.DiplomaticAction;
+using Religions.DiplomaticAction.Alliance;
+using Religions.DiplomaticAction.NonAggressionPact;
+using Religions.Events;
+using Religions.Extensions;
 
 using Microsoft.Extensions.Logging;
 
@@ -12,7 +12,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.Core;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class DiplomaticAgreementBehavior : CampaignBehaviorBase
     {

@@ -1,14 +1,14 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.Costs;
-using Diplomacy.DiplomaticAction;
-using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.DiplomaticAction.NonAggressionPact;
-using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Helpers;
-using Diplomacy.ViewModel;
-using Diplomacy.WarExhaustion;
+using Religions.Costs;
+using Religions.DiplomaticAction;
+using Religions.DiplomaticAction.Alliance;
+using Religions.DiplomaticAction.NonAggressionPact;
+using Religions.DiplomaticAction.WarPeace;
+using Religions.Helpers;
+using Religions.ViewModel;
+using Religions.WarExhaustion;
 
 using JetBrains.Annotations;
 
@@ -23,7 +23,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin("UpdateDiplomacyProperties")]
     [UsedImplicitly]

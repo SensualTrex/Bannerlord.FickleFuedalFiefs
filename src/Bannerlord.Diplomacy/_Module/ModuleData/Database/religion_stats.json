@@ -1,0 +1,318 @@
+{
+  "ReligionStats": [
+    {
+      "Parent": "",
+      "StringId": "Nonreligious",
+      "Name": "Non-religious",
+      "Organization": "Centralized",
+      "Policies": [],
+      "Stats": {
+        "Conversion": 5,
+        "Zeal": 0
+      },
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 0,
+        "Aserai": 0,
+        "Battania": 0,
+        "Kuzhait": 0,
+        "Sturgian": 0,
+        "Vlandia": 0,
+        "Nord": 0
+      },
+      "ReligionBonus": {
+        "FiveTorches": 0,
+        "SixFlames": 0,
+        "HearthofSix": 0,
+        "WhisperingWilds": 0,
+        "ThreeFaces": 0,
+        "SunandMoon": 0,
+        "EternalSky": 0
+      }
+    },
+    {
+      "Parent": "Non-religious",
+      "StringId": "SixFlames",
+      "Name": "The Faith of the Six Flames",
+      "MajorSites": [
+        {
+          "Name": "Origin of the Flame",
+          "StringId": "OriginFlame",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Charas"
+        },
+        {
+          "Name": "The Great Flame",
+          "StringId": "GreatFlame",
+          "Type": "CenterOfFaith",
+          "SettlementStringId": "Epicrotea"
+        }
+      ],
+      "Policies": [],
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 1,
+        "Battania": 0,
+        "Kuzhait": 0,
+        "Sturgian": 0,
+        "Vlandia": 0,
+        "Nord": 0
+      },
+      "ReligionBonus": {
+        "FiveTorches": 0,
+        "SixFlames": 0,
+        "HearthofSix": 0,
+        "WhisperingWilds": 2,
+        "ThreeFaces": 2,
+        "SunandMoon": -1,
+        "EternalSky": -1
+      }
+    },
+    {
+      "Parent": "Non-religious",
+      "StringId": "FiveTorches",
+      "Name": "The Faith of the Five Torches",
+      "Policies": [],
+      "MajorSites": [
+        {
+          "Name": "Origin of the Flame",
+          "AlternativeName": "The First Torch",
+          "StringId": "OriginFlame",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Charas"
+        },
+        {
+          "Name": "The Great Flame",
+          "StringId": "GreatFlame",
+          "Type": "CenterOfFaith",
+          "SettlementStringId": "Epicrotea"
+        }
+      ],
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 0,
+        "Aserai": 0,
+        "Battania": 0,
+        "Kuzhait": 0,
+        "Sturgian": 1,
+        "Vlandia": 0,
+        "Nord": 0
+      },
+      "ReligionBonus": {
+        "FiveTorches": 0,
+        "SixFlames": 0,
+        "HearthofSix": 0,
+        "WhisperingWilds": 0,
+        "ThreeFaces": 0,
+        "SunandMoon": -1,
+        "EternalSky": 0
+      }
+    },
+    {
+      "Parent": "Non-religious",
+      "Name": "The Hearth of Six",
+      "StringId": "HearthofSix",
+      "MajorSites": [
+        {
+          "Name": "Origin of the Flame",
+          "AlternativeName": "Life Hearth",
+          "StringId": "OriginFlame",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Charas"
+        },
+        {
+          "Name": "The Undying Hearth",
+          "StringId": "UndyingHearth",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Tyal"
+        },
+        {
+          "Name": "The Citidel",
+          "StringId": "Citidel",
+          "Type": "CenterOfFaith",
+          "SettlementStringId": "Balgard"
+        }
+      ],
+      "Policies": [],
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 0,
+        "Aserai": 0,
+        "Battania": 0,
+        "Kuzhait": 0,
+        "Sturgian": 1,
+        "Vlandia": 0,
+        "Nord": 0
+      },
+      "ReligionBonus": {
+        "FiveTorches": 0,
+        "SixFlames": 0,
+        "HearthofSix": 0,
+        "WhisperingWilds": 1,
+        "ThreeFaces": 2,
+        "SunandMoon": -1,
+        "EternalSky": 0
+      }
+    },
+    {
+      "Parent": "Non-religious",
+      "StringId": "WhisperingWilds",
+      "Name": "The Whispering Wilds",
+      "MajorSites": [
+        {
+          "Name": "The First Whisper",
+          "StringId": "FirstWhisper",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Marunath"
+        },
+        {
+          "Name": "The Field of the First Stand",
+          "StringId": "FirstStand",
+          "Type": "BuriedSacredSite",
+          "SettlementStringId": "Epicrotea"
+        },
+        {
+          "Name": "The Sacred Grove of Echoes",
+          "StringId": "GroveOfEchoes",
+          "Type": "Sanctuary",
+          "SettlementStringId": "Dunglanys"
+        }
+      ],
+      "Policies": [],
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 0,
+        "Aserai": 0,
+        "Battania": 1,
+        "Kuzhait": 0,
+        "Sturgian": 0,
+        "Vlandia": 0,
+        "Nord": 0
+      },
+      "ReligionBonus": {
+        "FiveTorches": 0,
+        "SixFlames": -2,
+        "HearthofSix": -1,
+        "WhisperingWilds": 0,
+        "ThreeFaces": 0,
+        "SunandMoon": -1,
+        "EternalSky": 0
+      }
+    },
+    {
+      "Parent": "Non-religious",
+      "Name": "The Path of Sun and Moon",
+      "StringId": "SunandMoon",
+      "Policies": [],
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 0,
+        "Aserai": 1,
+        "Battania": 0,
+        "Kuzhait": 0,
+        "Sturgian": 0,
+        "Vlandia": 0,
+        "Nord": 0
+      },
+      "ReligionBonus": {
+        "FiveTorches": 1,
+        "SixFlames": 1,
+        "HearthofSix": 1,
+        "WhisperingWilds": 1,
+        "ThreeFaces": 0,
+        "SunandMoon": 0,
+        "EternalSky": 0
+      }
+    },
+    {
+      "Parent": "Non-religious",
+      "StringId": "EternalSky",
+      "Name": "The Eternal Sky",
+      "Policies": [],
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 0,
+        "Aserai": 0,
+        "Battania": 0,
+        "Kuzhait": 0,
+        "Sturgian": 0,
+        "Vlandia": 0,
+        "Nord": 0
+      },
+      "ReligionBonus": {
+        "FiveTorches": 0,
+        "SixFlames": 0,
+        "HearthofSix": 0,
+        "WhisperingWilds": 0,
+        "ThreeFaces": 0,
+        "SunandMoon": 0,
+        "EternalSky": 0
+      }
+    },
+    {
+      "Parent": "Non-religious",
+      "StringId": "ThreeFaces",
+      "Name": "The Faces of the Deep",
+      "Policies": [],
+      "Values": {
+        "Honor": 0,
+        "Pacifism": 0,
+        "Tolerance": 0,
+        "Piety": 0
+      },
+      "CultureBonus": {
+        "Empire": 0,
+        "Aserai": 0,
+        "Battania": 0,
+        "Kuzhait": 0,
+        "Sturgian": 0,
+        "Vlandia": 0,
+        "Nord": 1
+      },
+      "ReligionBonus": {
+        "FiveTorches": 0,
+        "SixFlames": -2,
+        "HearthofSix": -2,
+        "WhisperingWilds": 0,
+        "ThreeFaces": 0,
+        "SunandMoon": 0,
+        "EternalSky": 0
+      }
+    }
+  ]
+}

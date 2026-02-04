@@ -6,7 +6,7 @@ using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Library;
 
-namespace Diplomacy.Actions
+namespace Religions.Actions
 {
     public static class GiveGoldToKingdomAction
     {

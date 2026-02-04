@@ -1,4 +1,4 @@
-﻿using Diplomacy.Actions;
+﻿using Religions.Actions;
 
 using JetBrains.Annotations;
 
@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Library;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal class GrantFiefItemVM : TaleWorlds.Library.ViewModel
     {

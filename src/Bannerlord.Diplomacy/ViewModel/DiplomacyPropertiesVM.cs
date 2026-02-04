@@ -1,5 +1,5 @@
-﻿using Diplomacy.DiplomaticAction;
-using Diplomacy.Extensions;
+﻿using Religions.DiplomaticAction;
+using Religions.Extensions;
 
 using Helpers;
 
@@ -12,7 +12,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     public sealed class DiplomacyPropertiesVM : TaleWorlds.Library.ViewModel
     {

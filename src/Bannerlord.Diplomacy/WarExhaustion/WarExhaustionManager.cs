@@ -1,6 +1,6 @@
-﻿using Diplomacy.Events;
-using Diplomacy.Helpers;
-using Diplomacy.WarExhaustion.EventRecords;
+﻿using Religions.Events;
+using Religions.Helpers;
+using Religions.WarExhaustion.EventRecords;
 
 using System;
 using System.Collections.Generic;
@@ -9,9 +9,9 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 using TaleWorlds.SaveSystem;
 
-using static Diplomacy.WarExhaustion.WarExhaustionRecord;
+using static Religions.WarExhaustion.WarExhaustionRecord;
 
-namespace Diplomacy.WarExhaustion
+namespace Religions.WarExhaustion
 {
     internal sealed partial class WarExhaustionManager
     {

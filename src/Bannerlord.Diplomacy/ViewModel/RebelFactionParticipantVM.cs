@@ -1,6 +1,6 @@
-﻿using Diplomacy.CivilWar.Factions;
-using Diplomacy.CivilWar.Scoring;
-using Diplomacy.Helpers;
+﻿using Religions.CivilWar.Factions;
+using Religions.CivilWar.Scoring;
+using Religions.Helpers;
 
 using JetBrains.Annotations;
 
@@ -14,7 +14,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     public class RebelFactionParticipantVM : EncyclopediaFactionVM
     {

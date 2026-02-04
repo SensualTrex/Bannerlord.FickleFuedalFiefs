@@ -1,4 +1,4 @@
-﻿using Diplomacy.WarExhaustion;
+﻿using Religions.WarExhaustion;
 
 using Microsoft.Extensions.Logging;
 
@@ -11,9 +11,9 @@ using TaleWorlds.CampaignSystem.MapEvents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 
-using static Diplomacy.WarExhaustion.WarExhaustionManager;
+using static Religions.WarExhaustion.WarExhaustionManager;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class WarExhaustionBehavior : CampaignBehaviorBase
     {

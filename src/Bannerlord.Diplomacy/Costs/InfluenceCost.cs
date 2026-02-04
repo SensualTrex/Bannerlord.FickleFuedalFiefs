@@ -3,7 +3,7 @@
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 
-namespace Diplomacy.Costs
+namespace Religions.Costs
 {
     public sealed class InfluenceCost : AbstractDiplomacyCost
     {

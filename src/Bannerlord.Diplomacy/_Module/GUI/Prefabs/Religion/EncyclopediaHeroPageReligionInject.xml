@@ -1,0 +1,12 @@
+﻿<Prefab>
+    <Constants>
+    </Constants>
+    <Window>
+        <ListPanel HorizontalAlignment="Left" HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" MarginTop="70" MarginLeft="0">
+            <Children>
+                <RichTextWidget Text="Religion:" Brush="Encyclopedia.Stat.DefinitionText" Brush.FontSize="22" Brush.TextHorizontalAlignment="Left" SuggestedWidth="100" WidthSizePolicy="CoverChildren" SuggestedHeight="30" HorizontalAlignment="Left" VerticalAlignment="Top" DoNotAcceptEvents="true" CanAcceptEvents="false"/>
+                <RichTextWidget Text="@ReligionText" Brush="Encyclopedia.Stat.ValueText" Brush.FontSize="20" Brush.TextHorizontalAlignment="Left" SuggestedWidth="300" SuggestedHeight="30" HorizontalAlignment="Left" MarginLeft="15" VerticalAlignment="Top" DoNotAcceptEvents="true" CanAcceptEvents="false"/>
+            </Children>
+        </ListPanel>
+    </Window>
+</Prefab>

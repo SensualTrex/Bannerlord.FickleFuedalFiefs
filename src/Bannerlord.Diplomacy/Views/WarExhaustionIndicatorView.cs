@@ -1,6 +1,6 @@
 ﻿using SandBox.View.Map;
 
-namespace Diplomacy.Views
+namespace Religions.Views
 {
     public class MapWarExhaustionIndicatorView : MapView
     {

@@ -1,8 +1,8 @@
-﻿using Diplomacy.CivilWar.Factions;
+﻿using Religions.CivilWar.Factions;
 
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.CivilWar.Actions
+namespace Religions.CivilWar.Actions
 {
     public class LeaveFactionAction
     {

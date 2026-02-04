@@ -1,0 +1,199 @@
+{
+  "CultureProfiles": [
+    {
+      "CultureId": "empire",
+
+      "ReligionWeights": {
+        "SixFlames": 80,
+        "HearthOfSix": 3,
+        "DaysLight": 1,
+        "Nonreligious": 1
+      }
+    },
+
+    {
+      "CultureId": "vlandia",
+
+      "CulturallyLocked": [ "WeyricOrth" ],
+
+      "ReligionWeights": {
+        "FiveTorches": 70,
+        "WeyricOrth": 25,
+        "DaysLight": 3,
+        "WhisperingWilds": 1,
+        "Nonreligious": 1
+      }
+    },
+
+    {
+      "CultureId": "battania",
+
+      "CulturallyLocked": [ "BloodOfFenra" ],
+
+      "ReligionWeights": {
+        "WhisperingWilds": 75,
+        "BloodOfFenra": 20,
+        "SixFlames": 3,
+        "HearthOfSix": 1,
+        "Nonreligious": 1
+      }
+    },
+
+    {
+      "CultureId": "sturgia",
+
+      "ReligionWeights": {
+        "HearthOfSix": 80,
+        "SixFlames": 10,
+        "WhisperingWilds": 5,
+        "FiveTorches": 2,
+        "Nonreligious": 3
+      }
+    },
+
+    {
+      "CultureId": "aserai",
+
+      "ReligionWeights": {
+        "PathOfSunAndMoon": 70,
+        "CultOfAsera": 10,
+        "CultOfTheCandlemaker": 10,
+        "CultOfTheFlayedGod": 5,
+        "DaysLight": 3,
+        "Nonreligious": 2
+      }
+    },
+
+    {
+      "CultureId": "khuzait",
+
+      "CulturallyLocked": [ "CelestialSteed" ],
+
+      "ReligionWeights": {
+        "EternalSky": 75,
+        "CelestialSteed": 15,
+        "SixFlames": 5,
+        "WhisperingWilds": 2,
+        "Nonreligious": 3
+      }
+    },
+
+    {
+      "CultureId": "nord",
+
+      "CulturallyLocked": [ "ThreeFacesOld" ],
+
+      "ReligionWeights": {
+        "ThreeFaces": 75,
+        "ThreeFacesOld": 5,
+        "HearthOfSix": 10,
+        "CelestialSteed": 7,
+        "WhisperingWilds": 2,
+        "Nonreligious": 1
+      }
+    }
+  ],
+  "DiffusionProfiles": 
+    [
+      {
+        "ReligionId": "CultOfTheCandlemaker",
+
+        "DirectionalSpread": {
+          "Origin": {
+            "x": 520,
+            "y": 300
+          },
+          "Falloff": 1,
+          "Intensity": 1
+        },
+
+        "Proselytizing": {
+          "GlobalChance": 0.001,
+          "HolymanMultiplier": 1.2
+        }
+      },
+
+      {
+        "ReligionId": "CultOfTheFlayedGod",
+
+        "DirectionalSpread": {
+          "Origin": {
+            "x": 540,
+            "y": 420
+          },
+          "Falloff": 3,
+          "Intensity": 1
+        }
+      },
+
+      {
+        "ReligionId": "DaysLight",
+
+        "GeographicInfluence": {
+          "OceanPortBonus": 6
+        },
+
+        "Proselytizing": {
+          "GlobalChance": 0.006,
+          "HolymanMultiplier": 2.0,
+          "HeroInfluence": 0.5
+        }
+      },
+
+      {
+        "ReligionId": "CelestialSteed",
+
+        "DirectionalSpread": {
+          "Origin": {
+            "x": 720,
+            "y": 260
+          },
+          "Falloff": 1,
+          "Intensity": 2
+        }
+      },
+
+      {
+        "ReligionId": "Tideborn",
+
+        "GeographicInfluence": {
+          "PortBonus": 8,
+          "RiverBonus": 4,
+          "CoastalBonus": 3,
+          "LakeBonus": 1
+        }
+      },
+
+      {
+        "ReligionId": "NineSpirits",
+
+        "DirectionalSpread": {
+          "Origin": {
+            "x": 820,
+            "y": 200
+          },
+          "Falloff": 1,
+          "Intensity": 1
+        }
+      },
+
+      {
+        "ReligionId": "CultOfAsera",
+
+        "Proselytizing": {
+          "GlobalChance": 0.004,
+          "HolymanMultiplier": 2.2,
+          "HeroInfluence": 0.6
+        },
+
+        "DirectionalSpread": {
+          "Origin": {
+            "x": 560,
+            "y": 380
+          },
+          "Falloff": 1,
+          "Intensity": 2
+        }
+      }
+  ]
+}

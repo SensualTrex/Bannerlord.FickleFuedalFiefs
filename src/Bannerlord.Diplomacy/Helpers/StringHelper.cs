@@ -1,6 +1,6 @@
 ﻿using TaleWorlds.Localization;
 
-namespace Diplomacy.Helpers
+namespace Religions.Helpers
 {
     internal static class StringHelper
     {

@@ -1,4 +1,4 @@
-﻿using Diplomacy.Events;
+﻿using Religions.Events;
 
 using System;
 
@@ -7,7 +7,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Core;
 using Helpers;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal sealed class WarExhaustionMapIndicatorVM : TaleWorlds.Library.ViewModel
     {

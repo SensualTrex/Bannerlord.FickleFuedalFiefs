@@ -1,6 +1,6 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 
-using Diplomacy.PatchTools;
+using Religions.PatchTools;
 
 using Helpers;
 
@@ -13,7 +13,7 @@ using System.Reflection;
 
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class FactionManagerPatch : PatchClass<FactionManagerPatch, FactionManager>
     {

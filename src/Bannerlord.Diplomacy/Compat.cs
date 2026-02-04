@@ -1,6 +1,6 @@
 ﻿using TaleWorlds.Localization;
 
-namespace Diplomacy
+namespace Religions
 {
     internal static class Compat
     {

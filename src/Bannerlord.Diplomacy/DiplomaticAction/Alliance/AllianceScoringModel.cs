@@ -1,4 +1,4 @@
-﻿namespace Diplomacy.DiplomaticAction.Alliance
+﻿namespace Religions.DiplomaticAction.Alliance
 {
     internal sealed class AllianceScoringModel : AbstractScoringModel<AllianceScoringModel>
     {

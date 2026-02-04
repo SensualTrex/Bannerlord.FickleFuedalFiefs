@@ -1,6 +1,6 @@
-﻿using Diplomacy.Character;
-using Diplomacy.Events;
-using Diplomacy.Extensions;
+﻿using Religions.Character;
+using Religions.Events;
+using Religions.Extensions;
 
 using System;
 using System.Linq;
@@ -10,7 +10,7 @@ using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.Actions
+namespace Religions.Actions
 {
     internal sealed class GrantFiefAction
     {

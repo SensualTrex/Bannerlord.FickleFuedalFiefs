@@ -1,6 +1,6 @@
-﻿using Diplomacy.CivilWar.Factions;
-using Diplomacy.Extensions;
-using Diplomacy.PatchTools;
+﻿using Religions.CivilWar.Factions;
+using Religions.Extensions;
+using Religions.PatchTools;
 
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class RebelKingdomPatches : PatchClass<RebelKingdomPatches>
     {

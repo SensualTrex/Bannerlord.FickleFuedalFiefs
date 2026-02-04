@@ -1,11 +1,11 @@
-﻿using Diplomacy.ViewModel;
+﻿using Religions.ViewModel;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.InputSystem;
 using TaleWorlds.ScreenSystem;
 
-namespace Diplomacy.GauntletInterfaces
+namespace Religions.GauntletInterfaces
 {
     internal sealed class DonateGoldInterface : GenericInterface
     {

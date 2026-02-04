@@ -1,10 +1,10 @@
-﻿using Diplomacy.DiplomaticAction.GenericConditions;
-using Diplomacy.DiplomaticAction.NonAggressionPact;
-using Diplomacy.DiplomaticAction.WarPeace.Conditions;
+﻿using Religions.DiplomaticAction.GenericConditions;
+using Religions.DiplomaticAction.NonAggressionPact;
+using Religions.DiplomaticAction.WarPeace.Conditions;
 
 using System.Collections.Generic;
 
-namespace Diplomacy.DiplomaticAction.WarPeace
+namespace Religions.DiplomaticAction.WarPeace
 {
     internal sealed class DeclareWarConditions : AbstractConditionEvaluator<DeclareWarConditions>
     {

@@ -2,7 +2,7 @@
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.NonAggressionPact
+namespace Religions.DiplomaticAction.NonAggressionPact
 {
     class HasEnoughScoreCondition : IDiplomacyCondition
     {

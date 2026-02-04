@@ -1,11 +1,11 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Factions;
-using Diplomacy.DiplomaticAction;
-using Diplomacy.Messengers;
-using Diplomacy.Religions;
-using Diplomacy.Religions.ViewModel;
-using Diplomacy.WarExhaustion;
-using Diplomacy.WarExhaustion.EventRecords;
+﻿using Religions.CivilWar;
+using Religions.CivilWar.Factions;
+using Religions.DiplomaticAction;
+using Religions.Messengers;
+using Religions.Religion;
+using Religions.Religion.ViewModel;
+using Religions.WarExhaustion;
+using Religions.WarExhaustion.EventRecords;
 
 using JetBrains.Annotations;
 
@@ -15,9 +15,9 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.SaveSystem;
 
-using static Diplomacy.WarExhaustion.WarExhaustionRecord;
+using static Religions.WarExhaustion.WarExhaustionRecord;
 
-namespace Diplomacy
+namespace Religions
 {
     [UsedImplicitly]
     internal class CustomSavedTypeDefiner : SaveableTypeDefiner

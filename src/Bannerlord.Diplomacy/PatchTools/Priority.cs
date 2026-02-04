@@ -1,4 +1,4 @@
-﻿namespace Diplomacy.PatchTools
+﻿namespace Religions.PatchTools
 {
     /// <summary>A patch priority</summary>
     /// 

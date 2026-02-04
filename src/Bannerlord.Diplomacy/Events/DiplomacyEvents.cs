@@ -1,12 +1,12 @@
-﻿using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.DiplomaticAction.WarPeace;
+﻿using Religions.DiplomaticAction.Alliance;
+using Religions.DiplomaticAction.WarPeace;
 
 using System.Collections.Generic;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace Diplomacy.Events
+namespace Religions.Events
 {
     public sealed class DiplomacyEvents
     {

@@ -1,6 +1,6 @@
-﻿using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Extensions;
-using Diplomacy.PatchTools;
+﻿using Religions.DiplomaticAction.WarPeace;
+using Religions.Extensions;
+using Religions.PatchTools;
 
 using System.Collections.Generic;
 
@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.Election;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class KingdomDecisionProposalBehaviorPatch : PatchClass<KingdomDecisionProposalBehaviorPatch, KingdomDecisionProposalBehavior>
     {

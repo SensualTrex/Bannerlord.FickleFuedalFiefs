@@ -1,12 +1,12 @@
-﻿using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.Events;
+﻿using Religions.DiplomaticAction.Alliance;
+using Religions.Events;
 
 using Microsoft.Extensions.Logging;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class CooldownBehavior : CampaignBehaviorBase
     {

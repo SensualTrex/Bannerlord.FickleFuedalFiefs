@@ -1,0 +1,18 @@
+﻿<Prefab>
+    <Template Name="TableCell" Parameters="CellValue">
+        <Window>
+            <Children>
+                <Widget SuggestedWidth="25" SuggestedHeight="35" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Children>
+                        <Widget SuggestedWidth="5" VerticalAlignment="Center" HorizontalAlignment="Center" HeightSizePolicy="StretchToParent" Sprite="SPGeneral\TownManagement\long_divider"/>
+                    </Children>
+                </Widget>
+                <Widget SuggestedWidth="30" SuggestedHeight="35" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Children>
+                        <RichTextWidget Brush="Crafting.WeaponType.Dropdown.Text" Brush.FontSize="14" SuggestedWidth="200" SuggestedHeight="30" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" Text="@CellValue" />
+                    </Children>
+                </Widget>
+            </Children>
+        </Window>
+  </Template>
+</Prefab>

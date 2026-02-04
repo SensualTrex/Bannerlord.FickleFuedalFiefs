@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Diplomacy.PatchTools
+namespace Religions.PatchTools
 {
     /// <summary>
     /// Non-generic abstract root class of the PatchClass hierarchy. Do not inherit directly from this class.

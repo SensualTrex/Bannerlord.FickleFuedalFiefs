@@ -1,11 +1,11 @@
-﻿using Diplomacy.CivilWar.Factions;
+﻿using Religions.CivilWar.Factions;
 
 using System.Linq;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 
-namespace Diplomacy.CivilWar.Actions
+namespace Religions.CivilWar.Actions
 {
     public class ConsolidateKingdomsAction
     {

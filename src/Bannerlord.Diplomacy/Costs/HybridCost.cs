@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Diplomacy.Costs
+namespace Religions.Costs
 {
     class HybridCost : DiplomacyCost
     {

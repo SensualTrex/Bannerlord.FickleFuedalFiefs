@@ -1,7 +1,7 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.Events;
+using Religions.Events;
 
 using JetBrains.Annotations;
 
@@ -9,7 +9,7 @@ using SandBox.ViewModelCollection.Nameplate;
 
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin]
     [UsedImplicitly]

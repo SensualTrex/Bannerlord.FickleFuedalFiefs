@@ -1,5 +1,5 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Factions;
+﻿using Religions.CivilWar;
+using Religions.CivilWar.Factions;
 
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 
 
-namespace Diplomacy.Extensions
+namespace Religions.Extensions
 {
     public static class KingdomExtensions
     {
@@ -27,8 +27,9 @@ namespace Diplomacy.Extensions
             {
                 return false;
             }
-            faction1.IsAlliedWith(faction2);
-            return faction1.IsAlliedWith(faction2);
+            bool allyStatus = ((Kingdom) faction1).IsAllyWith((Kingdom) faction2);
+            //faction1.IsAlliedWith(faction2);
+            return allyStatus; //faction1.IsAlliedWith(faction2);
         }
 
         public static IEnumerable<Kingdom> GetAlliedKingdoms(this Kingdom kingdom)

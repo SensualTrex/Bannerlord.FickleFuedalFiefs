@@ -1,5 +1,5 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Factions;
+﻿using Religions.CivilWar;
+using Religions.CivilWar.Factions;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace Diplomacy.Extensions
+namespace Religions.Extensions
 {
     internal static class ClanExtensions
     {

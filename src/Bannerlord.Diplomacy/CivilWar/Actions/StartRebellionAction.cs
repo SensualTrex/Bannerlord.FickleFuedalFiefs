@@ -1,5 +1,5 @@
-﻿using Diplomacy.CivilWar.Factions;
-using Diplomacy.Extensions;
+﻿using Religions.CivilWar.Factions;
+using Religions.Extensions;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.CivilWar.Actions
+namespace Religions.CivilWar.Actions
 {
     public class StartRebellionAction
     {

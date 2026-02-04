@@ -1,7 +1,7 @@
 ﻿#if v100 || v101 || v102 || v103
-using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Events;
-using Diplomacy.PatchTools;
+using Religions.DiplomaticAction.WarPeace;
+using Religions.Events;
+using Religions.PatchTools;
 
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     /// <summary>
     /// Fires the WarDeclaredEvent when a war is declared.

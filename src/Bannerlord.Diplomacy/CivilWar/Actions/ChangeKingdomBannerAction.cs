@@ -1,8 +1,8 @@
 ﻿using ColorMine.ColorSpaces;
 using ColorMine.ColorSpaces.Comparisons;
 
-using Diplomacy.Events;
-using Diplomacy.Extensions;
+using Religions.Events;
+using Religions.Extensions;
 
 using HarmonyLib.BUTR.Extensions;
 
@@ -15,7 +15,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection.BannerEditor;
 
-namespace Diplomacy.CivilWar.Actions
+namespace Religions.CivilWar.Actions
 {
     public class ChangeKingdomBannerAction
     {

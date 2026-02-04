@@ -1,10 +1,10 @@
-﻿using Diplomacy.Costs;
-using Diplomacy.Events;
-using Diplomacy.Messengers;
+﻿using Religions.Costs;
+using Religions.Events;
+using Religions.Messengers;
 
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class MessengerBehavior : CampaignBehaviorBase
     {

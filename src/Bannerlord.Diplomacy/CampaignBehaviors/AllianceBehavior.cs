@@ -1,7 +1,7 @@
-﻿using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Events;
-using Diplomacy.Extensions;
+﻿using Religions.DiplomaticAction.Alliance;
+using Religions.DiplomaticAction.WarPeace;
+using Religions.Events;
+using Religions.Extensions;
 
 using Helpers;
 
@@ -13,7 +13,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class AllianceBehavior : CampaignBehaviorBase
     {

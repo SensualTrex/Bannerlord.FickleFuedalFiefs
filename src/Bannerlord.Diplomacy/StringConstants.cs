@@ -1,4 +1,4 @@
-﻿namespace Diplomacy
+﻿namespace Religions
 {
     internal sealed class StringConstants
     {

@@ -4,7 +4,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal class DetailWarStatsVM : TaleWorlds.Library.ViewModel
     {

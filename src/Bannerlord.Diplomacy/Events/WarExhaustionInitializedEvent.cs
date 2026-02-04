@@ -1,6 +1,6 @@
 ﻿using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.Events
+namespace Religions.Events
 {
     public readonly struct WarExhaustionInitializedEvent
     {

@@ -1,0 +1,171 @@
+[
+  {
+    "FactionId": "empire_south",
+    "PrimaryReligionId": "FaithOfTheSixFlames",
+    "AllowedReligions": [
+      "FaithOfTheSixFlames",
+      "FaithOfTheSixFlamesSouth"
+    ],
+    "BannedReligions": [
+      "CultOfTheFlayedGod"
+    ],
+    "Tolerance": {
+      "FaithOfTheSixFlames": 1.0,
+      "FaithOfTheSixFlamesSouth": 0.9,
+      "FaithOfTheSixFlamesNorth": 0.7,
+      "FaithOfTheSixFlamesWest": 0.7,
+      "DaysLight": 0.4,
+      "Tideborn": 0.3,
+      "CultOfTheFlayedGod": 0.0
+    }
+  },
+  {
+    "FactionId": "empire_north",
+    "PrimaryReligionId": "FaithOfTheSixFlames",
+    "AllowedReligions": [
+      "FaithOfTheSixFlames",
+      "FaithOfTheSixFlamesNorth"
+    ],
+    "BannedReligions": [], 
+    "Tolerance": {
+      "FaithOfTheSixFlames": 1.0,
+      "FaithOfTheSixFlamesNorth": 0.9,
+      "FaithOfTheSixFlamesSouth": 0.7,
+      "FaithOfTheSixFlamesWest": 0.7,
+      "DaysLight": 0.4,
+      "Tideborn": 0.3
+    }
+  },
+  {
+    "FactionId": "empire_west",
+    "PrimaryReligionId": "FaithOfTheSixFlames",
+    "AllowedReligions": [
+      "FaithOfTheSixFlames",
+      "FaithOfTheSixFlamesWest"
+    ],
+    "BannedReligions": [],
+    "Tolerance": {
+      "FaithOfTheSixFlames": 1.0,
+      "FaithOfTheSixFlamesWest": 0.9,
+      "FaithOfTheSixFlamesNorth": 0.7,
+      "FaithOfTheSixFlamesSouth": 0.7,
+      "DaysLight": 0.4,
+      "Tideborn": 0.3
+    }
+  },
+  {
+    "FactionId": "vlandia",
+    "PrimaryReligionId": "FaithOfTheFiveTorches",
+    "AllowedReligions": [
+      "FaithOfTheFiveTorches",
+      "VlandianPaganism",
+      "DaysLight"
+    ],
+    "BannedReligions": [
+      "CultOfTheFlayedGod"
+    ],
+    "Tolerance": {
+      "FaithOfTheFiveTorches": 1.0,
+      "VlandianPaganism": 0.6,
+      "DaysLight": 0.4,
+      "WhisperingWilds": 0.2,
+      "CultOfTheFlayedGod": 0.0
+    }
+  },
+  {
+    "FactionId": "battania",
+    "PrimaryReligionId": "WhisperingWilds",
+    "AllowedReligions": [
+      "WhisperingWilds",
+      "BloodOfFenra",
+      "FaithOfTheSixFlames"
+    ],
+    "BannedReligions": [],
+    "Tolerance": {
+      "WhisperingWilds": 1.0,
+      "BloodOfFenra": 0.8,
+      "FaithOfTheSixFlames": 0.4,
+      "DaysLight": 0.3,
+      "CultOfTheFlayedGod": 0.0
+    }
+  },
+  {
+    "FactionId": "sturgia",
+    "PrimaryReligionId": "HearthOfSix",
+    "AllowedReligions": [
+      "HearthOfSix",
+      "FaithOfTheSixFlames",
+      "WhisperingWilds"
+    ],
+    "BannedReligions": [],
+    "Tolerance": {
+      "HearthOfSix": 1.0,
+      "FaithOfTheSixFlames": 0.7,
+      "WhisperingWilds": 0.4,
+      "DaysLight": 0.3,
+      "CultOfTheFlayedGod": 0.0
+    }
+  },
+  {
+    "FactionId": "aserai",
+    "PrimaryReligionId": "PathOfSunAndMoon",
+    "AllowedReligions": [
+      "PathOfSunAndMoon",
+      "CultOfAsera",
+      "SaniAlShumu",
+      "FollowersOfMargSaheb"
+    ],
+    "BannedReligions": [],
+    "Tolerance": {
+      "PathOfSunAndMoon": 1.0,
+      "CultOfAsera": 0.8,
+      "SaniAlShumu": 0.5,
+      "FollowersOfMargSaheb": 0.2,
+      "DaysLight": 0.3,
+      "CultOfTheFlayedGod": 0.0
+    }
+  },
+  {
+    "FactionId": "khuzait",
+    "PrimaryReligionId": "EternalSky",
+    "AllowedReligions": [
+      "EternalSky",
+      "FourHorsemen",
+      "FaithOfTheSixFlames"
+    ],
+    "BannedReligions": [],
+    "Tolerance": {
+      "EternalSky": 1.0,
+      "FourHorsemen": 0.7,
+      "FaithOfTheSixFlames": 0.4,
+      "DaysLight": 0.3,
+      "CultOfTheFlayedGod": 0.0
+    }
+  },
+  {
+    "FactionId": "nord",
+    "PrimaryReligionId": "FaithOfTheThreeFaces",
+    "AllowedReligions": [
+      "FaithOfTheThreeFaces",
+      "FaithOfTheThreeFacesOld",
+      "HearthOfSix",
+      "FourHorsemen"
+    ],
+    "BannedReligions": [
+      "CultOfTheFlayedGod",
+      "FollowersOfMargSaheb"
+    ],
+    "Tolerance": {
+      "FaithOfTheThreeFaces": 1.0,
+      "FaithOfTheThreeFacesOld": 0.2,
+      "HearthOfSix": 0.5,
+      "FourHorsemen": 0.4,
+      "WhisperingWilds": 0.3,
+      "FaithOfTheSixFlames": 0.2,
+      "Tideborn": 0.2,
+      "DaysLight": 0.1,
+      "CultOfTheFlayedGod": 0.0,
+      "FollowersOfMargSaheb": 0.0
+    }
+  }
+]

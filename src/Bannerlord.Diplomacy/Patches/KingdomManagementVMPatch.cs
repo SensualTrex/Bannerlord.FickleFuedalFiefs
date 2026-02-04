@@ -1,10 +1,10 @@
-﻿using Diplomacy.PatchTools;
+﻿using Religions.PatchTools;
 
 using System.Collections.Generic;
 
 using TaleWorlds.CampaignSystem.ViewModelCollection.KingdomManagement;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class KingdomManagementVMPatch : PatchClass<KingdomManagementVMPatch>
     {

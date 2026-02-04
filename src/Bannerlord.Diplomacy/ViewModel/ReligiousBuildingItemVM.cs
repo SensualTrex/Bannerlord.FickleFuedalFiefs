@@ -1,5 +1,5 @@
-﻿using Diplomacy.CivilWar.Actions;
-using Diplomacy.CivilWar.Factions;
+﻿using Religions.CivilWar.Actions;
+using Religions.CivilWar.Factions;
 
 using JetBrains.Annotations;
 
@@ -11,7 +11,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     public sealed class ReligiousBuildingItemVM : TaleWorlds.Library.ViewModel
     {

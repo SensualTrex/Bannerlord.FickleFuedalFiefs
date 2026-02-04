@@ -6,7 +6,7 @@ using TaleWorlds.CampaignSystem.Party;
 
 using static HarmonyLib.AccessTools;
 
-namespace Diplomacy.Helpers
+namespace Religions.Helpers
 {
     internal static class FieldAccessHelper
     {

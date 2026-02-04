@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 using System.Xml;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [PrefabExtension("EncyclopediaFactionPage", "descendant::NavigatableGridWidget[@Id='EnemiesGrid']")]
     [UsedImplicitly]

@@ -1,12 +1,12 @@
-﻿using Diplomacy.Events;
-using Diplomacy.PatchTools;
+﻿using Religions.Events;
+using Religions.PatchTools;
 
 using System.Collections.Generic;
 
 using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.Settlements;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class GameMenusCallbacksPatch : PatchClass<GameMenusCallbacksPatch>
     {

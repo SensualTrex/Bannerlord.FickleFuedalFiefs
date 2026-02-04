@@ -1,5 +1,5 @@
-﻿using Diplomacy.Helpers;
-using Diplomacy.WarExhaustion;
+﻿using Religions.Helpers;
+using Religions.WarExhaustion;
 
 using System;
 using System.Collections.Generic;
@@ -9,9 +9,9 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-using static Diplomacy.WarExhaustion.WarExhaustionManager;
+using static Religions.WarExhaustion.WarExhaustionManager;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal class WarExhaustionBreakdownVM : TaleWorlds.Library.ViewModel
     {

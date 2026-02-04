@@ -7,7 +7,7 @@ using JetBrains.Annotations;
 
 using System.Xml;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [PrefabExtension("DiplomacyPanel", "descendant::Widget[@IsVisible='@Show']")]
     [UsedImplicitly]

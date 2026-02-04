@@ -1,7 +1,7 @@
 ﻿using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.Alliance.Conditions
+namespace Religions.DiplomaticAction.Alliance.Conditions
 {
     class AlliancesEnabledCondition : IDiplomacyCondition
     {

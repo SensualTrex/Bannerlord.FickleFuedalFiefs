@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteData>
+    <SpriteSheet name="religion_icons" texture="religion_icons">
+        <Sprite name="religion_population" x="0" y="0" width="64" height="64" />
+    </SpriteSheet>
+</SpriteData>

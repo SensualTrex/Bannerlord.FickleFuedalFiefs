@@ -1,9 +1,9 @@
-﻿using Diplomacy.DiplomaticAction.Alliance.Conditions;
-using Diplomacy.DiplomaticAction.GenericConditions;
+﻿using Religions.DiplomaticAction.Alliance.Conditions;
+using Religions.DiplomaticAction.GenericConditions;
 
 using System.Collections.Generic;
 
-namespace Diplomacy.DiplomaticAction.Alliance
+namespace Religions.DiplomaticAction.Alliance
 {
     class FormAllianceConditions : AbstractConditionEvaluator<FormAllianceConditions>
     {

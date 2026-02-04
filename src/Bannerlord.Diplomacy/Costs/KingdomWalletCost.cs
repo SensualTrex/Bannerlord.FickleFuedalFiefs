@@ -1,8 +1,8 @@
 ﻿using TaleWorlds.CampaignSystem;
 
-using static Diplomacy.Actions.GiveGoldToKingdomAction;
+using static Religions.Actions.GiveGoldToKingdomAction;
 
-namespace Diplomacy.Costs
+namespace Religions.Costs
 {
     public sealed class KingdomWalletCost : AbstractDiplomacyCost
     {

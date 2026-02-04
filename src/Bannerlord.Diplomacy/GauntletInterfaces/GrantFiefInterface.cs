@@ -1,4 +1,4 @@
-﻿using Diplomacy.ViewModel;
+﻿using Religions.ViewModel;
 
 using System;
 
@@ -7,7 +7,7 @@ using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.InputSystem;
 using TaleWorlds.ScreenSystem;
 
-namespace Diplomacy.GauntletInterfaces
+namespace Religions.GauntletInterfaces
 {
     internal sealed class GrantFiefInterface : GenericInterface
     {

@@ -1,4 +1,4 @@
-﻿using Diplomacy.Extensions;
+﻿using Religions.Extensions;
 
 using JetBrains.Annotations;
 
@@ -8,7 +8,7 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy
+namespace Religions
 {
     internal sealed class CooldownManager
     {

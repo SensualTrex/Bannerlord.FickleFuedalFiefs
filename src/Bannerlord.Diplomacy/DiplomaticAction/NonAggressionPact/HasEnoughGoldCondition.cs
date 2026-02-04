@@ -1,9 +1,9 @@
-﻿using Diplomacy.Costs;
+﻿using Religions.Costs;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.NonAggressionPact
+namespace Religions.DiplomaticAction.NonAggressionPact
 {
     class HasEnoughGoldCondition : AbstractCostCondition
     {

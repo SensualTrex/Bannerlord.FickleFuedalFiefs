@@ -1,0 +1,759 @@
+{
+	"Religions":[
+    {
+      "Id": "SixFlames",
+      "Name": "The Faith of the Six Flames",
+      "Type": "Major",
+      "Culture": "Empire",
+      "Factions": [ "None" ],
+
+      "Description": "The Empire believes that the world is lit by six eternal flames, each representing a divine power. Together, they illuminate civilization and guide mortals through life, war, and death. Temples often depict six braziers burning in unison, symbolizing harmony among the gods.",
+      "History": "The Faith of the Six Flames began in the heart of the Empire, where Caldaros was exalted as the divine Emperor. Priests taught that six sacred flames embodied justice, mercy, war, wisdom, fertility, and death, each burning in eternal harmony. As the Empire expanded, the faith spread and adapted to local cultures, giving rise to three regional variations.",
+      "Creation": "In the beginning, the world was dark and cold. The Six Flames descended from the heavens, each lighting a part of existence — courage, wisdom, toil, mercy, war, and death. Together, they brought balance and order.",
+      "Life": "Mortals are born from the sparks of Doros’ forge, given breath by Serona’s mercy, and guided by Aurethia’s wisdom. Calradios grants them courage to face trials, while Veyros teaches them the strength to defend their kin.",
+      "Death": "When life ends, Mortranos extinguishes the mortal flame and carries the soul across the Twilight River. There, the soul is judged by Calradios for bravery and justice, and placed among the Six Flames according to the virtues it upheld.",
+      "Cycle": "Souls that lived with balance are reborn into the world, their spark reignited by Doros. Those who falter are given penance in the shadow of Mortranos until they are ready to return.",
+
+      "Dieties": [
+        {
+          "Name": "Calradios",
+          "Domain": "Bravery & Justice",
+          "Title": "The Flame of Valor",
+          "Description": "Once a mortal emperor who united the land, Calradios ascended into godhood. Depicted as a dragon-crowned warrior, he embodies courage, honor, and the defense of law."
+        },
+        {
+          "Name": "Aurethia",
+          "Domain": "Knowledge",
+          "Title": "The Flame of Wisdom",
+          "Description": "Goddess of scrolls, stars, and hidden truths. Scholars and magistrates pray to her for clarity in judgment and mastery of learning."
+        },
+        {
+          "Name": "Mortranos",
+          "Domain": "Death",
+          "Title": "The Flame of Twilight",
+          "Description": "A hooded figure who guides souls to the afterlife. He ensures balance between the living and the dead."
+        },
+        {
+          "Name": "Veyros",
+          "Domain": "War",
+          "Title": "The Flame of Iron",
+          "Description": "Patron of soldiers and generals. Depicted with a sword in one hand and a broken shield in the other, symbolizing both conquest and sacrifice."
+        },
+        {
+          "Name": "Serona",
+          "Domain": "Kindness",
+          "Title": "The Flame of Mercy",
+          "Description": "Gentle goddess of compassion, healing, and charity. Invoked by healers, midwives, and those who care for the poor."
+        },
+        {
+          "Name": "Doros",
+          "Domain": "Labor",
+          "Title": "The Flame of Toil",
+          "Description": "God of farmers, builders, and craftsmen. His worship emphasizes diligence, humility, and the sanctity of honest work."
+        }
+      ],
+
+      "Sects": [
+        {
+          "Id": "SixFlames_SouthernEmpire",
+          "Name": "Southern Flamebearers",
+          "Factions": [ "South Empire" ],
+          "Description": "A southern interpretation of the Six Flames that elevates Serona and emphasizes mercy, fertility, and the symbolic power of women in ritual.",
+          "Traits": [
+            {
+              "Name": "Women in Rituals",
+              "Description": "Women can serve as Flamebearers and hold high priestly roles.",
+              "Bonus": "No social stigma for female leaders."
+            }
+          ]
+        },
+        {
+          "Id": "SixFlames_NorthernEmpire",
+          "Name": "Northern Enduring Flame",
+          "Factions": [ "North Empire" ],
+          "Description": "A northern interpretation that elevates Doros and emphasizes endurance, toil, and harsh funerary rites.",
+          "Traits": [
+            {
+              "Name": "Elevation of Doros",
+              "Description": "Doros is revered as the Enduring Flame.",
+              "Bonus": "No negative social bonus to female leaders."
+            }
+          ]
+        },
+        {
+          "Id": "SixFlames_WesternEmpire",
+          "Name": "Western Legion Flame",
+          "Factions": [ "West Empire" ],
+          "Description": "A western interpretation that elevates Veyros and emphasizes military service as sacred duty.",
+          "Traits": [
+            {
+              "Name": "Elevation of Veyros",
+              "Description": "Veyros is the Dominant Flame.",
+              "Bonus": "No negative social bonus to female leaders."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "FiveTorches",
+      "Name": "The Faith of the Five Torches",
+      "Type": "Major",
+      "Culture": "Vlandia",
+      "Factions": [ "Vlandia" ],
+
+      "Description": "When the Vlandians came into contact with the Empire, their paganism was gradually replaced by the Faith of the Flames. The process was political, cultural, and military. Vlandians reject Calradios as a false god-emperor and instead worship five divine Torches representing guiding lights for mortal life.",
+      "History": "The Faith of the Five Torches emerged during the transition from Vlandian paganism to Imperial religion. Originally, Vlandians worshipped gods of sky, earth, wolves, rivers, and ancestors. Imperial missionaries reinterpreted these deities as Torches—lesser lights beneath the Six Flames. King Alaric formally adopted the Faith to secure Imperial legitimacy, outlawing pagan rites while folk traditions survived in secret.",
+      "Creation": "The Five Torches were lit by the First King, a mortal chosen by the gods to bring order to chaos.",
+      "Life": "Aldric grants wisdom, Serenya grants mercy, Durand grants strength of hand, and Veymar grants courage. Together they sustain mortal life.",
+      "Death": "Morthain extinguishes the mortal torch and guides souls into the Hall of Ashes, where they await rebirth.",
+      "Cycle": "Souls who lived with balance are rekindled by Durand’s forge and return to the world. Those who sought tyranny are cast into eternal shadow.",
+
+      "Dieties": [
+        {
+          "Name": "Aldric",
+          "Domain": "Knowledge",
+          "Title": "The Torch of Lore",
+          "Description": "Patron of scribes and judges. His priests keep chronicles and advise lords."
+        },
+        {
+          "Name": "Morthain",
+          "Domain": "Death",
+          "Title": "The Torch of Shadows",
+          "Description": "A grim reaper figure who guides souls to the afterlife. Seen as the great equalizer among peasants."
+        },
+        {
+          "Name": "Veymar",
+          "Domain": "War",
+          "Title": "The Torch of Steel",
+          "Description": "Patron of knights and mercenaries. His worship emphasizes martial honor and loyalty."
+        },
+        {
+          "Name": "Serenya",
+          "Domain": "Kindness",
+          "Title": "The Torch of Grace",
+          "Description": "A maternal figure invoked by healers and midwives. Her mercy binds lords to care for their vassals."
+        },
+        {
+          "Name": "Durand",
+          "Domain": "Labor",
+          "Title": "The Torch of Toil",
+          "Description": "Patron of farmers, masons, and craftsmen. Symbolizes endurance and the dignity of work."
+        }
+      ]
+    },
+    {
+      "Id": "WeyricOrth",
+      "Name": "Weyric Orth",
+      "Type": "Minor",
+      "Culture": "Vlandia",
+      "Factions": [ "Vlandia" ],
+
+      "Description": "Before adopting the Empire’s religion, the Vlandians practiced a tribal, warrior-centered faith rooted in nature and ancestor worship. Their gods embodied storms, earth, wolves, rivers, and the spirits of their forebears. Though suppressed after the rise of the Five Torches, the old ways survive in rural clans and hidden groves.",
+
+      "Dieties": [
+        {
+          "Name": "Weyric",
+          "Domain": "Storms & Kingship",
+          "Title": "The Sky-Father",
+          "Description": "God of thunder, sky, and authority. Lords swore fealty beneath his storms, believing lightning sealed their vows."
+        },
+        {
+          "Name": "Thyra",
+          "Domain": "Fertility & Harvest",
+          "Title": "The Earth-Mother",
+          "Description": "Goddess of soil, crops, and family. Farmers prayed to her for abundance, and women invoked her during childbirth."
+        },
+        {
+          "Name": "Fenric",
+          "Domain": "War & Loyalty",
+          "Title": "The Wolf-Spirit",
+          "Description": "Patron of warriors and raiders. Wolves symbolized ferocity in battle and loyalty to kin."
+        },
+        {
+          "Name": "The River-Sisters",
+          "Domain": "Water & Vision",
+          "Title": "Maidens of the Stream",
+          "Description": "Minor spirits tied to rivers, wells, and springs. Travelers sought their protection, and seers claimed visions from their waters."
+        },
+        {
+          "Name": "Ancestor Shades",
+          "Domain": "Ancestry & Guidance",
+          "Title": "Voices of the Mounds",
+          "Description": "Spirits of dead chieftains, honored in burial mounds. Believed to guide descendants in war and counsel leaders through dreams."
+        }
+      ]
+    },
+    {
+      "Id": "WhisperingWilds",
+      "Name": "Whispering Wilds",
+      "Type": "Major",
+      "Culture": "Battania",
+      "Factions": [ "Battania" ],
+
+      "Description": "The Whispering Wilds is less a structured religion and more a living dialogue with nature. It emphasizes harmony with the forest, respect for ancestors, and channeling animal spirits in war. Worship is performed in sacred groves, stone circles, and riverbanks rather than temples.",
+      "History": "The Whispering Wilds has long been the lifeblood of the Battanian clans, rooted in shamanism and animism. Immigration, Imperial missionaries, and territorial losses have weakened the faith in recent generations. Though still dominant, each lost battle and each new convert to the Flames chips away at its strength. The faith now stands at a crossroads: adapt or fade.",
+      "Creation": "In the beginning, the world was a silent forest. The First Shaman lit a fire, and from its smoke rose the spirits — stag, raven, wolf, and oak — who gave voice to the land.",
+      "Life": "Mortals are born from the soil of the Earth-Mother, given breath by the winds of the Sky-Father, and guided by animal spirits that choose them at birth.",
+      "Death": "When a mortal dies, their spirit is carried by the Raven into the Shadowed Glade, where ancestors dwell. There, they feast and counsel the living through dreams.",
+      "Cycle": "Souls may return to the world, reborn as new warriors or hunters, or remain among the ancestors to guard the clan. The cycle depends on whether the spirit’s duty is fulfilled.",
+
+      "Dieties": [
+        {
+          "Name": "Cernach",
+          "Domain": "Forest & Kingship",
+          "Title": "Stag-Lord",
+          "Description": "Patron of chieftains and hunters. His antlers symbolize authority and the bounty of the forest."
+        },
+        {
+          "Name": "Branna",
+          "Domain": "Death & Fate",
+          "Title": "The Raven",
+          "Description": "Guide of souls to the Shadowed Glade. Ravens are seen as omens of death and prophecy."
+        },
+        {
+          "Name": "Fenra",
+          "Domain": "War & Loyalty",
+          "Title": "Wolf-Mother",
+          "Description": "Spirit of warriors and clans. Wolves embody ferocity in battle and devotion to kin."
+        },
+        {
+          "Name": "Thalos",
+          "Domain": "Storms & Oaths",
+          "Title": "Sky-Father",
+          "Description": "God of the sky, storms, and sacred oaths. His lightning punishes oath-breakers."
+        },
+        {
+          "Name": "Eira",
+          "Domain": "Fertility & Hearth",
+          "Title": "Earth-Mother",
+          "Description": "Goddess of soil, crops, and family. She sustains mortals with her endless bounty."
+        },
+        {
+          "Name": "Sylwen",
+          "Domain": "Water & Vision",
+          "Title": "River-Maiden",
+          "Description": "Spirit of rivers and wells. Shamans seek visions in her waters."
+        },
+        {
+          "Name": "Druan",
+          "Domain": "Endurance & Wisdom",
+          "Title": "Oak-Spirit",
+          "Description": "Embodiment of the sacred groves. Oaks are seen as eternal witnesses of history."
+        },
+        {
+          "Name": "Cael",
+          "Domain": "Inspiration & Ritual",
+          "Title": "Fire-Sprite",
+          "Description": "Minor spirit of fire, invoked in rituals and feasts. Fire is seen as a bridge between worlds."
+        },
+        {
+          "Name": "Ancestor Shades",
+          "Domain": "Guidance & Memory",
+          "Title": "Voices of the Glade",
+          "Description": "Spirits of fallen heroes and chieftains. They advise descendants through dreams and omens."
+        }
+      ]
+    },
+    {
+      "Id": "BloodOfFenra",
+      "Name": "The Blood of Fenra",
+      "Type": "Minor",
+      "Culture": "Battania",
+      "Factions": [],
+
+      "Description": "A militant sect devoted to Fenra, the Wolf-Mother, whom they believe is the true patron of Battania’s warriors. The Wolfskins see themselves as her chosen children, embodying the ferocity and loyalty of the wolf pack. Their rituals are violent, their feasts blood-soaked, and their worldview centered entirely on war and kinship.",
+      "History": "Wolfskins wear pelts, paint themselves with ash and blood, and howl before battle. Their rites are feared even among other Battanians, and their raids have become infamous for their brutality.",
+      "Creation": "Fenra tore her way out of the First Shaman’s fire, howling into the silent forest. Her howl gave mortals their courage and bound them into clans.",
+      "Life": "Every warrior is born with a wolf-spirit shadow. To ignore it is weakness; to embrace it is strength.",
+      "Death": "When a Wolfskin dies, Fenra herself devours their spirit, carrying it into her eternal pack. There, they hunt in the endless forest beyond the mortal world.",
+      "Cycle": "Wolfskins do not believe in rebirth. Once claimed by Fenra, a soul remains in her pack forever, fighting and feasting until the end of time.",
+
+      "Dieties": [
+        {
+          "Name": "Fenra",
+          "Domain": "War & Loyalty",
+          "Title": "Wolf-Mother",
+          "Description": "Elevated as the supreme spirit. Wolfskins believe she alone is worthy of devotion."
+        },
+        {
+          "Name": "Branna",
+          "Domain": "Death & Fate",
+          "Title": "Wing of Shadows",
+          "Description": "Still respected as the messenger of death, but seen as Fenra’s servant."
+        },
+        {
+          "Name": "Ancestor Shades",
+          "Domain": "Guidance & Memory",
+          "Title": "Voices of the Hunt",
+          "Description": "Ancestors are believed to join Fenra’s pack, hunting alongside her in the afterlife."
+        },
+        {
+          "Name": "Cael",
+          "Domain": "Inspiration & Ritual",
+          "Title": "Flame of Fury",
+          "Description": "Fire is invoked before battle to awaken Fenra’s rage in the warriors."
+        }
+      ]
+    },
+    {
+      "Id": "HearthOfSix",
+      "Name": "The Hearth of Six",
+      "Type": "Major",
+      "Culture": "Sturgian",
+      "Factions": [],
+
+      "Description": "The Sturgians believe in six sacred hearths, each representing a divine principle. Five hearths are singular deities tied to survival and community. The Sixth Hearth is unique: a multi-faced deity embodying Land, Wind, and Water — the primal forces of the north. Caldaros is accepted as part of this sixth hearth, seen as the Emperor who brought order and legitimacy.",
+      "History": "The Sturgians originally practiced animistic faiths tied to forests, rivers, and ancestral spirits. Hearth fires symbolized survival in the frozen north. As they encountered Imperial religion, they reinterpreted the Six Flames as hearths — warmer, more communal symbols. The sixth hearth became supreme, embodying the primal forces of land, wind, and water, with Caldaros added as its fourth face.",
+      "Creation": "The First Clan lit six hearths to survive the endless winter. From each flame rose a spirit. The sixth hearth burned brightest, revealing itself as a god with three faces — Land, Wind, and Water — later joined by Caldaros as its fourth face.",
+      "Life": "Mortals live by the hearths. Each hearth sustains a different part of life: food, family, trade, war, wisdom. The sixth hearth governs the natural forces and kingship.",
+      "Death": "Souls who honor the hearths are welcomed into the Hall of the Hearthfire, a communal afterlife of warmth and feasting. Those who betray oaths or abandon kin are cast into the cold wastes.",
+      "Cycle": "Souls may return through the hearth’s flame, reborn into new generations, or remain with ancestors as guardians of the clan.",
+
+      "Dieties": [
+        {
+          "Name": "Hrodan’s Hearth",
+          "Domain": "Family & Continuity",
+          "Title": "Keeper of Kin",
+          "Description": "Embodies the warmth of family bonds and household survival."
+        },
+        {
+          "Name": "Brynja’s Hearth",
+          "Domain": "Fertility & Hearth",
+          "Title": "Mother of Plenty",
+          "Description": "Goddess of crops, livestock, and the hearth’s daily fire."
+        },
+        {
+          "Name": "Eirik’s Hearth",
+          "Domain": "War & Honor",
+          "Title": "Blade of the Hearth",
+          "Description": "Patron of warriors, raids, and defense of clan lands."
+        },
+        {
+          "Name": "Torvald’s Hearth",
+          "Domain": "Trade & Wisdom",
+          "Title": "Voice of Counsel",
+          "Description": "Spirit of law, wisdom, and fair trade among clans."
+        },
+        {
+          "Name": "Skara’s Hearth",
+          "Domain": "Ancestors & Memory",
+          "Title": "Watcher of Ashes",
+          "Description": "Guardian of ancestral spirits, honored in burial mounds."
+        },
+        {
+          "Name": "The Great Hearth",
+          "Domain": "Land, Wind, Water, Kingship",
+          "Title": "Flame of the World",
+          "Description": "The supreme deity with three primal faces — soil, sky, sea — and a fourth face revealed as Caldaros, the Emperor."
+        }
+      ]
+    },
+    {
+      "Id": "PathOfSunAndMoon",
+      "Name": "The Path of Sun and Moon",
+      "Type": "Major",
+      "Culture": "Aserai",
+      "Factions": [],
+
+      "Description": "The Path of Sun and Moon teaches that life is a balance between extremes: the burning trial of the Sun and the gentle guidance of the Moon. The Aserai believe survival in the desert requires discipline, hygiene, and self-reliance. Leadership is earned through merit, not divine appointment.",
+      "History": "Long before kings and clans, the desert tribes wandered without unity. Asera, a wise patriarch, stood beneath the blazing Sun and the guiding Moon and declared that survival required balance between discipline and mercy. His teachings united the tribes into the Banu Asera, the Children of Asera. Leadership became a matter of merit, with the Sun blessing strength and the Moon blessing wisdom.",
+      "Creation": "From the first dawn, the Sun and Moon rose as twins. The Sun gave heat, light, and trial; the Moon gave coolness, guidance, and rest. Together they shaped the desert and its people.",
+      "Life": "Mortals live between the cycles of Sun and Moon. The Sun demands discipline, hygiene, and strength; the Moon offers mercy, wisdom, and dreams.",
+      "Death": "Souls are judged by balance. Those who lived with honor and discipline are welcomed into the Garden of Twilight, where Sun and Moon meet in harmony. Those who lived in excess or corruption wander the endless desert storms.",
+      "Cycle": "The Sun and Moon endlessly chase each other across the sky, symbolizing the eternal rhythm of struggle and renewal.",
+
+      "Dieties": [
+        {
+          "Name": "Shams",
+          "Domain": "Life, Discipline, Merit",
+          "Title": "The Sun",
+          "Description": "Embodies strength, hygiene, and trial. Blesses those who prove themselves through talent and discipline."
+        },
+        {
+          "Name": "Qamar",
+          "Domain": "Guidance, Mercy, Dreams",
+          "Title": "The Moon",
+          "Description": "Embodies wisdom, respite, and balance. Guides travelers by night and judges souls with compassion."
+        }
+      ]
+    },
+    {
+      "Id": "CultOfAsera",
+      "Name": "The Cult of Asera",
+      "Type": "Minor",
+      "Culture": "Aserai",
+      "Factions": [],
+
+      "Description": "The Cult of Asera is a strict and ascetic branch of the Path of Sun and Moon. Its followers accept Shams and Qamar as the supreme celestial powers, yet they also venerate Asera as a demigod—an exalted mortal who walked so perfectly in balance that the Sun and Moon raised him above all others. The Cult preserves older teachings that emphasize discipline, purity, and the belief that Asera’s example reveals the true path to divine favor.",
+
+      "History": "The earliest desert tribes revered Asera as a wise patriarch whose teachings united scattered clans. When the Path of Sun and Moon emerged, Asera was canonized as a mortal prophet chosen by Shams and Qamar. The Cult rejected this softened interpretation, insisting that Asera was more than a teacher—he was transformed by the Sun and Moon into a being of divine insight. Over time, the Cult became a minority tradition, overshadowed by the more moderate Path. Yet in remote caravansaries, old oases, and among families who trace their lineage to Asera’s companions, the ancient rites endure.",
+
+      "Creation": "The Cult teaches that in the first age, Shams and Qamar shaped the desert together—one through trial, the other through guidance. When mortals first wandered the sands, they were lost and without purpose. Asera rose among them, a man of unmatched discipline and clarity. Seeing his devotion, Shams tempered him with fire, and Qamar filled him with wisdom. Through their blessing, Asera became a demigod, a living bridge between mortal struggle and celestial harmony.",
+
+      "Life": "Life is a test of balance. Followers believe that Asera’s footsteps still echo in the dunes, guiding those who seek perfection of body, mind, and spirit. Rituals emphasize cleanliness, fasting, endurance, and mastery of desire. Shams is invoked during trials of strength and discipline, while Qamar is invoked for wisdom, mercy, and dreams. Asera is honored as the exemplar who proved that mortals can rise toward the divine through merit alone.",
+
+      "Death": "At death, the soul is judged first by Shams, who weighs discipline and integrity, and then by Qamar, who weighs wisdom and compassion. Those who followed Asera’s example are said to be welcomed into the Garden of Twilight, where Asera himself walks between Sun and Moon. Those who falter wander the desert storms until they learn the balance they lacked in life.",
+
+      "Cycle": "The Cult teaches that souls move through cycles of trial and refinement. Rebirth is granted by Shams to those who require further discipline, while Qamar grants rest to those who have achieved harmony. Asera stands between them as the ideal—proof that a mortal may transcend the cycle through perfect balance.",
+
+      "Dieties": [
+        {
+          "Name": "Shams",
+          "Domain": "Life, Discipline, Merit",
+          "Title": "The Sun",
+          "Description": "The blazing arbiter of strength and trial. Shams tests mortals through hardship and rewards those who rise through discipline."
+        },
+        {
+          "Name": "Qamar",
+          "Domain": "Guidance, Mercy, Dreams",
+          "Title": "The Moon",
+          "Description": "The gentle judge of wisdom and compassion. Qamar guides travelers by night and reveals truth through dreams."
+        },
+        {
+          "Name": "Asera",
+          "Domain": "Balance, Guidance, Ascension",
+          "Title": "The Exalted Wayfarer",
+          "Description": "A mortal patriarch elevated to demigodhood by Shams and Qamar. His life is the perfect example of balance between trial and mercy."
+        }
+      ]
+    },
+    {
+      "Id": "CultOfTheCandlemaker",
+      "Name": "Sani al-Shumu",
+      "Type": "Minor",
+      "Culture": "Aserai",
+      "Factions": [],
+
+      "Description": "In the southernmost towns of the Aserai lands, migrants brought with them the worship of the Candlemaker, known locally as Sani al-Shumu. This god is said to light a candle at each birth and snuff it at each death, symbolizing the fragility of life. The faith has spread quickly among the poor, who see their struggles reflected in the flickering flame. Its message of predestination undermines the Aserai meritocracy, whispering that destiny is fixed rather than earned.",
+      "History": "",
+      "Creation": "",
+      "Life": "Each person’s life is a candle lit by the Candlemaker. The flame represents vitality, and its strength depends on the purity of one’s actions. Followers emphasize humility, endurance, and acceptance of fate.",
+      "Death": "At death, the Candlemaker snuffs out the flame. The soul is said to vanish into darkness, with no afterlife promised — only the memory of the candle’s light remains.",
+      "Cycle": "Life is predetermined; the Candlemaker alone decides when a flame is lit and when it is extinguished. There is no rebirth, only the inevitability of the snuffing.",
+
+      "Dieties": [
+        {
+          "Name": "Sani al-Shumu",
+          "Domain": "Life and Death",
+          "Title": "The Candlemaker",
+          "Description": "A solitary god who holds all lives in his hands, lighting and extinguishing candles as he wills."
+        }
+      ]
+    },
+    {
+      "Id": "CultOfTheFlayedGod",
+      "Name": "Followers of Marg-Saheb",
+      "Type": "Minor",
+      "Culture": "Aserai",
+      "Factions": [],
+
+      "Description": "A grim faith devoted to Marg-Saheb, a god of death and destruction. Its followers believe the world is ending, and only through grisly sacrifice can they stave off annihilation. Enemies are skinned alive, their hides displayed as offerings to the Flayed God. Raids, terror, and forced sacrifices have made the cult infamous across the desert.",
+      "History": "The cult of Marg-Saheb spread into the Aserai lands from the southeast. Its followers believe the world nears its end and that only blood and skin-offerings can appease their god. Unlike the quiet fatalism of the Candlemaker or the balanced teachings of Asera, the Followers of Marg-Saheb destabilize trade, sow fear, and fracture clan unity.",
+      "Creation": "",
+      "Life": "",
+      "Death": "",
+      "Cycle": "",
+
+      "Dieties": [
+        {
+          "Name": "Marg-Saheb",
+          "Domain": "Death & Destruction",
+          "Title": "The Flayed God",
+          "Description": "A ravenous deity who demands skin-offerings to delay the world's end. His followers believe only sacrifice can appease his endless hunger."
+        }
+      ]
+    },
+    {
+      "Id": "DaysLight",
+      "Name": "The Day's Light",
+      "Type": "Minor",
+      "Culture": "",
+      "Factions": [],
+
+      "Description": "From across the western sea comes the faith of The Day’s Light, a monotheistic religion devoted to the Lord of Light, the sole deity who banishes darkness and guides mortals toward truth. Its followers believe all other gods are false shadows, mere illusions cast by the absence of true light. Its zeal and clarity of purpose attract converts seeking certainty.",
+      "Life": "Life is a struggle to walk in the Lord’s radiance. Followers strive for purity, honesty, and unwavering resolve.",
+      "Death": "At death, souls are judged by the Lord of Light. Those who walked faithfully are welcomed into the Eternal Dawn, while those who strayed are cast into endless night.",
+      "Cycle": "The Lord of Light is eternal; mortals live only once. There is no rebirth, only the final judgment.",
+
+      "Dieties": [
+        {
+          "Name": "The Lord of Light",
+          "Domain": "Truth, Purity, Illumination",
+          "Title": "The One Radiant God",
+          "Description": "The singular deity who embodies truth and purity. All prayers, in any tongue, rise to him alone. He is said to burn away falsehood and shadow."
+        }
+      ]
+    },
+    {
+      "Id": "CelestialSteed",
+      "Name": "Path of the Celestial Steed",
+      "Type": "Minor",
+      "Culture": "Khuzait",
+      "Factions": [ "Khuzait" ],
+
+      "Description": "Once the state creed of a vast steppe empire, the Path of the Celestial Steed teaches that the world is dragged across the heavens by the Kök At — the Sky-Steed — a colossal divine horse whose endless labor sets the rhythm of time. Warlords claimed their right to rule by mirroring the Steed’s burden: to pull their people forward through conquest, migration, and unbroken motion. Today the faith survives only in the remote northeast, practiced by scattered clans and aging warlords who remember the empire’s glory.",
+
+      "History": "Centuries ago, the Khuzait ancestors forged a mighty empire stretching from the eastern mountains to the central plains. Its khagans ruled by the Mandate of the Kök At, claiming that just as the Sky-Steed dragged the world, so too must a khagan drag the tribes toward destiny. Victories were seen as signs of the Steed’s strength; defeats as warnings that the khagan had failed his burden. When the empire fractured under internal strife and foreign pressure, the Path lost its political power. Imperial temples fell, Sky-Readers were scattered, and rival faiths spread across the plains. Only in the northeast — among old bloodlines and stubborn clans — does the Path endure, a fading echo of a once-unbreakable creed.",
+
+      "Creation": "Before the first dawn, the world was a frozen stone adrift in darkness. The gods quarreled over its fate until the Kök At stepped forward. With a thunderous breath, it accepted the Yük — the Burden — and lowered its neck beneath a cosmic yoke. As it dragged the world into motion, sparks from its hooves became the stars, and the first sunrise marked the beginning of time. The khagans taught that the Steed’s burden was mirrored in mortal duty: to conquer stagnation, to expand the horizon, and to carry one’s people forward.",
+
+      "Life": "Life is a burden to be pulled. Every rider is born with a Yük — duty to clan, khan, and land. To shirk one’s burden is to insult the Sky-Steed. Motion is sacred; migration, raiding, and warfare are holy acts that echo the Steed’s eternal journey. Horses are revered as living reflections of the divine, and a warrior’s mount is believed to share his fate.",
+
+      "Death": "When a warrior dies, their spirit dismounts and walks beside the Sky-Steed along the Celestial Track. Those who carried their burdens with honor are invited to ride behind the Steed in the Eternal Host — a spectral army that gallops across the night sky. Cowards and oath-breakers must walk the Black Road alone, weighed down by their abandoned burdens.",
+
+      "Cycle": "The world moves because the Sky-Steed moves. Seasons shift with its strength; storms rise when it strains; winters linger when it tires. Souls follow the Steed in an endless cycle of burden, battle, and rebirth. The empire once believed that as long as its riders conquered new lands, the Steed would remain strong — but as the empire faltered, so too did the heavens grow dimmer.",
+
+      "Dieties": [
+        {
+          "Name": "Kök At",
+          "Domain": "Sky, Motion, Dominion",
+          "Title": "The Celestial Steed",
+          "Description": "A colossal horse-spirit who drags the world across the heavens. Its strength determines the fate of seasons, storms, and empires."
+        },
+        {
+          "Name": "Ulgen-Eki",
+          "Domain": "Oaths & Sovereignty",
+          "Title": "The Yoke-Binder",
+          "Description": "Forged the cosmic yoke placed upon the Sky-Steed. Patron of khagans and warlords, invoked during coronations and declarations of conquest."
+        },
+        {
+          "Name": "Tengrik",
+          "Domain": "Storms & War",
+          "Title": "The Hoof-Storm",
+          "Description": "A tempest spirit born from the Steed’s hooves. Storms and battlefield winds are seen as Tengrik’s war-cries."
+        },
+        {
+          "Name": "Ayzana",
+          "Domain": "Dreams & Ancestral Guidance",
+          "Title": "The Trail-Mother",
+          "Description": "Guides the spirits of fallen warriors along the Celestial Track. Her whispers are sought by shamans before great campaigns."
+        },
+        {
+          "Name": "Kara Jol",
+          "Domain": "Endurance & Trial",
+          "Title": "The Black Road",
+          "Description": "Embodiment of hardship and the long road of empire. Followers believe that overcoming trials strengthens both rider and Steed."
+        }
+      ]
+    },{
+  "Id": "Tideborn",
+  "Name": "The Tideborn",
+  "Type": "Minor",
+  "Culture": "",
+  "Factions": [],
+
+  "Description": "The Tideborn faith comes from distant coastal lands across the southern sea, carried into Calradia by sailors and merchants. Its followers believe that all of life is governed by the Ebb and Flow, a dual spirit of the ocean that embodies fortune. Prosperity and suffering are seen as tides — one always following the other. The faith is peaceful but fatalistic, teaching that success is not earned but granted by the tides.",
+  "Life": "Life is a tide that rises and falls. Followers accept fortune and hardship as natural cycles, striving for humility and patience rather than ambition.",
+  "Death": "At death, the soul is carried out to sea. Those who lived in balance are borne gently into the horizon, while those who defied the tides are dragged beneath the waves, never to surface again.",
+  "Cycle": "The Ebb and Flow are eternal. Mortals are like waves: they rise, crest, and fall, only to return again. Rebirth is possible, but always as part of the endless ocean.",
+
+  "Dieties": [
+    {
+      "Name": "The Ebb and Flow",
+      "Domain": "Fortune, Cycles, The Sea",
+      "Title": "The Twin Tide",
+      "Description": "A dual spirit of the ocean, neither wholly benevolent nor cruel. It governs prosperity and suffering, guiding mortals through the cycles of life."
+    }
+  ]
+},{
+  "Id": "NineSpirits",
+  "Name": "Os Nove Espiritos da Selva",
+  "Type": "Minor",
+  "Culture": "",
+  "Factions": [],
+
+  "Description": "In the dense jungles beyond Calradia, the faith of Os Nove Espiritos da Selva thrives. Rooted in animism and polytheism, it teaches that nine sacred animals embody divine forces that shape the world. Rituals are vibrant, filled with drumming, masks, and dance, echoing the rhythms of the forest. Though foreign, the religion’s color and vitality have intrigued Calradian traders and mercenaries who encounter its followers.",
+  "Life": "Life is a gift from the jungle, guided by the spirits. Each person is believed to be born under the influence of one animal, shaping their destiny.",
+  "Death": "At death, the soul returns to the selva. The spirit most aligned with one’s deeds carries the soul — either to protection in the canopy or to be consumed in the undergrowth.",
+  "Cycle": "The Nine Spirits embody the eternal cycle of nature: birth, growth, death, and renewal. Souls may return as animals, continuing the balance of the jungle.",
+
+  "Dieties": [
+    {
+      "Name": "Onca",
+      "Domain": "Power & Guardianship",
+      "Title": "The Jaguar",
+      "Description": "Embodies ferocity, strength, and protection. Revered as the apex spirit of the jungle."
+    },
+    {
+      "Name": "Cobra",
+      "Domain": "Mystery & Rebirth",
+      "Title": "The Serpent",
+      "Description": "Symbol of hidden knowledge and transformation. Associated with cycles of shedding and renewal."
+    },
+    {
+      "Name": "Macaco",
+      "Domain": "Cleverness & Play",
+      "Title": "The Monkey",
+      "Description": "Spirit of mischief, agility, and wit. Followers believe he teaches adaptability."
+    },
+    {
+      "Name": "Aguia",
+      "Domain": "Vision & Authority",
+      "Title": "The Eagle",
+      "Description": "Represents clarity, leadership, and the ability to see truth from afar."
+    },
+    {
+      "Name": "Jacare",
+      "Domain": "Patience & Death",
+      "Title": "The Crocodile",
+      "Description": "A lurking spirit of stillness and inevitability. Associated with the boundary between life and death."
+    },
+    {
+      "Name": "Tartaruga",
+      "Domain": "Endurance & Wisdom",
+      "Title": "The Tortoise",
+      "Description": "Symbol of longevity, memory, and the slow, steady rhythm of the world."
+    },
+    {
+      "Name": "Arara",
+      "Domain": "Voice & Story",
+      "Title": "The Parrot",
+      "Description": "Keeper of oral tradition. Shamans say she remembers every tale ever spoken."
+    },
+    {
+      "Name": "Javali",
+      "Domain": "Fertility & Courage",
+      "Title": "The Boar",
+      "Description": "Embodies stubborn strength, virility, and the will to fight for one’s kin."
+    },
+    {
+      "Name": "Aranha",
+      "Domain": "Fate & Connection",
+      "Title": "The Spider",
+      "Description": "Weaver of destiny. Her web symbolizes the interconnectedness of all life."
+    }
+  ]
+},
+    {
+      "Id": "ThreeFaces",
+      "Name": "Faith of the Three Faces",
+      "Type": "Major",
+      "Culture": "Nord",
+      "Description": "The Nords believe their god is one being with three faces, each governing a vital element of survival in the harsh north. To appease the god, sacrifices are made to each face in its own way. The fallen face, however, is seen as the source of chaos, storms, and destruction — a reminder of the cost of freedom.  Captives are bound to the Land Face until their debt is repaid. Slavery is temporary, closer to indentured servitude, with more freedom than peasants.",
+      "History": "The Faith of the Three Faces is the harsh monotheism of the Nords, worshipping a single god with three aspects: Land, Wind, and Water. Each face demands sacrifice — blood spilled on foreign soil, hanging, or drowning — to sustain the balance of the world. Yet the god is fractured: a fallen face betrayed the unity by granting mortals freedom of choice, and now rules a frozen hell of blizzards and storms. Warriors who die in battle are carried to the Hall of Eternal Glory, while cowards are condemned to the fallen face’s torment. This faith reflects the Nord ethos: raiding as necessity, slavery as survival, and honor as the only path to eternity.",
+      "Creation": "The god of Three Faces shaped the land, stirred the winds, and filled the seas. Together, these aspects gave mortals life and order. But one face fell, granting humans freedom of choice, betraying the unity of the god.",
+      "Life": "Mortals live under the balance of the three faces. They must appease each through sacrifice: hanging for wind, drowning for water, and blood spilled on foreign soil for land. Women, as keepers of the hearth and household, are seen as guardians of continuity while men raid abroad.",
+      "Death": "Warriors who die in battle are carried into the Hall of Eternal Glory, where they feast, fight, and drink forever. Those who die craven or surrender are dragged into the frozen hell of the fallen face, tormented by blizzards and storms.",
+      "Cycle": "Honor sustains the cycle. Brave souls remain in the Hall of Eternal Glory; dishonored souls are trapped in the frozen wastes. There is no rebirth — only eternal reward or punishment.",
+      "Dieties": [
+        {
+          "Name": "The Land Face",
+          "Domain": "Soil & Blood",
+          "Title": "Stone of Strength",
+          "Description": "Embodies the earth, stability, and conquest. Appeased by blood spilled on foreign soil."
+        },
+        {
+          "Name": "The Wind Face",
+          "Domain": "Sky & Breath",
+          "Title": "Voice of Oaths",
+          "Description": "Governs storms, oaths, and freedom of spirit. Appeased by sacrifice through hanging."
+        },
+        {
+          "Name": "The Water Face",
+          "Domain": "Sea & Passage",
+          "Title": "Depth of Fate",
+          "Description": "Rules rivers, seas, and journeys. Appeased by sacrifice through drowning.  Women manage households, farms, and trade while men raid. They are respected as spiritual keepers of continuity, tied to the Water Face’s life-giving role."
+        },
+        {
+          "Name": "The Fallen Face",
+          "Domain": "Chaos & Choice",
+          "Title": "Breaker of Unity",
+          "Description": "Once part of the god, but betrayed the core three by giving mortals freedom of choice. Now rules the frozen hell, sending blizzards, tsunamis, and earthquakes to hinder Nord raids."
+        }
+      ]
+    },
+    {
+      "Id": "ThreeFacesOld",
+      "Name": "The Old Three-Face Rite",
+      "Type": "Minor",
+      "Culture": "Sturgia",
+      "Factions": [ "Nord" ],
+
+      "Description": "The Old Three-Face Rite is a forbidden remnant of the earliest northern worship, predating the organized faith of the Three-Face God. Its followers revere the deity in its most primal and terrifying form: Hrímvatr, the Frost-Faced One, whose three visages govern hunger, storm, and corruption. The sect teaches that the world survives only through sacrifice, and that consuming the flesh of the fallen binds a clan to the god’s cold favor.",
+
+      "History": "Long before the Sturgian holds rose from the snow, scattered clans along the northern fjords practiced the Old Rite. Shamans spoke of Hrímvatr appearing during blizzards, its three faces shifting like ice under moonlight. These clans believed that famine, winter, and madness were not curses but gifts — trials sent to harden the worthy. When the unified Three-Face faith emerged, the Old Rite was outlawed, its shrines burned and its shamans hunted. Yet in remote valleys and storm-lashed islands, whispers claim the old ways endure.",
+
+      "Creation": "According to the Old Rite, the world was born from the corpse of a giant frozen beast. Hrímvatr rose from its ribs, wearing three faces: Skarn, the Hunger; Vethr, the Storm; and Murgal, the Rot. Each face carved a part of the world — mountains from bone, seas from blood, and winds from the beast’s dying breath. Mortals were shaped from the scraps left behind, forever bound to hunger, weather, and decay.",
+
+      "Life": "Followers believe that every mortal carries a spark of the three faces within them. Hunger drives ambition, storms test strength, and rot reminds all of their end. Rituals involve fasting, exposure to winter winds, and offerings of meat to appease Skarn. Shamans known as Frost‑Speakers interpret omens in drifting snow, cracked ice, and the cries of ravens.",
+
+      "Death": "When a person dies, their spirit is said to wander the Blighted Gale — a storm between worlds — until one of Hrímvatr’s faces claims them. Those who honored the rites are devoured by Skarn and reborn in the next winter’s first snowfall. Those who defied the cycles are left to freeze in the storm, their spirits howling across the tundra.",
+
+      "Cycle": "The Old Rite teaches that all things move through three inevitable states: hunger, storm, and rot. Clans rise in hunger, are tested in storm, and fall into rot. To resist this cycle is to invite Hrímvatr’s wrath. To embrace it is to gain strength from the cold and endure beyond death.",
+
+      "Dieties": [
+        {
+          "Name": "Hrímvatr",
+          "Domain": "Winter, Hunger, Corruption",
+          "Title": "The Frost-Faced One",
+          "Description": "A primordial deity with three shifting visages. Hrímvatr embodies the harshest truths of the north: hunger, storm, and decay."
+        },
+        {
+          "Name": "Skarn",
+          "Domain": "Hunger & Ambition",
+          "Title": "First Face",
+          "Description": "The devouring face. Skarn represents famine, desire, and the drive to survive at any cost."
+        },
+        {
+          "Name": "Vethr",
+          "Domain": "Storms & Trials",
+          "Title": "Second Face",
+          "Description": "The storming face. Vethr governs blizzards, tempests, and the trials that shape the strong."
+        },
+        {
+          "Name": "Murgal",
+          "Domain": "Decay & Corruption",
+          "Title": "Third Face",
+          "Description": "The rotting face. Murgal rules over sickness, madness, and the inevitable end of all things."
+        }
+      ]
+    },
+    {
+      "Id": "EternalSky",
+      "Name": "The Eternal Sky",
+      "Type": "Major",
+      "Culture": "Khuzait",
+      "Factions": [],
+
+      "Description": "The Eternal Sky is the ancient steppe faith that teaches all life moves beneath a single boundless sky, the source of fate, freedom, and judgment. Khans and herders alike believe the Sky watches all deeds, rewarding honor and punishing treachery. Worship is simple and unadorned, expressed through open-air rites, horse sacrifices, and the reading of omens in wind and cloud.",
+
+      "History": "Long before the rise of khanates, the nomads of the steppe revered the Eternal Sky as the supreme power. Shamans served as interpreters of its will, guiding clans through visions, storms, and celestial signs. As the Khuzait confederation grew, the faith unified scattered tribes, providing a shared identity rooted in honor, mobility, and the belief that the Sky grants authority to those strong enough to wield it. Though foreign religions have entered the steppe, the Eternal Sky remains the spiritual backbone of Khuzait culture.",
+
+      "Creation": "In the beginning, there was only the endless Sky. From its breath came the winds, and from its tears came the rivers. The Sky struck the earth with lightning, awakening the first horses and the first riders. Mortals were shaped from dust and wind, given freedom to roam and the burden of honor to guide their steps.",
+
+      "Life": "Life is a journey across the open world, guided by omens in the clouds and the movements of stars. Riders honor the Sky through courage, generosity, and mastery of the horse. Shamans interpret dreams, storms, and the cries of animals to discern the Sky’s will. To live well is to ride with a free spirit, unbound by walls or cowardice.",
+
+      "Death": "When a rider dies, their spirit rises on the wind to face the Eternal Sky. Those who lived with honor join their ancestors in the Blue Expanse, a realm of endless plains beneath a radiant sky. Those who betrayed kin or broke sacred oaths are cast into the Grey Storm, where restless spirits wander without rest.",
+
+      "Cycle": "The Sky grants rebirth to those whose journey is unfinished. Souls may return as riders, shamans, or even as horses, depending on the lessons they must learn. Only those who achieve perfect honor ascend permanently into the Blue Expanse.",
+
+      "Dieties": [
+        {
+          "Name": "Tengri",
+          "Domain": "Sky, Fate, Kingship",
+          "Title": "The Eternal Sky",
+          "Description": "The supreme and formless deity who governs fate, storms, and the right to rule. Tengri is not depicted in idols; the open sky itself is his face."
+        },
+        {
+          "Name": "Erlik",
+          "Domain": "Death & Judgment",
+          "Title": "Lord of the Underworld",
+          "Description": "Judge of the dead who weighs the honor of each soul. Erlik commands the Grey Storm, where oath-breakers wander."
+        },
+        {
+          "Name": "Kök At",
+          "Domain": "Horses & Freedom",
+          "Title": "The Sky-Steed",
+          "Description": "A divine horse spirit believed to carry messages between mortals and the Sky. Riders pray to Kök At for speed, endurance, and safe journeys."
+        },
+        {
+          "Name": "Umay",
+          "Domain": "Fertility & Hearth",
+          "Title": "Mother of the Plains",
+          "Description": "A gentle spirit who protects children, mothers, and the hearth. Her blessing ensures healthy herds and prosperous families."
+        }
+      ]
+    }
+		
+]}

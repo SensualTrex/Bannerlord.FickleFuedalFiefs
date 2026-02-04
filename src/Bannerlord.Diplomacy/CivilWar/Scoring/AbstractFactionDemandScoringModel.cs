@@ -1,4 +1,4 @@
-﻿using Diplomacy.CivilWar.Factions;
+﻿using Religions.CivilWar.Factions;
 
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.CivilWar.Scoring
+namespace Religions.CivilWar.Scoring
 {
     internal abstract class AbstractFactionDemandScoringModel
     {

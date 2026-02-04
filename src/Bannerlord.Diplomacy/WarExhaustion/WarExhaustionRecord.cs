@@ -3,7 +3,7 @@
 using TaleWorlds.Library;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.WarExhaustion
+namespace Religions.WarExhaustion
 {
     public readonly struct WarExhaustionRecord
     {

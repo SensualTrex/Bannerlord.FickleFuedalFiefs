@@ -1,7 +1,7 @@
 ﻿#if v100 || v101 || v102 || v103
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.DiplomaticAction.WarPeace
+namespace Religions.DiplomaticAction.WarPeace
 {
     public readonly struct WarDeclaredEvent
     {

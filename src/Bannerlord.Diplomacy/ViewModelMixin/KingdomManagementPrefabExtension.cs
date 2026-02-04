@@ -6,7 +6,7 @@ using JetBrains.Annotations;
 using System.Collections.Generic;
 using System.Xml;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [PrefabExtension("KingdomManagement", "descendant::ButtonWidget[@Id='FiefsTabButton']")]
     [UsedImplicitly]

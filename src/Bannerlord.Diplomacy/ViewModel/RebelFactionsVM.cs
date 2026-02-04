@@ -1,7 +1,7 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Actions;
-using Diplomacy.CivilWar.Factions;
-using Diplomacy.Extensions;
+﻿using Religions.CivilWar;
+using Religions.CivilWar.Actions;
+using Religions.CivilWar.Factions;
+using Religions.Extensions;
 
 using JetBrains.Annotations;
 
@@ -16,7 +16,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     
     internal sealed class RebelFactionsVM : TaleWorlds.Library.ViewModel

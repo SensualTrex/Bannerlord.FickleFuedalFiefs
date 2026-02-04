@@ -1,7 +1,7 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.GauntletInterfaces;
+using Religions.GauntletInterfaces;
 
 using JetBrains.Annotations;
 
@@ -16,7 +16,7 @@ using TaleWorlds.Core.ViewModelCollection.Generic;
 using TaleWorlds.CampaignSystem.ComponentInterfaces;
 
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin(nameof(SettlementMenuOverlayVM.RefreshValues))]
     [UsedImplicitly]

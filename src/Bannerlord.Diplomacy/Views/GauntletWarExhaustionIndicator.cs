@@ -1,4 +1,4 @@
-﻿using Diplomacy.ViewModel;
+﻿using Religions.ViewModel;
 
 using JetBrains.Annotations;
 
@@ -9,7 +9,7 @@ using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.View;
 
-namespace Diplomacy.Views
+namespace Religions.Views
 {
     [ViewCreatorModule]
     [OverrideView(typeof(MapWarExhaustionIndicatorView))]

@@ -1,5 +1,5 @@
-﻿using Diplomacy.Actions;
-using Diplomacy.Extensions;
+﻿using Religions.Actions;
+using Religions.Extensions;
 
 using JetBrains.Annotations;
 
@@ -12,7 +12,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal sealed class GrantFiefVM : TaleWorlds.Library.ViewModel
     {

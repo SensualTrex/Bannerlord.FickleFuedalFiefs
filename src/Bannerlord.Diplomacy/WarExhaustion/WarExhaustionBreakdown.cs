@@ -1,6 +1,6 @@
 ﻿using Bannerlord.ButterLib.Common.Helpers;
 
-using Diplomacy.WarExhaustion.EventRecords;
+using Religions.WarExhaustion.EventRecords;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.WarExhaustion
+namespace Religions.WarExhaustion
 {
     internal sealed partial class WarExhaustionManager
     {

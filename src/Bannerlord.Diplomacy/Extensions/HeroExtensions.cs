@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 
-namespace Diplomacy.Extensions
+namespace Religions.Extensions
 {
     public static class HeroExtensions
     {

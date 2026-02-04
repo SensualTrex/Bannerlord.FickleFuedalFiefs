@@ -1,9 +1,9 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.DiplomaticAction;
-using Diplomacy.Extensions;
-using Diplomacy.GauntletInterfaces;
+using Religions.DiplomaticAction;
+using Religions.Extensions;
+using Religions.GauntletInterfaces;
 
 using JetBrains.Annotations;
 
@@ -17,7 +17,7 @@ using TaleWorlds.Localization;
 using TaleWorlds.ScreenSystem;
 using NavalDLC;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin(nameof(EncyclopediaFactionPageVM.RefreshValues))]
     internal sealed class EncyclopediaFactionPageVMMixin : BaseViewModelMixin<EncyclopediaFactionPageVM>

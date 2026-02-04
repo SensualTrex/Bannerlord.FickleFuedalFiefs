@@ -1,5 +1,5 @@
-﻿using Diplomacy.Costs;
-using Diplomacy.Events;
+﻿using Religions.Costs;
+using Religions.Events;
 
 using Helpers;
 
@@ -11,7 +11,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.Alliance
+namespace Religions.DiplomaticAction.Alliance
 {
     internal sealed class DeclareAllianceAction : AbstractDiplomaticAction<DeclareAllianceAction>
     {

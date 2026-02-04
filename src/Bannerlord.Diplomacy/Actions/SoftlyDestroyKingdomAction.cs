@@ -3,7 +3,7 @@
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 
-namespace Diplomacy.Actions
+namespace Religions.Actions
 {
     public static class SoftlyDestroyKingdomAction
     {

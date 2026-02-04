@@ -4,7 +4,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.Messengers
+namespace Religions.Messengers
 {
     internal class Messenger
     {

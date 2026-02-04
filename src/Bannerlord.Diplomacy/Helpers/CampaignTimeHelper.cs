@@ -1,6 +1,6 @@
 ﻿using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.Helpers
+namespace Religions.Helpers
 {
     internal static class CampaignTimeHelper
     {

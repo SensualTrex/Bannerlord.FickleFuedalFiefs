@@ -1,4 +1,4 @@
-﻿using Diplomacy.Extensions;
+﻿using Religions.Extensions;
 
 using Helpers;
 
@@ -9,7 +9,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction
+namespace Religions.DiplomaticAction
 {
     internal abstract class AbstractScoringModel<T> where T : AbstractScoringModel<T>, new()
     {

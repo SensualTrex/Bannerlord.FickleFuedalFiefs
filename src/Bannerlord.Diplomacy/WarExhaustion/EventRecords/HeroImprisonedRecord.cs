@@ -2,7 +2,7 @@
 using TaleWorlds.Core;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.WarExhaustion.EventRecords
+namespace Religions.WarExhaustion.EventRecords
 {
     internal sealed class HeroImprisonedRecord : HeroRelatedRecord
     {

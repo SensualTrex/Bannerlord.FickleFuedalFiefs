@@ -1,4 +1,4 @@
-﻿using Diplomacy.Costs;
+﻿using Religions.Costs;
 
 using Microsoft.Extensions.Logging;
 
@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.NonAggressionPact
+namespace Religions.DiplomaticAction.NonAggressionPact
 {
     class FormNonAggressionPactAction : AbstractDiplomaticAction<FormNonAggressionPactAction>
     {

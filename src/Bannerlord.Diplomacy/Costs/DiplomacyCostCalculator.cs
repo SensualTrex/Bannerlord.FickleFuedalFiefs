@@ -1,7 +1,7 @@
-﻿using Diplomacy.CivilWar.Factions;
-using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Extensions;
-using Diplomacy.WarExhaustion;
+﻿using Religions.CivilWar.Factions;
+using Religions.DiplomaticAction.WarPeace;
+using Religions.Extensions;
+using Religions.WarExhaustion;
 
 using Helpers;
 
@@ -11,7 +11,7 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
 
-namespace Diplomacy.Costs
+namespace Religions.Costs
 {
     class DiplomacyCostCalculator
     {

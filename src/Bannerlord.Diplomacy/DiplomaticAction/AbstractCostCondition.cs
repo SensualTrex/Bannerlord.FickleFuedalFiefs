@@ -1,7 +1,7 @@
 ﻿using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction
+namespace Religions.DiplomaticAction
 {
     abstract class AbstractCostCondition : IDiplomacyCondition
     {

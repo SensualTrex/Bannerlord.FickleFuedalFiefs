@@ -1,12 +1,12 @@
-﻿using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.PatchTools;
+﻿using Religions.DiplomaticAction.WarPeace;
+using Religions.PatchTools;
 
 using System.Collections.Generic;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Election;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class MakePeaceKingdomDecisionPatch : PatchClass<MakePeaceKingdomDecisionPatch, MakePeaceKingdomDecision>
     {

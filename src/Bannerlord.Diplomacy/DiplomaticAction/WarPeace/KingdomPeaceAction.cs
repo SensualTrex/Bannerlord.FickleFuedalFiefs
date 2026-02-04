@@ -1,14 +1,14 @@
 ﻿using Bannerlord.ButterLib.Common.Helpers;
 
-using Diplomacy.Actions;
-using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Factions;
-using Diplomacy.Costs;
-using Diplomacy.Events;
-using Diplomacy.Extensions;
-using Diplomacy.Helpers;
-using Diplomacy.WarExhaustion;
-using Diplomacy.WarExhaustion.EventRecords;
+using Religions.Actions;
+using Religions.CivilWar;
+using Religions.CivilWar.Factions;
+using Religions.Costs;
+using Religions.Events;
+using Religions.Extensions;
+using Religions.Helpers;
+using Religions.WarExhaustion;
+using Religions.WarExhaustion.EventRecords;
 
 using Helpers;
 
@@ -26,7 +26,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.WarPeace
+namespace Religions.DiplomaticAction.WarPeace
 {
     internal sealed class KingdomPeaceAction
     {

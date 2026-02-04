@@ -1,7 +1,7 @@
 ﻿using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy
+namespace Religions
 {
     interface IDiplomacyCondition
     {

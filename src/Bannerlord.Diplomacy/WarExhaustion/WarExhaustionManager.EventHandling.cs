@@ -1,8 +1,8 @@
-﻿using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Events;
-using Diplomacy.Extensions;
-using Diplomacy.Helpers;
-using Diplomacy.WarExhaustion.EventRecords;
+﻿using Religions.DiplomaticAction.WarPeace;
+using Religions.Events;
+using Religions.Extensions;
+using Religions.Helpers;
+using Religions.WarExhaustion.EventRecords;
 
 using Helpers;
 
@@ -23,7 +23,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.ObjectSystem;
 
-namespace Diplomacy.WarExhaustion
+namespace Religions.WarExhaustion
 {
     internal sealed partial class WarExhaustionManager
     {

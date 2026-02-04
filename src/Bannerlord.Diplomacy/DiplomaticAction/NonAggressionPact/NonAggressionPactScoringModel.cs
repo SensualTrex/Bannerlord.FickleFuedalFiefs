@@ -1,4 +1,4 @@
-﻿namespace Diplomacy.DiplomaticAction.NonAggressionPact
+﻿namespace Religions.DiplomaticAction.NonAggressionPact
 {
     internal sealed class NonAggressionPactScoringModel : AbstractScoringModel<NonAggressionPactScoringModel>
     {

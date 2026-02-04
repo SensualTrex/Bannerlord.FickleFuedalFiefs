@@ -1,4 +1,4 @@
-﻿using Diplomacy.PatchTools;
+﻿using Religions.PatchTools;
 
 using StoryMode.Quests.FirstPhase;
 
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class SupportKingdomQuestPatch : PatchClass<SupportKingdomQuestPatch>
     {

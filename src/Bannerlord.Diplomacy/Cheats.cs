@@ -1,10 +1,10 @@
-﻿using Diplomacy.CivilWar;
-using Diplomacy.CivilWar.Actions;
-using Diplomacy.DiplomaticAction;
-using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.DiplomaticAction.NonAggressionPact;
-using Diplomacy.Extensions;
-using Diplomacy.WarExhaustion;
+﻿using Religions.CivilWar;
+using Religions.CivilWar.Actions;
+using Religions.DiplomaticAction;
+using Religions.DiplomaticAction.Alliance;
+using Religions.DiplomaticAction.NonAggressionPact;
+using Religions.Extensions;
+using Religions.WarExhaustion;
 
 using JetBrains.Annotations;
 
@@ -15,7 +15,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.Library;
 
-namespace Diplomacy
+namespace Religions
 {
     internal sealed class CampaignCheatsExtension
     {

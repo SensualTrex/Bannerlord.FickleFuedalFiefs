@@ -6,7 +6,7 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.DiplomaticAction
+namespace Religions.DiplomaticAction
 {
     class DiplomaticAgreementManager
     {

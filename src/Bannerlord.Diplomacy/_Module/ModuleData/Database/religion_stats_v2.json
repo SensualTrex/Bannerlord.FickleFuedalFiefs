@@ -1,0 +1,1548 @@
+{
+    "ReligionStats": [
+      {
+        "Parent": "",
+        "StringId": "Nonreligious",
+        "Name": "Non-Religious",
+        "HierarchyType": "Decentralized",
+        "Tier":  0,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": false,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": false,
+            "AllowArena": true,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": false,
+            "AllowOpenConversion": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 0,
+          "EncourageForgiveness": 0,
+          "EncourageHeroicDeeds": 0,
+          "EncourageDeathInBattle": 0,
+          "EncourageHonesty": 0,
+          "EncourageCharity": 0,
+          "EncourageTithing": 0,
+          "EncourageProselytize": 0,
+          "EncourageHolyWar": 0,
+          "EncouragePilgrimage": 0,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 0,
+
+          "EncourageViolenceAgainstNonBelievers": 0,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 0,
+          "CondemnGladiatorialCombat": 0,
+          "CondemnDuels": 0,
+          "CondemnTrialByCombat": 0,
+          "CondemnTheft": 0,
+          "CondemnBanditry": 0,
+          "CondemnPillaging": 0
+        },
+
+        "Values": {
+          "Honor": 0,
+          "Pacifism": 0,
+          "Tolerance": 0,
+          "Piety": 0
+        },
+
+        "ReligionRisk": {
+          "HostileTo": [],
+          "OpposedTo": [],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "SixFlames",
+        "Name": "The Faith of the Six Flames",
+        "HierarchyType": "CentralizedLeader",
+        "Tier": 4,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": false,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": true,
+            "AllowClericalCelibacy": true
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": true
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": true,
+            "AllowOpenConversion": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": -10,
+          "EncourageForgiveness": -10,
+          "EncourageHeroicDeeds": 30,
+          "EncourageDeathInBattle": 40,
+          "EncourageHonesty": 30,
+          "EncourageCharity": 10,
+          "EncourageTithing": 20,
+          "EncourageProselytize": 30,
+          "EncourageHolyWar": 35,
+          "EncouragePilgrimage": 20,
+
+          "DiscourageWomensRights": 20,
+          "DiscourageSlavery": 0,
+
+          "EncourageViolenceAgainstNonBelievers": 40,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 40,
+          "CondemnGladiatorialCombat": 0,
+          "CondemnDuels": 0,
+          "CondemnTrialByCombat": 0,
+          "CondemnTheft": 40,
+          "CondemnBanditry": 40,
+          "CondemnPillaging": 20
+        },
+
+        "Values": {
+          "Honor": 3,
+          "Pacifism": -2,
+          "Tolerance": 0,
+          "Piety": 2
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [],
+          "OpposedTo": [],
+          "AlliedWith": [ "FiveTorches", "HearthofSix" ]
+        }
+      },
+      {
+        "StringId": "SixFlames_NorthernEmpire",
+        "Parent": "SixFlames",
+
+        "Doctrine": {
+          "EncouragePeace": -10,
+          "EncourageHolyWar": 15,
+          "EncourageProselytize": 20
+        },
+
+        "Policies": {
+          "Clergy": {
+            "AllowWarriorSect": true
+          }
+        },
+
+        "Values": {
+          "Pacifism": -2,
+          "Piety": 2
+        }
+      },
+      {
+        "StringId": "SixFlames_WesternEmpire",
+        "Parent": "SixFlames",
+
+        "Doctrine": {
+          "EncourageHonesty": 20,
+          "EncourageTithing": 10,
+          "CondemnExtramaritalRelationships": 20
+        },
+
+        "Policies": {
+          "Clergy": {
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false
+          }
+        },
+
+        "Values": {
+          "Piety": 2,
+          "Honor": 2
+        }
+      },
+      {
+        "StringId": "SixFlames_SouthernEmpire",
+        "Parent": "SixFlames",
+
+        "Doctrine": {
+          "EncourageForgiveness": 20,
+          "EncourageCharity": 20,
+          "DiscourageWomensRights": -20,
+          "EncouragePeace": 10
+        },
+
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowClericalCelibacy": false
+          }
+        },
+
+        "Values": {
+          "Tolerance": 1,
+          "Piety": 1
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "FiveTorches",
+        "Name": "The Faith of the Five Torches",
+        "HierarchyType": "CentralizedCouncil",
+        "Tier": 4,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": false,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowOpenConversion": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 10,
+          "EncourageForgiveness": 10,
+          "EncourageHeroicDeeds": 40,
+          "EncourageDeathInBattle": 10,
+          "EncourageHonesty": 50,
+          "EncourageCharity": 20,
+          "EncourageTithing": 30,
+          "EncourageProselytize": 10,
+          "EncourageHolyWar": -10,
+          "EncouragePilgrimage": 20,
+
+          "DiscourageWomensRights": 10,
+          "DiscourageSlavery": 20,
+
+          "EncourageViolenceAgainstNonBelievers": 0,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 30,
+          "CondemnGladiatorialCombat": 0,
+          "CondemnDuels": 0,
+          "CondemnTrialByCombat": 10,
+          "CondemnTheft": 50,
+          "CondemnBanditry": 40,
+          "CondemnPillaging": 30
+        },
+
+        "Values": {
+          "Honor": 1,
+          "Pacifism": 0,
+          "Tolerance": 0,
+          "Piety": 3
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [],
+          "OpposedTo": [ "SunandMoon" ],
+          "AlliedWith": [ "SixFlames", "HearthofSix" ]
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "HearthOfSix",
+        "Name": "The Hearth of Six",
+        "HierarchyType": "LocalElders",
+        "Tier": 4,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": false,
+            "AllowArena": true,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowOpenConversion": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 20,
+          "EncourageForgiveness": 20,
+          "EncourageHeroicDeeds": 10,
+          "EncourageDeathInBattle": -10,
+          "EncourageHonesty": 40,
+          "EncourageCharity": 30,
+          "EncourageTithing": 20,
+          "EncourageProselytize": -10,
+          "EncourageHolyWar": -30,
+          "EncouragePilgrimage": 10,
+
+          "DiscourageWomensRights": -10,
+          "DiscourageSlavery": 30,
+
+          "EncourageViolenceAgainstNonBelievers": -30,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 40,
+          "CondemnGladiatorialCombat": 20,
+          "CondemnDuels": 20,
+          "CondemnTrialByCombat": 20,
+          "CondemnTheft": 40,
+          "CondemnBanditry": 40,
+          "CondemnPillaging": 40
+        },
+
+        "Values": {
+          "Honor": 1,
+          "Pacifism": -1,
+          "Tolerance": 1,
+          "Piety": 1
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [],
+          "OpposedTo": [ "WhisperingWilds" ],
+          "AlliedWith": [ "SixFlames", "FiveTorches" ]
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "WhisperingWilds",
+        "Name": "The Whispering Wilds",
+        "HierarchyType": "ShamanicCircles",
+        "Tier": 3,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": true,
+            "AllowClericalCelibacy": false,
+            "AllowHolyGroves": true
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": true
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": false,
+            "AllowTithing": false,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowHallucinogens": true,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": -10,
+          "EncourageForgiveness": -20,
+          "EncourageHeroicDeeds": 20,
+          "EncourageDeathInBattle": 10,
+          "EncourageHonesty": -10,
+          "EncourageCharity": 0,
+          "EncourageTithing": -20,
+          "EncourageProselytize": -10,
+          "EncourageHolyWar": -10,
+          "EncouragePilgrimage": -20,
+
+          "DiscourageWomensRights": -20,
+          "DiscourageSlavery": 40,
+
+          "EncourageViolenceAgainstNonBelievers": -10,
+
+          "CondemnAlcohol": -10,
+          "CondemnExtramaritalRelationships": -10,
+          "CondemnGladiatorialCombat": -10,
+          "CondemnDuels": -10,
+          "CondemnTrialByCombat": 0,
+          "CondemnTheft": -10,
+          "CondemnBanditry": -20,
+          "CondemnPillaging": -20
+        },
+
+        "Values": {
+          "Honor": -1,
+          "Pacifism": -1,
+          "Tolerance": -1,
+          "Piety": -2
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [ "SixFlames" ],
+          "OpposedTo": [ "HearthOfFlames", "FiveTorches" ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "ThreeFaces",
+        "Name": "The Three Faces",
+        "HierarchyType": "Decentralized",
+        "Tier": 3,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": true,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": true
+          },
+
+          "Social": {
+            "AllowSlavery": true,
+            "AllowPilgrimage": false,
+            "AllowTithing": false,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": -20,
+          "EncourageForgiveness": -30,
+          "EncourageHeroicDeeds": 30,
+          "EncourageDeathInBattle": 20,
+          "EncourageHonesty": 20,
+          "EncourageCharity": -10,
+          "EncourageTithing": -20,
+          "EncourageProselytize": -20,
+          "EncourageHolyWar": 0,
+          "EncouragePilgrimage": -20,
+
+          "DiscourageWomensRights": -30,
+          "DiscourageSlavery": -30,
+
+          "EncourageViolenceAgainstNonBelievers": 10,
+
+          "CondemnAlcohol": -20,
+          "CondemnExtramaritalRelationships": -20,
+          "CondemnGladiatorialCombat": -10,
+          "CondemnDuels": -10,
+          "CondemnTrialByCombat": -20,
+          "CondemnTheft": 20,
+          "CondemnBanditry": 0,
+          "CondemnPillaging": -50
+        },
+
+        "Values": {
+          "Honor": -2,
+          "Pacifism": -3,
+          "Tolerance": -2,
+          "Piety": -1
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [ "SixFlames" ],
+          "OpposedTo": [ "HearthOfFlames", "FiveTorches" ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "PathOfSunAndMoon",
+        "Name": "The Path of Sun and Moon",
+        "HierarchyType": "CentralizedCouncil",
+        "Tier": 4,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": true,
+            "AllowFemaleClergyLeaders": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": true,
+            "AllowAsceticTrials": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": false,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 20,
+          "EncourageForgiveness": 20,
+          "EncourageHeroicDeeds": 10,
+          "EncourageDeathInBattle": -10,
+          "EncourageHonesty": 40,
+          "EncourageCharity": 20,
+          "EncourageTithing": 20,
+          "EncourageProselytize": 10,
+          "EncourageHolyWar": -20,
+          "EncouragePilgrimage": 30,
+
+          "DiscourageWomensRights": -20,
+          "DiscourageSlavery": 40,
+
+          "EncourageViolenceAgainstNonBelievers": -20,
+
+          "CondemnAlcohol": 40,
+          "CondemnExtramaritalRelationships": 30,
+          "CondemnGladiatorialCombat": 0,
+          "CondemnDuels": 0,
+          "CondemnTrialByCombat": 20,
+          "CondemnTheft": 40,
+          "CondemnBanditry": 40,
+          "CondemnPillaging": 40
+        },
+
+        "Values": {
+          "Honor": 2,
+          "Pacifism": 1,
+          "Tolerance": -1,
+          "Piety": 2
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [],
+          "OpposedTo": [ "WhisperingWilds", "ThreeFaces" ],
+          "AlliedWith": [ "HearthOfFlames" ]
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "EternalSky",
+        "Name": "The Eternal Sky",
+        "HierarchyType": "Decentralized",
+        "Tier": 4,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": false,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 20,
+          "EncourageForgiveness": 20,
+          "EncourageHeroicDeeds": 10,
+          "EncourageDeathInBattle": -10,
+          "EncourageHonesty": 30,
+          "EncourageCharity": 20,
+          "EncourageTithing": 0,
+          "EncourageProselytize": -10,
+          "EncourageHolyWar": -30,
+          "EncouragePilgrimage": 20,
+
+          "DiscourageWomensRights": -20,
+          "DiscourageSlavery": 40,
+
+          "EncourageViolenceAgainstNonBelievers": -30,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 10,
+          "CondemnGladiatorialCombat": 0,
+          "CondemnDuels": 0,
+          "CondemnTrialByCombat": 10,
+          "CondemnTheft": 30,
+          "CondemnBanditry": 20,
+          "CondemnPillaging": 20
+        },
+
+        "Values": {
+          "Honor": 0,
+          "Pacifism": -2,
+          "Tolerance": 3,
+          "Piety": 0
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [],
+          "OpposedTo": [ "ThreeFaces" ],
+          "AlliedWith": [ "PathOfSunAndMoon", "HearthOfFlames" ]
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "CelestialSteed",
+        "Name": "Path of the Celestial Steed",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": true,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": true
+          },
+
+          "Social": {
+            "AllowSlavery": true,
+            "AllowPilgrimage": false,
+            "AllowTithing": false,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": -20,
+          "EncourageForgiveness": -30,
+          "EncourageHeroicDeeds": 30,
+          "EncourageDeathInBattle": 20,
+          "EncourageHonesty": 10,
+          "EncourageCharity": -20,
+          "EncourageTithing": -10,
+          "EncourageProselytize": -20,
+          "EncourageHolyWar": 10,
+          "EncouragePilgrimage": -10,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": -20,
+
+          "EncourageViolenceAgainstNonBelievers": 10,
+
+          "CondemnAlcohol": -10,
+          "CondemnExtramaritalRelationships": -10,
+          "CondemnGladiatorialCombat": -20,
+          "CondemnDuels": -10,
+          "CondemnTrialByCombat": -20,
+          "CondemnTheft": 10,
+          "CondemnBanditry": -10,
+          "CondemnPillaging": -20
+        },
+
+        "Values": {
+          "Honor": -1,
+          "Pacifism": -3,
+          "Tolerance": -2,
+          "Piety": -1
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames",
+            "PathOfSunAndMoon",
+            "ThreeFaces"
+          ],
+          "OpposedTo": [
+            "WhisperingWilds",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "WeyricOrth",
+        "Name": "Weyric Orth",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": false,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": true,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": true
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": false,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": -10,
+          "EncourageForgiveness": -10,
+          "EncourageHeroicDeeds": 20,
+          "EncourageDeathInBattle": 10,
+          "EncourageHonesty": 20,
+          "EncourageCharity": -10,
+          "EncourageTithing": -10,
+          "EncourageProselytize": -20,
+          "EncourageHolyWar": 0,
+          "EncouragePilgrimage": 10,
+
+          "DiscourageWomensRights": 10,
+          "DiscourageSlavery": 10,
+
+          "EncourageViolenceAgainstNonBelievers": 0,
+
+          "CondemnAlcohol": -20,
+          "CondemnExtramaritalRelationships": 10,
+          "CondemnGladiatorialCombat": -10,
+          "CondemnDuels": -10,
+          "CondemnTrialByCombat": -10,
+          "CondemnTheft": 20,
+          "CondemnBanditry": 10,
+          "CondemnPillaging": 0
+        },
+
+        "Values": {
+          "Honor": 2,
+          "Pacifism": -1,
+          "Tolerance": -1,
+          "Piety": 1
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames"
+          ],
+          "OpposedTo": [
+            "WhisperingWilds",
+            "ThreeFaces",
+            "PathOfSunAndMoon",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "BloodOfFenra",
+        "Name": "Blood of Fenra",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": true,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": true,
+            "AllowTrialByCombat": true
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": false,
+            "AllowTithing": false,
+            "AllowIconism": false,
+            "AllowGambling": true,
+            "AllowHallucinogens": true,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": -30,
+          "EncourageForgiveness": -20,
+          "EncourageHeroicDeeds": 30,
+          "EncourageDeathInBattle": 20,
+          "EncourageHonesty": 10,
+          "EncourageCharity": -20,
+          "EncourageTithing": -20,
+          "EncourageProselytize": -30,
+          "EncourageHolyWar": 0,
+          "EncouragePilgrimage": -20,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 20,
+
+          "EncourageViolenceAgainstNonBelievers": 20,
+
+          "CondemnAlcohol": -20,
+          "CondemnExtramaritalRelationships": -10,
+          "CondemnGladiatorialCombat": -20,
+          "CondemnDuels": -10,
+          "CondemnTrialByCombat": -20,
+          "CondemnTheft": 10,
+          "CondemnBanditry": 0,
+          "CondemnPillaging": -10
+        },
+
+        "Values": {
+          "Honor": -1,
+          "Pacifism": -3,
+          "Tolerance": -3,
+          "Piety": -1
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames",
+            "WhisperingWilds",
+            "ThreeFaces"
+          ],
+          "OpposedTo": [
+            "PathOfSunAndMoon",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "CultOfTheCandlemaker",
+        "Name": "Sani al-Shumu",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": true
+          },
+
+          "Violence": {
+            "AllowDuels": false,
+            "AllowArena": false,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": true,
+            "AllowGambling": false,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": false,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 10,
+          "EncourageForgiveness": 0,
+          "EncourageHeroicDeeds": -10,
+          "EncourageDeathInBattle": -20,
+          "EncourageHonesty": 20,
+          "EncourageCharity": 10,
+          "EncourageTithing": 20,
+          "EncourageProselytize": -30,
+          "EncourageHolyWar": -30,
+          "EncouragePilgrimage": 20,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 20,
+
+          "EncourageViolenceAgainstNonBelievers": -30,
+
+          "CondemnAlcohol": 20,
+          "CondemnExtramaritalRelationships": 10,
+          "CondemnGladiatorialCombat": 20,
+          "CondemnDuels": 20,
+          "CondemnTrialByCombat": 20,
+          "CondemnTheft": 20,
+          "CondemnBanditry": 20,
+          "CondemnPillaging": 20
+        },
+
+        "Values": {
+          "Honor": 0,
+          "Pacifism": 1,
+          "Tolerance": -1,
+          "Piety": 3
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames"
+          ],
+          "OpposedTo": [
+            "WhisperingWilds",
+            "ThreeFaces",
+            "PathOfSunAndMoon",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "CultOfTheFlayedGod",
+        "Name": "Followers of Marg-Saheb",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": true
+          },
+
+          "Violence": {
+            "AllowDuels": false,
+            "AllowArena": false,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": false,
+            "AllowGambling": false,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": false,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 0,
+          "EncourageForgiveness": -10,
+          "EncourageHeroicDeeds": -10,
+          "EncourageDeathInBattle": -20,
+          "EncourageHonesty": 20,
+          "EncourageCharity": 0,
+          "EncourageTithing": 20,
+          "EncourageProselytize": -30,
+          "EncourageHolyWar": -20,
+          "EncouragePilgrimage": 20,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 20,
+
+          "EncourageViolenceAgainstNonBelievers": -20,
+
+          "CondemnAlcohol": 20,
+          "CondemnExtramaritalRelationships": 20,
+          "CondemnGladiatorialCombat": 20,
+          "CondemnDuels": 20,
+          "CondemnTrialByCombat": 20,
+          "CondemnTheft": 20,
+          "CondemnBanditry": 20,
+          "CondemnPillaging": 20
+        },
+
+        "Values": {
+          "Honor": -1,
+          "Pacifism": 0,
+          "Tolerance": -3,
+          "Piety": 3
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames",
+            "WhisperingWilds",
+            "ThreeFaces"
+          ],
+          "OpposedTo": [
+            "PathOfSunAndMoon",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "Tideborn",
+        "Name": "The Tideborn",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": false,
+            "AllowArena": true,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": false,
+            "AllowIconism": true,
+            "AllowGambling": true,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 20,
+          "EncourageForgiveness": 20,
+          "EncourageHeroicDeeds": -10,
+          "EncourageDeathInBattle": -20,
+          "EncourageHonesty": 20,
+          "EncourageCharity": 10,
+          "EncourageTithing": -10,
+          "EncourageProselytize": -30,
+          "EncourageHolyWar": -40,
+          "EncouragePilgrimage": 10,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 40,
+
+          "EncourageViolenceAgainstNonBelievers": -40,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 0,
+          "CondemnGladiatorialCombat": 0,
+          "CondemnDuels": 10,
+          "CondemnTrialByCombat": 20,
+          "CondemnTheft": 20,
+          "CondemnBanditry": 20,
+          "CondemnPillaging": 20
+        },
+
+        "Values": {
+          "Honor": 0,
+          "Pacifism": 2,
+          "Tolerance": 3,
+          "Piety": 1
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames"
+          ],
+          "OpposedTo": [
+            "WhisperingWilds",
+            "ThreeFaces",
+            "PathOfSunAndMoon",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "NineSpirits",
+        "Name": "Nine Spirits",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": false,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": false,
+            "AllowIconism": false,
+            "AllowGambling": true,
+            "AllowHallucinogens": true,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 10,
+          "EncourageForgiveness": 0,
+          "EncourageHeroicDeeds": -10,
+          "EncourageDeathInBattle": -10,
+          "EncourageHonesty": 10,
+          "EncourageCharity": 0,
+          "EncourageTithing": -10,
+          "EncourageProselytize": -30,
+          "EncourageHolyWar": -30,
+          "EncouragePilgrimage": 10,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 20,
+
+          "EncourageViolenceAgainstNonBelievers": -20,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 0,
+          "CondemnGladiatorialCombat": 10,
+          "CondemnDuels": 0,
+          "CondemnTrialByCombat": 10,
+          "CondemnTheft": 10,
+          "CondemnBanditry": 10,
+          "CondemnPillaging": 10
+        },
+
+        "Values": {
+          "Honor": 0,
+          "Pacifism": 1,
+          "Tolerance": 2,
+          "Piety": 2
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames"
+          ],
+          "OpposedTo": [
+            "WhisperingWilds",
+            "ThreeFaces",
+            "PathOfSunAndMoon",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "ThreeFacesOld",
+        "Name": "The Old Three-Face Rite",
+        "HierarchyType": "Decentralized",
+        "Tier": 2,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": false,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": false
+          },
+
+          "Violence": {
+            "AllowDuels": true,
+            "AllowArena": false,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": false,
+            "AllowTithing": false,
+            "AllowIconism": false,
+            "AllowGambling": false,
+            "AllowHallucinogens": true,
+            "AllowOpenConversion": false
+          },
+
+          "Dietary": {
+            "AllowAlcohol": true,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": -10,
+          "EncourageForgiveness": -20,
+          "EncourageHeroicDeeds": -10,
+          "EncourageDeathInBattle": -10,
+          "EncourageHonesty": 10,
+          "EncourageCharity": -20,
+          "EncourageTithing": -20,
+          "EncourageProselytize": -40,
+          "EncourageHolyWar": -30,
+          "EncouragePilgrimage": -10,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 20,
+
+          "EncourageViolenceAgainstNonBelievers": -10,
+
+          "CondemnAlcohol": 0,
+          "CondemnExtramaritalRelationships": 10,
+          "CondemnGladiatorialCombat": 10,
+          "CondemnDuels": 0,
+          "CondemnTrialByCombat": 10,
+          "CondemnTheft": 20,
+          "CondemnBanditry": 10,
+          "CondemnPillaging": 10
+        },
+
+        "Values": {
+          "Honor": -1,
+          "Pacifism": 0,
+          "Tolerance": -3,
+          "Piety": 3
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "HearthOfFlames"
+          ],
+          "OpposedTo": [
+            "WhisperingWilds",
+            "ThreeFaces",
+            "PathOfSunAndMoon",
+            "EternalSky"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "DaysLight",
+        "Name": "The Day's Light",
+        "HierarchyType": "CentralizedLeader",
+        "Tier": 3,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": false,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": true
+          },
+
+          "Violence": {
+            "AllowDuels": false,
+            "AllowArena": false,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": false,
+            "AllowGambling": false,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": false,
+            "AllowPork": true,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 10,
+          "EncourageForgiveness": 20,
+          "EncourageHeroicDeeds": -10,
+          "EncourageDeathInBattle": -20,
+          "EncourageHonesty": 40,
+          "EncourageCharity": 20,
+          "EncourageTithing": 30,
+          "EncourageProselytize": 20,
+          "EncourageHolyWar": -30,
+          "EncouragePilgrimage": 20,
+
+          "DiscourageWomensRights": 0,
+          "DiscourageSlavery": 30,
+
+          "EncourageViolenceAgainstNonBelievers": -40,
+
+          "CondemnAlcohol": 40,
+          "CondemnExtramaritalRelationships": 40,
+          "CondemnGladiatorialCombat": 20,
+          "CondemnDuels": 20,
+          "CondemnTrialByCombat": 20,
+          "CondemnTheft": 40,
+          "CondemnBanditry": 40,
+          "CondemnPillaging": 40
+        },
+
+        "Values": {
+          "Honor": 1,
+          "Pacifism": 1,
+          "Tolerance": -3,
+          "Piety": 3
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [
+            "SixFlames",
+            "FiveTorches",
+            "WhisperingWilds",
+            "ThreeFaces",
+            "CelestialSteed"
+          ],
+          "OpposedTo": [
+            "HearthOfSix",
+            "WeyricOrth",
+            "BloodOfFenra",
+            "CultOfTheFlayedGod"
+          ],
+          "AlliedWith": []
+        }
+      },
+      {
+        "Parent": "Nonreligious",
+        "StringId": "CultOfAsera",
+        "Name": "The Cult of Asera",
+        "HierarchyType": "CentralizedCouncil",
+        "Tier": 4,
+        "Policies": {
+          "Clergy": {
+            "AllowFemaleClergy": true,
+            "AllowMonasticism": true,
+            "AllowWarriorSect": false,
+            "AllowClericalCelibacy": true
+          },
+
+          "Violence": {
+            "AllowDuels": false,
+            "AllowArena": false,
+            "AllowTrialByCombat": false
+          },
+
+          "Social": {
+            "AllowSlavery": false,
+            "AllowPilgrimage": true,
+            "AllowTithing": true,
+            "AllowIconism": false,
+            "AllowGambling": false,
+            "AllowHallucinogens": false,
+            "AllowOpenConversion": true,
+            "AllowAsceticTrials": true
+          },
+
+          "Dietary": {
+            "AllowAlcohol": false,
+            "AllowPork": false,
+            "AllowBeef": true
+          }
+        },
+
+        "Doctrine": {
+          "EncouragePeace": 20,
+          "EncourageForgiveness": 10,
+          "EncourageHeroicDeeds": 0,
+          "EncourageDeathInBattle": -20,
+          "EncourageHonesty": 40,
+          "EncourageCharity": 20,
+          "EncourageTithing": 20,
+          "EncourageProselytize": 10,
+          "EncourageHolyWar": -30,
+          "EncouragePilgrimage": 30,
+
+          "DiscourageWomensRights": -20,
+          "DiscourageSlavery": 40,
+
+          "EncourageViolenceAgainstNonBelievers": -30,
+
+          "CondemnAlcohol": 40,
+          "CondemnExtramaritalRelationships": 30,
+          "CondemnGladiatorialCombat": 20,
+          "CondemnDuels": 20,
+          "CondemnTrialByCombat": 20,
+          "CondemnTheft": 40,
+          "CondemnBanditry": 40,
+          "CondemnPillaging": 40
+        },
+
+        "Values": {
+          "Honor": 2,
+          "Pacifism": 1,
+          "Tolerance": -1,
+          "Piety": 3
+        },
+
+        "ReligionRelations": {
+          "HostileTo": [],
+          "OpposedTo": [
+            "WhisperingWilds",
+            "ThreeFaces",
+            "BloodOfFenra",
+            "CultOfTheFlayedGod"
+          ],
+          "AlliedWith": [
+            "PathOfSunAndMoon"
+          ]
+        }
+      }
+
+
+
+
+
+  ]
+}

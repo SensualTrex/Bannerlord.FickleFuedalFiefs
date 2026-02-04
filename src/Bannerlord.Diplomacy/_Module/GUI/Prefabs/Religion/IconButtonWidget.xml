@@ -1,0 +1,13 @@
+<Prefab>
+    <Window>
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="20" VerticalAlignment="Top" HorizontalAlignment="Left" SuggestedWidth="225">
+            <Children>
+                <ButtonWidget IsVisible="@ShowIcon"  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="100" SuggestedWidth="100" MarginTop="35" MarginLeft="30" Brush="Encyclopedia.SubPage.Element" >
+                    <Children>
+                        <ImageWidget SuggestedWidth="96" SuggestedHeight="96" VerticalAlignment="Top" Sprite="@ItemSprite" MarginLeft="2" MarginBottom="2" />
+                    </Children>
+                </ButtonWidget>
+            </Children>
+        </Widget>
+    </Window>
+</Prefab>

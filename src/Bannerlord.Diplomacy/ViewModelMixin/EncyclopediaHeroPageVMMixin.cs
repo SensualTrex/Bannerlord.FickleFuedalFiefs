@@ -1,11 +1,11 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.Actions;
-using Diplomacy.Costs;
-using Diplomacy.Events;
-using Diplomacy.GauntletInterfaces;
-using Diplomacy.Messengers;
+using Religions.Actions;
+using Religions.Costs;
+using Religions.Events;
+using Religions.GauntletInterfaces;
+using Religions.Messengers;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.Pages;
@@ -14,7 +14,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.ScreenSystem;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin(nameof(EncyclopediaHeroPageVM.RefreshValues))]
     internal sealed class EncyclopediaHeroPageVMMixin : BaseViewModelMixin<EncyclopediaHeroPageVM>

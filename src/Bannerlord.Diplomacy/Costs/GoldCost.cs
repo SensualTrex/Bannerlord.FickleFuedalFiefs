@@ -1,4 +1,4 @@
-﻿using Diplomacy.Actions;
+﻿using Religions.Actions;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -6,7 +6,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.ObjectSystem;
 
-namespace Diplomacy.Costs
+namespace Religions.Costs
 {
     public sealed class GoldCost : AbstractDiplomacyCost
     {

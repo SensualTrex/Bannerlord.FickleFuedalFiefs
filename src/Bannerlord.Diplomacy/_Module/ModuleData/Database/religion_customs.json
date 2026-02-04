@@ -1,0 +1,1629 @@
+{
+  "ReligiousCustomsMap": [
+    {
+      "ReligionId": "GenericReligion",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Priest",
+          "Female": "Priest"
+        },
+
+        "CultMember": {
+          "Male": "Follower",
+          "Female": "Follower",
+          "IsOutdoors": false
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Acolyte",
+            "Female": "Acolyte",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Warden",
+            "Female": "Warden",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "High Priest",
+            "Female": "High Priest"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Brother",
+          "Female": "Sister"
+        },
+
+        "ReligiousLeader": {
+          "Male": "Elder",
+          "Female": "Elder"
+        }
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Wandering Priest",
+          "Traveling Acolyte",
+          "Pilgrim"
+        ],
+        "Female": [
+          "Wandering Priest",
+          "Traveling Acolyte",
+          "Pilgrim"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Simple Prayer",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Take a moment to reflect.",
+              "2": "May your path be clearer now."
+            },
+            "Hero": {
+              "1": "I reflect on my actions.",
+              "3": "I feel ready to continue."
+            }
+          }
+        },
+        {
+          "Name": "Initiation Rite",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you seek to join us?",
+              "2": "Then step forward and be welcomed.",
+              "4": "Let your old doubts fall away.",
+              "6": "Rise as one of us."
+            },
+            "Hero": {
+              "1": "I seek a new path.",
+              "3": "I accept this step.",
+              "5": "I leave my doubts behind.",
+              "7": "I rise renewed."
+            }
+          }
+        }
+      ],
+
+      "ReligiousHolidays": [
+        {
+          "Name": "Day of Reflection",
+          "Description": "A quiet day set aside for contemplation and rest.",
+          "Day": 100,
+          "DurationInDays": 1,
+          "Type": "Ritual"
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "Sacred Place",
+          "AlternativeName": "Old Shrine",
+          "StringId": "GenericHolySite1",
+          "Type": "Sanctuary",
+          "SettlementStringId": "Pravend",
+          "Falloff": 1,
+          "Intensity": 1
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "Quiet Meditation",
+          "Description": "A simple ritual of rest and reflection.",
+          "Effect": "Small Piety gain.",
+          "Cost": {
+            "Gold": 10,
+            "Cattle": 0,
+            "Food": 1,
+            "Nonbelievers": 0,
+            "Piety": 1
+          },
+          "DurationInDays": 1
+        }
+      ],
+
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "Peace to you.",
+            "May your day be steady."
+          ],
+          "DifferentReligion": [
+            "Greetings."
+          ],
+          "OpposedReligion": [
+            "We walk different paths."
+          ]
+        },
+        "Farewells": {
+          "SameReligion": [
+            "Go well.",
+            "May your steps be sure."
+          ],
+          "DifferentReligion": [
+            "Safe travels."
+          ],
+          "OpposedReligion": [
+            "Go your way, and I’ll go mine."
+          ]
+        },
+        "Blessings": {
+          "SameReligion": [
+            "May clarity find you.",
+            "May your burdens lighten."
+          ],
+          "DifferentReligion": [
+            "May fortune favor you."
+          ],
+          "OpposedReligion": [
+            "May your path be your own."
+          ]
+        },
+        "Curses": {
+          "SameReligion": [
+            "May doubt trouble the untrue.",
+            "Let folly follow the reckless."
+          ],
+          "DifferentReligion": [
+            "A poor day for some."
+          ],
+          "OpposedReligion": [
+            "May your choices weigh on you."
+          ]
+        }
+      }
+    },
+    {
+      "ReligionId": "SixFlames",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Flamekeeper",
+          "Female": "Flamekeeper"
+        },
+
+        "CultMember": {
+          "Male": "Ember‑Bearer",
+          "Female": "Ember‑Bearer",
+          "IsOutdoors": false
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Acolyte",
+            "Female": "Acolyte",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Keeper",
+            "Female": "Keeper",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "Pyrophant",
+            "Female": "Pyrophant"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Ash‑Brother",
+          "Female": "Ash‑Sister"
+        },
+
+        "ReligiousLeader": {
+          "Male": "Voice",
+          "Female": "Voice"
+        }
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Pilgrim of the Ember",
+          "Wayfaring Flamekeeper",
+          "Ash‑Marked Wanderer"
+        ],
+        "Female": [
+          "Pilgrim of the Ember",
+          "Wayfaring Flamekeeper",
+          "Ash‑Marked Wanderer"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Prayer of Rekindling",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "May the First Flame burn away your burdens.",
+              "2": "Let the embers of your spirit glow anew."
+            },
+            "Hero": {
+              "1": "I release what weighs upon me.",
+              "3": "Let the fire guide my steps."
+            }
+          }
+        },
+        {
+          "Name": "Invocation of Courage",
+          "Reason": "Prebattle",
+          "DialogueLines": {
+            "Hero": {
+              "0": "Six Flames, steel my resolve.",
+              "1": "Let fear burn to ash."
+            }
+          }
+        },
+        {
+          "Name": "Rite of Conversion",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you accept the warmth of the Six?",
+              "2": "Then step into the circle of light.",
+              "4": "Let the old ways fall away like ash.",
+              "6": "Rise now, reborn in flame."
+            },
+            "Hero": {
+              "1": "I seek the fire’s truth.",
+              "3": "I cast aside the shadows.",
+              "5": "I embrace the Six.",
+              "7": "I rise in their light."
+            }
+          }
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "Origin of the Flame",
+          "StringId": "OriginFlame",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Charas",
+          "Falloff": 2,
+          "Intensity": 3
+        },
+        {
+          "Name": "The Great Flame",
+          "StringId": "GreatFlame",
+          "Type": "CenterOfFaith",
+          "SettlementStringId": "Epicrotea",
+          "Falloff": 1,
+          "Intensity": 3
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "The Emberfast",
+          "Description": "A day of fasting and meditation before the sacred flame.",
+          "Effect": "Small Piety gain; minor morale boost for party.",
+          "Cost": {
+            "Gold": 0,
+            "Cattle": 0,
+            "Food": 5,
+            "Nonbelievers": 0,
+            "Piety": 2
+          },
+          "DurationInDays": 1
+        },
+        {
+          "Name": "The Purifying Flame",
+          "Description": "A ritual burning of symbolic offerings to cleanse the spirit.",
+          "Effect": "Removes minor negative traits; increases relation with SixFlames priests.",
+          "Cost": {
+            "Gold": 200,
+            "Cattle": 0,
+            "Food": 0,
+            "Nonbelievers": 0,
+            "Piety": 5
+          },
+          "DurationInDays": 1
+        },
+        {
+          "Name": "The Night of Six Lights",
+          "Description": "A communal lighting of six lanterns to honor each sacred flame.",
+          "Effect": "Boosts settlement loyalty; increases prosperity slightly.",
+          "Cost": {
+            "Gold": 500,
+            "Cattle": 0,
+            "Food": 10,
+            "Nonbelievers": 0,
+            "Piety": 10
+          },
+          "DurationInDays": 2
+        }
+      ],
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "The flame guide you.",
+            "Warmth upon your path."
+          ],
+          "DifferentReligion": [
+            "Peace upon your steps."
+          ],
+          "OpposedReligion": [
+            "...Walk carefully, traveler."
+          ]
+        },
+        "Farewells": {
+          "SameReligion": [
+            "May your fire burn bright."
+          ],
+          "DifferentReligion": [
+            "Safe travels."
+          ],
+          "OpposedReligion": [
+            "Go, then."
+          ]
+        },
+        "Blessings": {
+          "SameReligion": [
+            "The Six watch over you."
+          ],
+          "DifferentReligion": [
+            "May fortune favor you."
+          ],
+          "OpposedReligion": [
+            "May your path not cross the flame."
+          ]
+        },
+        "Curses": {
+          "SameReligion": [
+            "Ash take your doubts."
+          ],
+          "DifferentReligion": [
+            "Damnation take this day."
+          ],
+          "OpposedReligion": [
+            "May your fire gutter and die."
+          ]
+        }
+      }
+    },
+    {
+      "ReligionId": "FiveTorches",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Torchbearer",
+          "Female": "Torchbearer"
+        },
+
+        "CultMember": {
+          "Male": "Lightbearer",
+          "Female": "Lightbearer",
+          "IsOutdoors": false
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Flame Acolyte",
+            "Female": "Flame Acolyte",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Torch Warden",
+            "Female": "Torch Warden",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "High Torch",
+            "Female": "High Torch"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Ember Brother",
+          "Female": "Ember Sister"
+        },
+
+        "ReligiousLeader": {
+          "Male": "Torchfather",
+          "Female": "Torchmother"
+        }
+
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Road‑Torch",
+          "Wandering Keeper",
+          "Flame‑Walker"
+        ],
+        "Female": [
+          "Road‑Torch",
+          "Wandering Keeper",
+          "Flame‑Walker"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Oathfire Prayer",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Let the Five Torches witness your truth.",
+              "2": "May your oath burn brighter than your fear."
+            },
+            "Hero": {
+              "1": "I stand by my word.",
+              "3": "Let the flame judge me fairly."
+            }
+          }
+        },
+        {
+          "Name": "Rite of the First Torch",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you swear by the Five to walk in honor?",
+              "2": "Then step forward and face the First Torch.",
+              "4": "Let falsehood burn away from your spirit.",
+              "6": "Rise now, bound by oath and flame."
+            },
+            "Hero": {
+              "1": "I swear to walk in truth.",
+              "3": "I face the flame without fear.",
+              "5": "I cast aside all dishonor.",
+              "7": "I rise in the light of the Five."
+            }
+          }
+        }
+      ],
+
+      "ReligiousHolidays": [
+        {
+          "Name": "Torchbinding Day",
+          "Description": "A day when families gather to renew their oaths before the Five Torches.",
+          "Day": 112,
+          "DurationInDays": 1,
+          "Type": "Celebration"
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "Origin of the Flame",
+          "AlternativeName": "The First Torch",
+          "StringId": "OriginFlame",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Charas",
+          "Falloff": 2,
+          "Intensity": 3
+        },
+        {
+          "Name": "The Great Flame",
+          "StringId": "GreatFlame",
+          "Type": "CenterOfFaith",
+          "SettlementStringId": "Epicrotea",
+          "Falloff": 1,
+          "Intensity": 3
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "The Oathfire",
+          "Description": "A ritual where a believer casts a token of their promise into the flame.",
+          "Effect": "Small Piety gain; increases relation with FiveTorches priests.",
+          "Cost": {
+            "Gold": 50,
+            "Cattle": 0,
+            "Food": 0,
+            "Nonbelievers": 0,
+            "Piety": 1
+          },
+          "DurationInDays": 1
+        }
+      ],
+
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "Light guide your steps, brother.",
+            "May the Five watch over your oath.",
+            "The flame greet you and keep you."
+          ],
+          "DifferentReligion": [
+            "Peace upon your road."
+          ],
+          "OpposedReligion": [
+            "Walk with care. The flame sees all."
+          ]
+        },
+
+        "Farewells": {
+          "SameReligion": [
+            "Go in the light of the Five.",
+            "May your torch burn ever steady.",
+            "Honor your oath, and the flame will honor you."
+          ],
+          "DifferentReligion": [
+            "Safe travels to you."
+          ],
+          "OpposedReligion": [
+            "Go, then. The flame will judge your path."
+          ]
+        },
+
+        "Blessings": {
+          "SameReligion": [
+            "May the First Torch reveal your truth.",
+            "May the flame shield your heart from shadow.",
+            "Light guide your hand and steady your resolve."
+          ],
+          "DifferentReligion": [
+            "May fortune favor you."
+          ],
+          "OpposedReligion": [
+            "May the flame expose all falsehood before you."
+          ]
+        },
+
+        "Curses": {
+          "SameReligion": [
+            "May your torch dim for every oath you break.",
+            "Let the flame turn cold to liars.",
+            "May the Five see your shame."
+          ],
+          "DifferentReligion": [
+            "Damn this ill‑omened day."
+          ],
+          "OpposedReligion": [
+            "May the flame burn away your deceit."
+          ]
+        }
+      }
+    },
+    {
+      "ReligionId": "HearthOfSix",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Hearth‑Keeper",
+          "Female": "Hearth‑Keeper"
+        },
+
+        "CultMember": {
+          "Male": "Fire‑Watcher",
+          "Female": "Fire‑Watcher",
+          "IsOutdoors": false
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Ember‑Hand",
+            "Female": "Ember‑Hand",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Hearth‑Warden",
+            "Female": "Hearth‑Warden",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "High‑Hearth",
+            "Female": "High‑Hearth"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Ash‑Brother",
+          "Female": "Ash‑Sister"
+        },
+
+        "ReligiousLeader": {
+          "Male": "Hearth‑Father",
+          "Female": "Hearth‑Mother"
+        }
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Road‑Hearth",
+          "Wandering Keeper",
+          "Fire‑Bearer"
+        ],
+        "Female": [
+          "Road‑Hearth",
+          "Wandering Keeper",
+          "Fire‑Bearer"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Prayer of Warmth",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Let the hearth’s warmth ease your burdens.",
+              "2": "May comfort return to your spirit."
+            },
+            "Hero": {
+              "1": "I seek peace beside the flame.",
+              "3": "Let warmth settle my thoughts."
+            }
+          }
+        },
+        {
+          "Name": "Rite of the Hearthfire",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you seek the comfort of the Sixfold Hearth?",
+              "2": "Then step close and feel its warmth.",
+              "4": "Let cold doubts melt away.",
+              "6": "Rise now, welcomed to the hearth."
+            },
+            "Hero": {
+              "1": "I seek the warmth of belonging.",
+              "3": "I open my heart to the flame.",
+              "5": "I cast aside the chill of old ways.",
+              "7": "I rise in the hearth’s embrace."
+            }
+          }
+        }
+      ],
+
+      "ReligiousHolidays": [
+        {
+          "Name": "Hearthbinding",
+          "Description": "Families gather to rekindle their home flames from a communal fire, symbolizing unity and renewal.",
+          "Day": 96,
+          "DurationInDays": 1,
+          "Type": "Celebration"
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "Origin of the Flame",
+          "AlternativeName": "Life Hearth",
+          "StringId": "OriginFlame",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Charas",
+          "Falloff": 2,
+          "Intensity": 3
+        },
+        {
+          "Name": "The Undying Hearth",
+          "StringId": "UndyingHearth",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Tyal",
+          "Falloff": 2,
+          "Intensity": 2
+        },
+        {
+          "Name": "The Citidel",
+          "StringId": "Citidel",
+          "Type": "CenterOfFaith",
+          "SettlementStringId": "Balgard",
+          "Falloff": 1,
+          "Intensity": 3
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "The Hearthkindle",
+          "Description": "A simple ritual where a believer lights a small flame from a sacred ember to bring warmth and unity to their home.",
+          "Effect": "Small Piety gain; minor boost to party morale.",
+          "Cost": {
+            "Gold": 20,
+            "Cattle": 0,
+            "Food": 3,
+            "Nonbelievers": 0,
+            "Piety": 1
+          },
+          "DurationInDays": 1
+        }
+      ],
+
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "Warm hearth and strong kin to you.",
+            "May your fire burn bright against the long night.",
+            "Strength to your hands and peace to your hall."
+          ],
+          "DifferentReligion": [
+            "Peace to your home and those within."
+          ],
+          "OpposedReligion": [
+            "Keep your chill far from my hearth."
+          ]
+        },
+
+        "Farewells": {
+          "SameReligion": [
+            "Keep the hearthfire steady.",
+            "May warmth follow your steps through the frost.",
+            "Return with honor and a tale worth telling."
+          ],
+          "DifferentReligion": [
+            "Safe roads and calm weather."
+          ],
+          "OpposedReligion": [
+            "Go, and let no cold omen follow you."
+          ]
+        },
+
+        "Blessings": {
+          "SameReligion": [
+            "May the Six shield your hearth from storm and sorrow.",
+            "May your home be warm and your kin unbroken.",
+            "Let the hearthfire guide you through the dark."
+          ],
+          "DifferentReligion": [
+            "May fortune favor your journey."
+          ],
+          "OpposedReligion": [
+            "May your hearth find no warmth in falsehood."
+          ]
+        },
+
+        "Curses": {
+          "SameReligion": [
+            "May frost bite the tongues of liars.",
+            "Let cold winds chase oath‑breakers from every hall.",
+            "May your fire sputter when your courage fails."
+          ],
+          "DifferentReligion": [
+            "Damn this bitter wind."
+          ],
+          "OpposedReligion": [
+            "May winter claim your path and silence your fire."
+          ]
+        }
+      }
+    },
+    {
+      "ReligionId": "WhisperingWilds",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Wald‑Seiðer",
+          "Female": "Wald‑Seiðer"
+        },
+
+        "CultMember": {
+          "Male": "Tier‑Ganger",
+          "Female": "Tier‑Ganger",
+          "IsOutdoors": true
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Fell‑Seer",
+            "Female": "Fell‑Seer",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Holt‑Warden",
+            "Female": "Holt‑Warden",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "High‑Fang",
+            "Female": "High‑Fang"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Rot‑Bróðer",
+          "Female": "Rot‑Systir"
+        },
+
+        "ReligiousLeader": {
+          "Male": "Wald‑Hirðr",
+          "Female": "Wald‑Hirðr"
+        }
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Fang‑Walker",
+          "Wind‑Stalker",
+          "Shadow‑Strider"
+        ],
+        "Female": [
+          "Fang‑Walker",
+          "Wind‑Stalker",
+          "Shadow‑Strider"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Whisper of Renewal",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Still your breath… the Wilds hear your unrest.",
+              "2": "Let fang and leaf strip your spirit clean."
+            },
+            "Hero": {
+              "1": "I quiet myself before the Wilds.",
+              "3": "Let the forest take what weighs me down."
+            }
+          }
+        },
+        {
+          "Name": "Rite of the First Whisper",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you seek the truth carried by claw and wind?",
+              "2": "Then step soft, for the Wilds judge all who enter.",
+              "4": "Let the noise of the tamed world fall from you.",
+              "6": "Rise now, bound to fang, root, and shadow."
+            },
+            "Hero": {
+              "1": "I seek the voice beneath the canopy.",
+              "3": "I open myself to wind and whisper.",
+              "5": "I shed the chains of the old world.",
+              "7": "I rise in the Wilds’ embrace."
+            }
+          }
+        }
+      ],
+
+      "ReligiousHolidays": [
+        {
+          "Name": "Night of Echoes",
+          "Description": "A silent vigil held in deep woods where believers listen for the voices of beasts and ancestors carried on the wind.",
+          "Day": 210,
+          "DurationInDays": 1,
+          "Type": "Ritual"
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "The First Whisper",
+          "AlternativeName": "Wald‑Rúna",
+          "StringId": "FirstWhisper",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Marunath",
+          "Falloff": 2,
+          "Intensity": 3
+        },
+        {
+          "Name": "The Field of the First Stand",
+          "AlternativeName": "Fellmark",
+          "StringId": "FirstStand",
+          "Type": "BuriedSacredSite",
+          "SettlementStringId": "Epicrotea",
+          "Falloff": 1,
+          "Intensity": 2
+        },
+        {
+          "Name": "The Sacred Grove of Echoes",
+          "AlternativeName": "Holt‑Halla",
+          "StringId": "GroveOfEchoes",
+          "Type": "Sanctuary",
+          "SettlementStringId": "Dunglanys",
+          "Falloff": 2,
+          "Intensity": 2
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "The Grovebreath",
+          "Description": "A ritual of stillness performed beneath ancient boughs, where the breath of the forest is taken into the spirit.",
+          "Effect": "Small Piety gain; minor increase to party cohesion.",
+          "Cost": {
+            "Gold": 0,
+            "Cattle": 0,
+            "Food": 2,
+            "Nonbelievers": 0,
+            "Piety": 1
+          },
+          "DurationInDays": 1
+        }
+      ],
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "May your arrows fly true and your foes fall screaming.",
+            "Blood to the roots, arrows to the wind.",
+            "The Wilds mark your bow‑hand as kin today."
+          ],
+          "DifferentReligion": [
+            "Peace on your path… if your arrows stay sheathed."
+          ],
+          "OpposedReligion": [
+            "Step lightly. Our shafts whisper before they strike."
+          ]
+        },
+
+        "Farewells": {
+          "SameReligion": [
+            "Loose true, and let the crows feast well.",
+            "May your quiver empty before your courage does.",
+            "Walk with fang, shadow, and a ready bow."
+          ],
+          "DifferentReligion": [
+            "Safe travels… keep to the open paths."
+          ],
+          "OpposedReligion": [
+            "Go. And pray no arrow finds your back."
+          ]
+        },
+
+        "Blessings": {
+          "SameReligion": [
+            "May the blood of your foes feed the deep roots.",
+            "May your bowstring never fray and your aim never waver.",
+            "The Wilds guide your strike and sharpen your claws."
+          ],
+          "DifferentReligion": [
+            "May calm find you, stranger."
+          ],
+          "OpposedReligion": [
+            "May the forest turn its teeth and arrows toward you."
+          ]
+        },
+
+        "Curses": {
+          "SameReligion": [
+            "May rot claim the coward’s bones and dull his arrows.",
+            "Let the briar drink the blood of oath‑breakers.",
+            "May the wolves scent your fear before your bow is drawn."
+          ],
+          "DifferentReligion": [
+            "Damn this storm and all who stirred it."
+          ],
+          "OpposedReligion": [
+            "May the Wilds swallow your path and blacken your bow‑hand."
+          ]
+        }
+      }
+    },
+    {
+      "ReligionId": "ThreeFaces",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Face‑Speaker",
+          "Female": "Face‑Speaker"
+        },
+
+        "CultMember": {
+          "Male": "Blood‑Oath",
+          "Female": "Blood‑Oath",
+          "IsOutdoors": true
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Land‑Caller",
+            "Female": "Land‑Caller",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Wind‑Binder",
+            "Female": "Wind‑Binder",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "Deep‑Voice",
+            "Female": "Deep‑Voice"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Rope‑Brother",
+          "Female": "Rope‑Sister"
+        },
+
+        "ReligiousLeader": {
+          "Male": "High‑Face",
+          "Female": "High‑Face"
+        }
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Storm‑Walker",
+          "Wave‑Caller",
+          "Blood‑Seer"
+        ],
+        "Female": [
+          "Storm‑Walker",
+          "Wave‑Caller",
+          "Blood‑Seer"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Call of the Three",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Still yourself. The Faces weigh your deeds.",
+              "2": "Let land, wind, and deep judge you true."
+            },
+            "Hero": {
+              "1": "I stand before the Three without fear.",
+              "3": "Let their judgment fall where it must."
+            }
+          }
+        },
+        {
+          "Name": "Rite of the Drowned Oath",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you swear to face land, wind, and deep without faltering?",
+              "2": "Then step forward and let the sea hear your name.",
+              "4": "Cast off the weakness of your old life.",
+              "6": "Rise now, bound to the Three Faces."
+            },
+            "Hero": {
+              "1": "I swear my strength to the Three.",
+              "3": "Let the waves carry my oath.",
+              "5": "I cast aside all fear.",
+              "7": "I rise in the storm’s embrace."
+            }
+          }
+        }
+      ],
+
+      "ReligiousHolidays": [
+        {
+          "Name": "Night of the Drowned",
+          "Description": "A grim vigil held on storm‑lashed shores, honoring those claimed by the sea.",
+          "Day": 143,
+          "DurationInDays": 1,
+          "Type": "Ritual"
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "The Breaking Shore",
+          "AlternativeName": "Stormfall Strand",
+          "StringId": "BreakingShore",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Varcheg",
+          "Falloff": 2,
+          "Intensity": 3
+        },
+        {
+          "Name": "The Hanging Cliffs",
+          "AlternativeName": "Wind‑Cleft Rise",
+          "StringId": "HangingCliffs",
+          "Type": "Sanctuary",
+          "SettlementStringId": "Sargot",
+          "Falloff": 1,
+          "Intensity": 2
+        },
+        {
+          "Name": "The Blooded Earth",
+          "AlternativeName": "Redmark Field",
+          "StringId": "BloodedEarth",
+          "Type": "BattlefieldShrine",
+          "SettlementStringId": "Ocs Hall",
+          "Falloff": 2,
+          "Intensity": 2
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "The Tidebinding",
+          "Description": "A ritual where a believer binds a token of their oath and casts it into the sea.",
+          "Effect": "Small Piety gain; minor increase to party morale.",
+          "Cost": {
+            "Gold": 50,
+            "Cattle": 0,
+            "Food": 0,
+            "Nonbelievers": 0,
+            "Piety": 1
+          },
+          "DurationInDays": 1
+        }
+      ],
+
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "May the sea spare you one more day.",
+            "Blood to the Land Face, strength to your arm.",
+            "The Wind Face hears your oath — stand firm."
+          ],
+          "DifferentReligion": [
+            "Storms on your horizon, traveler."
+          ],
+          "OpposedReligion": [
+            "Tread lightly. The Faces hunger."
+          ]
+        },
+        "Farewells": {
+          "SameReligion": [
+            "May your enemies drown beneath you.",
+            "Walk with the wind at your back and a blade in hand.",
+            "Let the Faces judge your foes harshly."
+          ],
+          "DifferentReligion": [
+            "Safe seas, if such things exist."
+          ],
+          "OpposedReligion": [
+            "Go, before the storm chooses you."
+          ]
+        },
+        "Blessings": {
+          "SameReligion": [
+            "May the waves carry your wrath far and true.",
+            "The Land Face steady your feet in battle.",
+            "The Wind Face tighten the noose around your foes."
+          ],
+          "DifferentReligion": [
+            "May fate look kindly on you."
+          ],
+          "OpposedReligion": [
+            "May the sea remember your name… and drag it under."
+          ]
+        },
+        "Curses": {
+          "SameReligion": [
+            "May the tide claim oath‑breakers first.",
+            "Let the Wind Face twist your tongue to truth.",
+            "May the Land Face drink your coward’s blood."
+          ],
+          "DifferentReligion": [
+            "Damn the storm that brought you."
+          ],
+          "OpposedReligion": [
+            "May the deep swallow your breath and your bones."
+          ]
+        }
+      }
+    },
+    {
+      "ReligionId": "PathOfSunAndMoon",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Light‑Keeper",
+          "Female": "Light‑Keeper"
+        },
+
+        "CultMember": {
+          "Male": "Dawn‑Adept",
+          "Female": "Dawn‑Adept",
+          "IsOutdoors": false
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Sun‑Novice",
+            "Female": "Sun‑Novice",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Moon‑Warden",
+            "Female": "Moon‑Warden",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "High‑Luminary",
+            "Female": "High‑Luminary"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Brother of the Cycle",
+          "Female": "Sister of the Cycle"
+        },
+
+        "ReligiousLeader": {
+          "Male": "Voice of the Two Lights",
+          "Female": "Voice of the Two Lights"
+        }
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Path‑Walker",
+          "Cycle‑Seeker",
+          "Light‑Wanderer"
+        ],
+        "Female": [
+          "Path‑Walker",
+          "Cycle‑Seeker",
+          "Light‑Wanderer"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Prayer of Balance",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Still your breath. Let sun and moon weigh your deeds.",
+              "2": "May the Cycle restore what has fallen out of harmony."
+            },
+            "Hero": {
+              "1": "I open myself to the Two Lights.",
+              "3": "Let balance return to my steps."
+            }
+          }
+        },
+        {
+          "Name": "Rite of the Twin Lights",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you seek the path walked between sun and moon?",
+              "2": "Then step forward and let the Lights witness you.",
+              "4": "Cast aside the shadows of excess and neglect.",
+              "6": "Rise now, aligned with the Cycle."
+            },
+            "Hero": {
+              "1": "I seek the path of balance.",
+              "3": "I stand before the Two Lights without fear.",
+              "5": "I release what binds me to imbalance.",
+              "7": "I rise in harmony with the Cycle."
+            }
+          }
+        }
+      ],
+
+      "ReligiousHolidays": [
+        {
+          "Name": "Day of Equal Light",
+          "Description": "A solemn observance marking the perfect balance between sun and moon, day and night.",
+          "Day": 84,
+          "DurationInDays": 1,
+          "Type": "Ritual"
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "The Sunspire",
+          "AlternativeName": "Pillar of Dawn",
+          "StringId": "Sunspire",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Sanala",
+          "Falloff": 2,
+          "Intensity": 3
+        },
+        {
+          "Name": "The Moonwell",
+          "AlternativeName": "Stillwater Basin",
+          "StringId": "Moonwell",
+          "Type": "Sanctuary",
+          "SettlementStringId": "Askar",
+          "Falloff": 1,
+          "Intensity": 2
+        },
+        {
+          "Name": "The Path of the Two Lights",
+          "AlternativeName": "Cycle’s Crossing",
+          "StringId": "TwoLightsPath",
+          "Type": "PilgrimageRoute",
+          "SettlementStringId": "Hubyar",
+          "Falloff": 2,
+          "Intensity": 2
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "The Cycle’s Breath",
+          "Description": "A meditative ritual of controlled breathing at dawn and dusk, aligning the spirit with the Two Lights.",
+          "Effect": "Small Piety gain; minor increase to party morale.",
+          "Cost": {
+            "Gold": 20,
+            "Cattle": 0,
+            "Food": 1,
+            "Nonbelievers": 0,
+            "Piety": 1
+          },
+          "DurationInDays": 1
+        }
+      ],
+
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "Balance upon your path.",
+            "May the Two Lights guide your steps.",
+            "Dawn’s clarity and dusk’s calm to you."
+          ],
+          "DifferentReligion": [
+            "Peace upon your journey."
+          ],
+          "OpposedReligion": [
+            "Walk carefully. Shadows cling to the unbalanced."
+          ]
+        },
+        "Farewells": {
+          "SameReligion": [
+            "Walk in harmony.",
+            "May your steps follow the Cycle.",
+            "Sun at your back, moon at your side."
+          ],
+          "DifferentReligion": [
+            "Safe travels."
+          ],
+          "OpposedReligion": [
+            "Go, and disturb not the balance."
+          ]
+        },
+        "Blessings": {
+          "SameReligion": [
+            "May the sun strengthen your resolve.",
+            "May the moon steady your heart.",
+            "The Cycle keep you centered."
+          ],
+          "DifferentReligion": [
+            "May fortune favor you."
+          ],
+          "OpposedReligion": [
+            "May imbalance reveal your falsehoods."
+          ]
+        },
+        "Curses": {
+          "SameReligion": [
+            "May excess cloud your judgment.",
+            "Let imbalance weigh upon the reckless.",
+            "May the Cycle turn cold to oath‑breakers."
+          ],
+          "DifferentReligion": [
+            "A poor omen on this day."
+          ],
+          "OpposedReligion": [
+            "May the Two Lights turn their faces from you."
+          ]
+        }
+      }
+    },
+    {
+      "ReligionId": "EternalSky",
+
+      "PriestHierarchy": {
+        "Generic": {
+          "Male": "Sky‑Speaker",
+          "Female": "Sky‑Speaker"
+        },
+
+        "CultMember": {
+          "Male": "Cloud‑Adept",
+          "Female": "Cloud‑Adept",
+          "IsOutdoors": true
+        },
+
+        "Ranks": [
+          {
+            "Id": "Rank1",
+            "Male": "Wind‑Novice",
+            "Female": "Wind‑Novice",
+            "UpgradeTo": "Rank2"
+          },
+          {
+            "Id": "Rank2",
+            "Male": "Horizon‑Warden",
+            "Female": "Horizon‑Warden",
+            "UpgradeTo": "Rank3"
+          },
+          {
+            "Id": "Rank3",
+            "Male": "High‑Sky",
+            "Female": "High‑Sky"
+          }
+        ],
+
+        "Monastic": {
+          "Male": "Brother of the Open Sky",
+          "Female": "Sister of the Open Sky"
+        },
+
+        "ReligiousLeader": {
+          "Male": "Voice of the Eternal",
+          "Female": "Voice of the Eternal"
+        }
+      },
+
+      "WanderingPriestTitles": {
+        "Male": [
+          "Sky‑Walker",
+          "Wind‑Seeker",
+          "Cloud‑Strider"
+        ],
+        "Female": [
+          "Sky‑Walker",
+          "Wind‑Seeker",
+          "Cloud‑Strider"
+        ]
+      },
+
+      "Prayers": [
+        {
+          "Name": "Prayer of Clarity",
+          "Reason": "Absolution",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Still your thoughts. The sky sees without judgment.",
+              "2": "Let the wind carry away what clouds your spirit."
+            },
+            "Hero": {
+              "1": "I open myself to the endless sky.",
+              "3": "Let clarity return to my path."
+            }
+          }
+        },
+        {
+          "Name": "Rite of the Open Horizon",
+          "Reason": "Conversion",
+          "DialogueLines": {
+            "Priest": {
+              "0": "Do you seek the path beneath the boundless sky?",
+              "2": "Then step forward and lift your gaze.",
+              "4": "Cast aside the weight that binds you to the earth.",
+              "6": "Rise now, child of the Eternal Sky."
+            },
+            "Hero": {
+              "1": "I seek the freedom of the open horizon.",
+              "3": "I lift my eyes to the Eternal.",
+              "5": "I release what holds me low.",
+              "7": "I rise beneath the endless sky."
+            }
+          }
+        }
+      ],
+
+      "ReligiousHolidays": [
+        {
+          "Name": "Day of Clear Winds",
+          "Description": "A serene observance honoring the clarity and freedom of the open sky.",
+          "Day": 172,
+          "DurationInDays": 1,
+          "Type": "Celebration"
+        }
+      ],
+
+      "HolySites": [
+        {
+          "Name": "The Sky Pillar",
+          "AlternativeName": "Highwatch Spire",
+          "StringId": "SkyPillar",
+          "Type": "MiracleLocation",
+          "SettlementStringId": "Chaikand",
+          "Falloff": 2,
+          "Intensity": 3
+        },
+        {
+          "Name": "The Whispering Steppe",
+          "AlternativeName": "Wind‑Plain",
+          "StringId": "WhisperingSteppe",
+          "Type": "Sanctuary",
+          "SettlementStringId": "Ortongard",
+          "Falloff": 1,
+          "Intensity": 2
+        },
+        {
+          "Name": "The Horizon Shrine",
+          "AlternativeName": "Edge of the Sky",
+          "StringId": "HorizonShrine",
+          "Type": "PilgrimageRoute",
+          "SettlementStringId": "Myzea",
+          "Falloff": 2,
+          "Intensity": 2
+        }
+      ],
+
+      "Rituals": [
+        {
+          "Name": "The Skybreath",
+          "Description": "A meditative ritual performed atop high ground, breathing deeply to align oneself with the open sky.",
+          "Effect": "Small Piety gain; minor increase to party morale.",
+          "Cost": {
+            "Gold": 20,
+            "Cattle": 0,
+            "Food": 1,
+            "Nonbelievers": 0,
+            "Piety": 1
+          },
+          "DurationInDays": 1
+        }
+      ],
+
+      "EverydayPhrases": {
+        "Greetings": {
+          "SameReligion": [
+            "Clear skies upon you.",
+            "May the wind lift your spirit.",
+            "The horizon greets you as kin."
+          ],
+          "DifferentReligion": [
+            "Peace on your path."
+          ],
+          "OpposedReligion": [
+            "Walk lightly. The sky remembers all things."
+          ]
+        },
+        "Farewells": {
+          "SameReligion": [
+            "Walk beneath open skies.",
+            "May the wind guide your steps.",
+            "Horizon at your back, clarity before you."
+          ],
+          "DifferentReligion": [
+            "Safe travels."
+          ],
+          "OpposedReligion": [
+            "Go, and cast no shadow on the sky."
+          ]
+        },
+        "Blessings": {
+          "SameReligion": [
+            "May the sky steady your heart.",
+            "May the wind clear your thoughts.",
+            "The Eternal watch your steps."
+          ],
+          "DifferentReligion": [
+            "May fortune favor you."
+          ],
+          "OpposedReligion": [
+            "May the sky reveal your falsehoods."
+          ]
+        },
+        "Curses": {
+          "SameReligion": [
+            "May clouds gather on the path of liars.",
+            "Let the wind scatter the words of oath‑breakers.",
+            "May the horizon turn distant to the untrue."
+          ],
+          "DifferentReligion": [
+            "A poor wind blows today."
+          ],
+          "OpposedReligion": [
+            "May the sky deny you its light."
+          ]
+        }
+      }
+    }
+
+
+
+  ]
+}

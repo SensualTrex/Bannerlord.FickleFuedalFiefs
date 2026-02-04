@@ -7,7 +7,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.WarExhaustion.EventRecords
+namespace Religions.WarExhaustion.EventRecords
 {
     internal sealed class DailyRecord : WarExhaustionEventRecord
     {

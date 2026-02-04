@@ -3,7 +3,7 @@
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.WarPeace.Conditions
+namespace Religions.DiplomaticAction.WarPeace.Conditions
 {
     internal class HasEnoughTimeElapsedForWarCondition : IDiplomacyCondition
     {

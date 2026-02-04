@@ -1,0 +1,88 @@
+{
+    "CultureFactory": {
+        "empire": {
+            "SettlementPopulation": {
+                "Nonreligious": 1,
+                "SixFlames": 35,
+                "FiveTorches": 10,
+                "HearthofSix": 5,
+                "WhisperingWilds": 3,
+                "SunandMoon": 5,
+                "EternalSky": 0,
+                "ThreeFaces": 0
+            }
+        },
+        "vlandia": {
+            "SettlementPopulation": {
+                "Nonreligious": 1,
+                "SixFlames": 5,
+                "FiveTorches": 20,
+                "HearthofSix": 2,
+                "WhisperingWilds": 2,
+                "SunandMoon": 1,
+                "EternalSky": 0,
+                "ThreeFaces": 0
+            }
+        },
+        "battania": {
+            "SettlementPopulation": {
+                "Nonreligious": 2,
+                "SixFlames": 12,
+                "FiveTorches": 3,
+                "HearthofSix": 5,
+                "WhisperingWilds": 25,
+                "SunandMoon": 0,
+                "EternalSky": 0,
+                "ThreeFaces": 2
+            }
+        },
+        "sturgia": {
+            "SettlementPopulation": {
+                "Nonreligious": 1,
+                "SixFlames": 5,
+                "FiveTorches": 1,
+                "HearthofSix": 20,
+                "WhisperingWilds": 3,
+                "SunandMoon": 0,
+                "EternalSky": 4,
+                "ThreeFaces": 5
+            }
+        },
+        "aserai": {
+            "SettlementPopulation": {
+                "Nonreligious": 1,
+                "SixFlames": 3,
+                "FiveTorches": 2,
+                "HearthofSix": 0,
+                "WhisperingWilds": 0,
+                "SunandMoon": 25,
+                "EternalSky": 5,
+                "ThreeFaces": 0
+            }
+        },
+        "khuzait": {
+            "SettlementPopulation": {
+                "Nonreligious": 1,
+                "SixFlames": 5,
+                "FiveTorches": 0,
+                "HearthofSix": 3,
+                "WhisperingWilds": 0,
+                "SunandMoon": 5,
+                "EternalSky": 25,
+                "ThreeFaces": 0
+            }
+        },
+        "nord": {
+            "SettlementPopulation": {
+                "Nonreligious": 1,
+                "SixFlames": 2,
+                "FiveTorches": 0,
+                "HearthofSix": 5,
+                "WhisperingWilds": 2,
+                "SunandMoon": 0,
+                "EternalSky": 0,
+                "ThreeFaces": 25
+            }
+        }
+    }
+}

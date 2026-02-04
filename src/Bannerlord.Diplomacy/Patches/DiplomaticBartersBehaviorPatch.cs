@@ -1,12 +1,12 @@
-﻿using Diplomacy.Extensions;
-using Diplomacy.PatchTools;
+﻿using Religions.Extensions;
+using Religions.PatchTools;
 
 using System.Collections.Generic;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CampaignBehaviors.BarterBehaviors;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     /// <summary>
     /// Blocks AI from declaring war due to the AI diplomatic barter behavior.

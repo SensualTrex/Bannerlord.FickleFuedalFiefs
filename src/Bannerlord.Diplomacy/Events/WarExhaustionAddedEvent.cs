@@ -1,8 +1,8 @@
-﻿using Diplomacy.WarExhaustion;
+﻿using Religions.WarExhaustion;
 
 using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.Events
+namespace Religions.Events
 {
     public readonly struct WarExhaustionAddedEvent
     {

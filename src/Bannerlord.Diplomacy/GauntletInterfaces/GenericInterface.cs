@@ -5,7 +5,7 @@ using TaleWorlds.MountAndBlade.GauntletUI;
 using TaleWorlds.ScreenSystem;
 
 
-namespace Diplomacy.GauntletInterfaces
+namespace Religions.GauntletInterfaces
 {
     public abstract class GenericInterface
     {

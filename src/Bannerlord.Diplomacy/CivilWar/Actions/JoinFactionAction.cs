@@ -1,6 +1,6 @@
-﻿using Diplomacy.CivilWar.Factions;
-using Diplomacy.CivilWar.Scoring;
-using Diplomacy.Extensions;
+﻿using Religions.CivilWar.Factions;
+using Religions.CivilWar.Scoring;
+using Religions.Extensions;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.CivilWar.Actions
+namespace Religions.CivilWar.Actions
 {
     public class JoinFactionAction
     {

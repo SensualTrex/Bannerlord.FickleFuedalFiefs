@@ -1,5 +1,5 @@
-﻿using Diplomacy.Costs;
-using Diplomacy.Helpers;
+﻿using Religions.Costs;
+using Religions.Helpers;
 
 using HarmonyLib.BUTR.Extensions;
 
@@ -25,7 +25,7 @@ using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.Messengers
+namespace Religions.Messengers
 {
     internal sealed class MessengerManager : IMissionListener
     {

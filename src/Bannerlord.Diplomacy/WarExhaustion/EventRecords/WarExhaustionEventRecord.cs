@@ -5,7 +5,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy.WarExhaustion.EventRecords
+namespace Religions.WarExhaustion.EventRecords
 {
     internal abstract class WarExhaustionEventRecord
     {

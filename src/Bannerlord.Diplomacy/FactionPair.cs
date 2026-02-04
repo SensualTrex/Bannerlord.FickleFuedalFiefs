@@ -1,7 +1,7 @@
 ﻿using TaleWorlds.CampaignSystem;
 using TaleWorlds.SaveSystem;
 
-namespace Diplomacy
+namespace Religions
 {
     /// <summary>
     /// This is essentially an accessible copy of the game's own internal FactionPair class.

@@ -1,4 +1,4 @@
-﻿namespace Diplomacy.WarExhaustion
+﻿namespace Religions.WarExhaustion
 {
     public enum WarExhaustionType : byte
     {

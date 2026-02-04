@@ -1,9 +1,9 @@
-﻿using Diplomacy.Extensions;
+﻿using Religions.Extensions;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.GenericConditions
+namespace Religions.DiplomaticAction.GenericConditions
 {
     internal sealed class BadRelationCondition : IDiplomacyCondition
     {

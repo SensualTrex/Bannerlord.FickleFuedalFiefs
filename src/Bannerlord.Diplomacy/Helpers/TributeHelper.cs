@@ -1,4 +1,4 @@
-﻿using Diplomacy.Extensions;
+﻿using Religions.Extensions;
 
 using System.Linq;
 
@@ -6,9 +6,9 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.BarterSystem.Barterables;
 using TaleWorlds.CampaignSystem.Election;
 
-using static Diplomacy.WarExhaustion.WarExhaustionManager;
+using static Religions.WarExhaustion.WarExhaustionManager;
 
-namespace Diplomacy.Helpers
+namespace Religions.Helpers
 {
     internal static class TributeHelper
     {

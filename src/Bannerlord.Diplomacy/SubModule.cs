@@ -3,13 +3,13 @@ using Bannerlord.UIExtenderEx;
 using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ResourceManager;
 
-using Diplomacy.CampaignBehaviors;
-using Diplomacy.Events;
-using Diplomacy.Models;
-using Diplomacy.PatchTools;
-using Diplomacy.Religions;
-using Diplomacy.Religions.Behavior;
-using Diplomacy.Widgets;
+using Religions.CampaignBehaviors;
+using Religions.Events;
+using Religions.Models;
+using Religions.PatchTools;
+using Religions.Religion;
+using Religions.Religion.Behavior;
+using Religions.Widgets;
 
 using Microsoft.Extensions.Logging;
 
@@ -27,8 +27,9 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.SaveSystem;
 
-namespace Diplomacy
+namespace Religions
 {
     public sealed class SubModule : MBSubModuleBase
     {
@@ -52,6 +53,8 @@ namespace Diplomacy
         {
 
             base.OnSubModuleLoad();
+            _ = typeof(Religions.Religion.ReligionSaveData);
+
             Instance = this;
 
             var extender = UIExtender.Create(Name);
@@ -98,7 +101,7 @@ namespace Diplomacy
 
                 DiplomacyEvents.Instance = new DiplomacyEvents();
                 var gameStarter = (CampaignGameStarter) gameStarterObject;
-
+                gameStarter.AddBehavior(new ReligionInitBehavior());
                 gameStarter.AddBehavior(new DiplomaticAgreementBehavior());
                 gameStarter.AddBehavior(new CooldownBehavior());
                 gameStarter.AddBehavior(new MessengerBehavior());
@@ -115,8 +118,8 @@ namespace Diplomacy
                 gameStarter.AddBehavior(new CivilWarBehavior());
                 gameStarter.AddBehavior(new UIBehavior());
                 gameStarter.AddBehavior(new TownMenuBehavior());
-                gameStarter.AddBehavior(new ReligionInitBehavior());
 
+                gameStarter.AddBehavior(new ReligionConversationBehavior());
 
                 var currentKingdomDecisionPermissionModel = GetGameModel<KingdomDecisionPermissionModel>(gameStarterObject);
                 if (currentKingdomDecisionPermissionModel is null)

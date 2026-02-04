@@ -1,7 +1,7 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.GauntletInterfaces;
+using Religions.GauntletInterfaces;
 
 using JetBrains.Annotations;
 
@@ -10,7 +10,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.ScreenSystem;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin]
     [UsedImplicitly]

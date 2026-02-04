@@ -1,9 +1,9 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.DiplomaticAction.Alliance;
-using Diplomacy.Events;
-using Diplomacy.Extensions;
+using Religions.DiplomaticAction.Alliance;
+using Religions.Events;
+using Religions.Extensions;
 
 using JetBrains.Annotations;
 
@@ -16,7 +16,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin(nameof(KingdomDiplomacyVM.RefreshValues))]
     [UsedImplicitly]

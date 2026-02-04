@@ -2,7 +2,7 @@
 using TaleWorlds.CampaignSystem.LogEntries;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.DiplomaticAction.Alliance.Conditions
+namespace Religions.DiplomaticAction.Alliance.Conditions
 {
     internal class TimeElapsedSinceLastWarCondition : IDiplomacyCondition
     {

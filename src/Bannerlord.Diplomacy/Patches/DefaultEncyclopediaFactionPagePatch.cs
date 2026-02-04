@@ -1,5 +1,5 @@
-﻿using Diplomacy.Extensions;
-using Diplomacy.PatchTools;
+﻿using Religions.Extensions;
+using Religions.PatchTools;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Encyclopedia;
 using TaleWorlds.CampaignSystem.Encyclopedia.Pages;
 
-namespace Diplomacy.Patches
+namespace Religions.Patches
 {
     internal sealed class DefaultEncyclopediaFactionPagePatch : PatchClass<DefaultEncyclopediaFactionPagePatch, DefaultEncyclopediaFactionPage>
     {

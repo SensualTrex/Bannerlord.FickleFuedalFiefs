@@ -1,6 +1,6 @@
 ﻿using TaleWorlds.Localization;
 
-namespace Diplomacy.CivilWar.Factions
+namespace Religions.CivilWar.Factions
 {
     public enum RebelDemandType
     {

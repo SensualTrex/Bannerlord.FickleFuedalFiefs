@@ -1,5 +1,5 @@
-﻿using Diplomacy.GauntletInterfaces;
-using Diplomacy.WarExhaustion;
+﻿using Religions.GauntletInterfaces;
+using Religions.WarExhaustion;
 
 using JetBrains.Annotations;
 
@@ -10,7 +10,7 @@ using TaleWorlds.Core.ViewModelCollection.ImageIdentifiers;
 using TaleWorlds.Library;
 using TaleWorlds.ScreenSystem;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal sealed class WarExhaustionMapIndicatorItemVM : TaleWorlds.Library.ViewModel
     {

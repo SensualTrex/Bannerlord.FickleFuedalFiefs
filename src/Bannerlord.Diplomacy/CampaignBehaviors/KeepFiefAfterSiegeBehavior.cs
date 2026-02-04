@@ -1,5 +1,5 @@
-﻿using Diplomacy.Character;
-using Diplomacy.Events;
+﻿using Religions.Character;
+using Religions.Events;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -7,7 +7,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
     internal sealed class KeepFiefAfterSiegeBehavior : CampaignBehaviorBase
     {

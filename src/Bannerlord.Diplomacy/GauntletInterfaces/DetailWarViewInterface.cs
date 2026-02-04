@@ -1,4 +1,4 @@
-﻿using Diplomacy.ViewModel;
+﻿using Religions.ViewModel;
 
 using JetBrains.Annotations;
 
@@ -7,7 +7,7 @@ using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.InputSystem;
 using TaleWorlds.ScreenSystem;
 
-namespace Diplomacy.GauntletInterfaces
+namespace Religions.GauntletInterfaces
 {
     internal class DetailWarViewInterface : GenericInterface
     {

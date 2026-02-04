@@ -1,0 +1,44 @@
+<Prefab>
+	<Window>
+		<ListPanel Sprite="StdAssets\Popup\order_popup_canvas" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="@ItemTotalWidth" SuggestedHeight="200" MarginTop="20" MarginLeft="20">
+			<Children>
+				<ListPanel Sprite="StdAssets\Popup\canvas_gradient" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+					<Children>
+						<Panel Sprite="frame_9" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="-20" MarginTop="-20" MarginRight="-20" MarginBottom="-20" Brush="MyLittleWarbandEx.Tooltip.SmallText" >
+							<Children>
+								
+								<!-- Icon -->
+								<ButtonWidget IsVisible="@ShowIcon"  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="100" SuggestedWidth="100" MarginTop="35" MarginLeft="30" Brush="Encyclopedia.SubPage.Element" >
+									<Children>
+                                        <ImageWidget SuggestedWidth="96" SuggestedHeight="96" VerticalAlignment="Top" Sprite="@ItemSprite" MarginLeft="2" MarginBottom="2" />
+                                        <ImageWidget SuggestedWidth="50" SuggestedHeight="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Sprite="@LevelSprite" />
+									</Children>
+								</ButtonWidget>
+
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="125" SuggestedWidth="@ItemDetailsWidth" MarginTop="15" MarginRight="15" HorizontalAlignment="Right" VerticalAlignment="Top" >
+                                    <Children>
+                                        <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="Recruitment.Popup.Title.Text" MarginTop="15" Brush.FontSize="16" Text="@ItemName"/>
+                                        <ListPanel DataSource="{ItemProperties}" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="@ItemDetailsWidth" StackLayout.LayoutMethod="VerticalBottomToTop" MarginTop="15" >
+                                            <ItemTemplate>
+                                                    <ItemValuePair ButtonType="Radio" />
+                                            </ItemTemplate>
+                                        </ListPanel>
+                                    </Children>
+                                </Widget>
+                                
+								<!-- Apply -->
+								<ButtonWidget IsVisible="@ShowButtons" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="20" SuggestedWidth="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="ButtonBrush1" Command.Click="Apply"  MarginBottom="35" IsEnabled="true">
+									<Children>
+										<RichTextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="OverlayPopup.ButtonText" Brush.FontSize="16" Text="Pray" />
+									</Children>
+								</ButtonWidget>
+								
+							</Children>
+						</Panel>
+				</Children>
+				</ListPanel>			
+			</Children>
+		</ListPanel>
+
+	</Window>
+</Prefab>

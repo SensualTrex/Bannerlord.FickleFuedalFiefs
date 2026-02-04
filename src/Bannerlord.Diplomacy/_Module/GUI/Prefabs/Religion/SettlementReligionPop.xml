@@ -1,0 +1,9 @@
+<Prefab>
+    <Window>
+        <Widget SuggestedWidth="@PopWidth" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="32" VerticalAlignment="Center" HorizontalAlignment="Center" ClipContents="true" ClipHorizontalContent="true" ClipVerticalContent="true">
+            <Children>
+                <Widget SuggestedWidth="30" SuggestedHeight="30" VerticalAlignment="Center" HorizontalAlignment="Left" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" Sprite="SPGeneral\GeneralFlagIcons\civillian" Brush.ColorFactor="2" />
+            </Children>
+        </Widget>
+    </Window>
+</Prefab>

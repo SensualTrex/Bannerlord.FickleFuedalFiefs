@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 using System.Xml;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [PrefabExtension("EncyclopediaHeroPage", "descendant::RichTextWidget[@Text='@InformationText']")]
     [UsedImplicitly]

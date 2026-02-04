@@ -1,5 +1,5 @@
-﻿using Diplomacy.Actions;
-using Diplomacy.Character;
+﻿using Religions.Actions;
+using Religions.Character;
 
 using JetBrains.Annotations;
 
@@ -13,7 +13,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     internal sealed class DonateGoldVM : TaleWorlds.Library.ViewModel
     {

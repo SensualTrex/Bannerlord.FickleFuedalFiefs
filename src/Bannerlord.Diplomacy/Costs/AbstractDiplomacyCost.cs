@@ -1,4 +1,4 @@
-﻿namespace Diplomacy.Costs
+﻿namespace Religions.Costs
 {
     public abstract class AbstractDiplomacyCost : IDiplomacyCost
     {

@@ -1,4 +1,4 @@
-﻿using Diplomacy.DiplomaticAction.WarPeace;
+﻿using Religions.DiplomaticAction.WarPeace;
 
 using System.Linq;
 
@@ -7,7 +7,7 @@ using TaleWorlds.CampaignSystem.ComponentInterfaces;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.Models
+namespace Religions.Models
 {
     public class DiplomacyKingdomDecisionPermissionModel : KingdomDecisionPermissionModel
     {

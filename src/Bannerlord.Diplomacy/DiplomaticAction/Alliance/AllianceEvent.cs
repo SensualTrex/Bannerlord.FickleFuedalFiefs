@@ -1,6 +1,6 @@
 ﻿using TaleWorlds.CampaignSystem;
 
-namespace Diplomacy.DiplomaticAction.Alliance
+namespace Religions.DiplomaticAction.Alliance
 {
     public readonly struct AllianceEvent
     {

@@ -1,8 +1,8 @@
-﻿using Diplomacy.DiplomaticAction.GenericConditions;
+﻿using Religions.DiplomaticAction.GenericConditions;
 
 using System.Collections.Generic;
 
-namespace Diplomacy.DiplomaticAction.NonAggressionPact
+namespace Religions.DiplomaticAction.NonAggressionPact
 {
     internal class NonAggressionPactConditions : AbstractConditionEvaluator<NonAggressionPactConditions>
     {

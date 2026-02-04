@@ -1,11 +1,11 @@
 ﻿using Bannerlord.UIExtenderEx.Attributes;
 using Bannerlord.UIExtenderEx.ViewModels;
 
-using Diplomacy.Costs;
-using Diplomacy.DiplomaticAction.WarPeace;
-using Diplomacy.Helpers;
-using Diplomacy.ViewModel;
-using Diplomacy.WarExhaustion;
+using Religions.Costs;
+using Religions.DiplomaticAction.WarPeace;
+using Religions.Helpers;
+using Religions.ViewModel;
+using Religions.WarExhaustion;
 
 using JetBrains.Annotations;
 
@@ -20,7 +20,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.ViewModelMixin
+namespace Religions.ViewModelMixin
 {
     [ViewModelMixin("UpdateDiplomacyProperties")]
     internal sealed class KingdomWarItemVMMixin : BaseViewModelMixin<KingdomWarItemVM>

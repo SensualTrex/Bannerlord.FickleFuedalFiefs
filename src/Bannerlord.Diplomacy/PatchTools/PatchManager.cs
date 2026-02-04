@@ -1,4 +1,4 @@
-﻿using Diplomacy.Patches;
+﻿using Religions.Patches;
 
 using HarmonyLib;
 
@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Diplomacy.PatchTools
+namespace Religions.PatchTools
 {
     /// <summary>
     /// Upon first and only instantiation, collects all of the active unannotated Harmony patches in its assembly and wires them.

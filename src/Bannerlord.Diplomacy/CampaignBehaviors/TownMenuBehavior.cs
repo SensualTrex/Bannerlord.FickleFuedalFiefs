@@ -1,4 +1,4 @@
-﻿using Diplomacy.GauntletInterfaces;
+﻿using Religions.GauntletInterfaces;
 
 using SandBox.View.Map;
 
@@ -17,7 +17,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.ScreenSystem;
 
-namespace Diplomacy.CampaignBehaviors
+namespace Religions.CampaignBehaviors
 {
 
     internal sealed class TownMenuBehavior : CampaignBehaviorBase

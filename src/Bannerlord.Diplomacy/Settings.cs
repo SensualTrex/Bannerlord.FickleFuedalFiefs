@@ -4,7 +4,7 @@ using MCM.Abstractions.Base.Global;
 
 using TaleWorlds.Localization;
 
-namespace Diplomacy
+namespace Religions
 {
     class Settings : AttributeGlobalSettings<Settings>
     {

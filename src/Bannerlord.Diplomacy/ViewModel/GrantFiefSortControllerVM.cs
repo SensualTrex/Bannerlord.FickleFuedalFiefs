@@ -2,7 +2,7 @@
 
 using TaleWorlds.Library;
 
-namespace Diplomacy.ViewModel
+namespace Religions.ViewModel
 {
     class GrantFiefSortControllerVM : TaleWorlds.Library.ViewModel
     {

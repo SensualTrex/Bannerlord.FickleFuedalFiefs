@@ -3,7 +3,7 @@
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.WarExhaustion.EventRecords
+namespace Religions.WarExhaustion.EventRecords
 {
     internal abstract class CasualtyRecord : WarExhaustionEventRecord
     {

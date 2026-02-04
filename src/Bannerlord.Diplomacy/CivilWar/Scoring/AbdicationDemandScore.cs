@@ -1,4 +1,4 @@
-﻿using Diplomacy.CivilWar.Factions;
+﻿using Religions.CivilWar.Factions;
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.Localization;
 
-namespace Diplomacy.CivilWar.Scoring
+namespace Religions.CivilWar.Scoring
 {
     internal sealed class AbdicationDemandScore : ChangeRulerFactionScoreBase
     {
